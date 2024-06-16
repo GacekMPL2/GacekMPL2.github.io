@@ -5,6 +5,9 @@ body{
         font-size: 50px;
         text-align: center;
     }
+    p{
+        text-align: center;
+    }
     main{
         display: flex;
         a{
@@ -38,7 +41,7 @@ body{
         .video{
             width: 33%;
             video{
-                height: 70%;
+                height: 60%;
                 width: 100%;
             }
         }

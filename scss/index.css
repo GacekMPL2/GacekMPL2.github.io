@@ -6,6 +6,9 @@ body h1 {
   font-size: 50px;
   text-align: center;
 }
+body p {
+  text-align: center;
+}
 body main {
   display: flex;
 }
@@ -41,6 +44,6 @@ body main .video {
   width: 33%;
 }
 body main .video video {
-  height: 70%;
+  height: 60%;
   width: 100%;
 }/*# sourceMappingURL=index.css.map */
