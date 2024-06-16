@@ -173,8 +173,6 @@ main{
             }
             .warsaw-powisle-mobile{
                 display: flex;
-                img{
-                }
                 h2{
                     margin-left: 20px;
                     color: $color-maps-text;
@@ -309,14 +307,6 @@ main{
     .other-cities{
         background-color: $color-other-cities-bacground;
         color: $color-other-cities-text;
-    }
-    .news{
-        .container{
-            .news-text{
-                h2{
-                }
-            }
-        }
     }
 }
 
@@ -788,9 +778,6 @@ main{
                         margin-top: 20px;
                         margin-bottom: 30px;
                         font-size: 20px;
-                        img{
-                            
-                        }
                     }
                     .el-food{
                         width: 100%;
@@ -828,16 +815,6 @@ main{
                 width: 574px;
                 img{
                     width: 100%;
-                }
-            }
-        }
-        .news{
-            .container{
-                .news-text{
-
-                }
-                .news-slider{
-
                 }
             }
         }
@@ -1064,10 +1041,6 @@ main{
                     width: 768px;
                 }
             }
-            .news{
-                .news-text{
-                }
-            }
         }
     }
 
@@ -1158,8 +1131,6 @@ main{
                     .intesting-place-text{
                         margin-left: 5px;
                         width: 350px;
-                        h2{
-                        }
                         p{
                             width: 85%;
                         }

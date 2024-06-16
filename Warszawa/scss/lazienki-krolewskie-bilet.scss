@@ -57,12 +57,6 @@ main{
             display: flex;
         }
     }
-    .header-text{
-        .container{
-            .google{
-            }
-        }
-    }
 }
 
 
@@ -187,9 +181,6 @@ main{
                             input[type="checkbox"] {
                                 margin-right: 10px;
                             }
-                            .date{
-                                
-                            }
                             .checkbox {
                                 display: flex;
                                 flex-direction: column;
@@ -263,8 +254,6 @@ main{
             }
         }
     }
-    main{
-    }
 }
 
 
@@ -292,8 +281,6 @@ main{
                 }
             }
         }
-    }
-    main{
     }
 }
 
@@ -344,9 +331,6 @@ main{
                     margin-right: 30px;
                 }
                 .tag-positon{
-                    button{
-
-                    }
                     .hiden-desktop{
                         display: none;
                     }

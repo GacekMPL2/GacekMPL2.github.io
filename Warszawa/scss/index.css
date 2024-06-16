@@ -275,6 +275,7 @@ main .other-cities {
   background-color: #28282A;
   color: #FFFFFF;
 }
+
 @media (min-width: 380px) {
   header .container h1 {
     font-size: 70px;

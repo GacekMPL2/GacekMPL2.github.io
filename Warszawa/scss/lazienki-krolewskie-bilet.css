@@ -47,6 +47,7 @@ main .tag .container p {
 main .tag .container-position {
   display: flex;
 }
+
 @media (min-width: 380px) {
   h1 {
     margin-bottom: 40px;
