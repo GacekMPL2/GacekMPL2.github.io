@@ -1,0 +1,650 @@
+button {
+  border: 0;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.h2-text-weight {
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.h2-text-weight .span-text-weight {
+  font-weight: 1000;
+}
+
+.strong {
+  font-weight: 800;
+}
+
+.gray {
+  color: #808083;
+}
+
+header {
+  margin: 0;
+}
+header .container-fix {
+  background-color: #28282A;
+}
+header .container-fix .container .photo {
+  display: flex;
+}
+
+main p {
+  margin: 0;
+}
+main .tag .container .tag-positon {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .tag .container button, main .tag .container p {
+  margin: 0;
+  color: #808083;
+}
+main .tag .container p {
+  font-weight: 800;
+}
+main .tag .container-position {
+  display: flex;
+}
+
+@media (min-width: 380px) {
+  html {
+    scroll-padding-top: 150px;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: 1000;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 25px;
+    margin: 0;
+    font-weight: 800;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 800;
+  }
+  header {
+    position: relative;
+    margin: 0 auto;
+    width: 380px;
+    height: 207px;
+  }
+  header .container-fix {
+    padding-top: 35px;
+    width: 360px;
+    height: 155px;
+  }
+  header .container-fix .container {
+    position: static;
+  }
+  header .container-fix .container .photo {
+    position: absolute;
+    right: 0;
+    width: 360px;
+    height: 172px;
+  }
+  header .container-fix .container .photo .photo-one {
+    width: 100%;
+  }
+  header .container-fix .container .photo .photo-one img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .tag {
+    margin-top: 20px;
+    margin-bottom: 42px;
+  }
+  main .tag .container p {
+    margin-right: 16px;
+  }
+  main .tag .container .tag-positon button {
+    font-size: 14px;
+    margin-right: 13px;
+  }
+  main .tag .container .arrow {
+    display: none;
+  }
+  main .header-text .container .google {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 84px;
+    width: 264px;
+  }
+  main .header-text .container .google .google-logo {
+    margin: 20px 0px 20px 20px;
+    padding-right: 14px;
+    border-right: 1px solid black;
+  }
+  main .header-text .container .google .google-postion {
+    margin-left: 14px;
+  }
+  main .header-text .container .google .google-postion p {
+    font-size: 12px;
+  }
+  main .header-text .container .google .google-postion .points {
+    display: flex;
+    margin-top: 20px;
+  }
+  main .header-text .container .google .google-postion .points h2 {
+    margin-right: 10px;
+  }
+  main .header-text .container .google .google-postion .points .star {
+    margin-top: 12px;
+    margin-right: 4px;
+    height: 13px;
+  }
+  main .header-text .container .icons .container .icons-text {
+    display: flex;
+    color: #808083;
+    margin-bottom: 20px;
+  }
+  main .header-text .container .icons .container .icons-text img {
+    width: 28px;
+    height: 28px;
+  }
+  main .header-text .container .icons .container .icons-text p {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  main .header-text .container .icons .container .icons-text .last-text {
+    margin-left: 42px;
+  }
+  main .header-text .container .icons .container .icons-text .fix-text {
+    margin-top: 4px;
+  }
+  main .header-text .container .icons .container .details-ticket {
+    padding: 12px 57px;
+    margin-bottom: 32px;
+    margin-top: 38px;
+    width: 351px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #FF5674;
+  }
+  main .header-text .container .icons .container .details-ticket a {
+    color: #FFFFFF;
+  }
+  main .header-text .container .icons .container .hiden {
+    display: none;
+  }
+  main .text .container .text-position {
+    overflow: hidden;
+    max-height: 193px;
+  }
+  main .text .container .text-position.expanded {
+    max-height: 100%;
+  }
+  main .text .container .text-position .text-left h3, main .text .container .text-position .text-right h3 {
+    margin-bottom: 10px;
+  }
+  main .text .container .text-position .text-left p, main .text .container .text-position .text-right p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  main .text .container .zwin {
+    margin-top: 20px;
+  }
+  main .text .container .zwin .expandable-checkbox {
+    display: none;
+  }
+  main .text .container .zwin .expandable-checkbox:not(:checked) ~ .zwin .expand-button::after {
+    content: " tekst";
+  }
+  main .text .container .zwin label {
+    font-weight: 800;
+  }
+  main .text .container .zwin .expand-icon {
+    margin-left: 10px;
+    width: 13px;
+    height: 5px;
+  }
+  main .info {
+    margin-top: 64px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: #28282A;
+    color: #FFFFFF;
+  }
+  main .info .container h2 {
+    margin-bottom: 20px;
+  }
+  main .info .container .info-postion .info-left p, main .info .container .info-postion .info-right p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  main .info .container .info-postion .info-left .info-button, main .info .container .info-postion .info-right .info-button {
+    text-transform: uppercase;
+    padding: 12px 35px;
+    background-color: #FF5674;
+  }
+  main .info .container .info-postion .info-left .info-button a, main .info .container .info-postion .info-right .info-button a {
+    color: #FFFFFF;
+  }
+  main .info .container .info-postion .info-left .info-button-one, main .info .container .info-postion .info-right .info-button-one {
+    margin-top: 32px;
+    margin-bottom: 52px;
+  }
+  main .info .container .info-postion .info-left .info-button-two, main .info .container .info-postion .info-right .info-button-two {
+    margin: 40px 0px;
+  }
+  main .info .container .info-postion .info-left .info-button-three, main .info .container .info-postion .info-right .info-button-three {
+    margin-top: 52px;
+  }
+  main .info .container .info-postion .ticket-icon {
+    display: flex;
+  }
+  main .info .container .info-postion .ticket-icon img {
+    margin-right: 20px;
+    height: 28px;
+    width: 28px;
+  }
+  main .info .container .info-postion .ticket-icon .fix-ticket {
+    margin-top: 4px;
+  }
+  main .image .container .image-postion {
+    display: flex;
+    flex-direction: column;
+  }
+  main .image .container .image-postion .image-one {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    width: 382px;
+    height: 204px;
+  }
+  main .image .container .image-postion .image-one .img-one {
+    height: 204px;
+    width: 382px;
+    content: url("../img/lazienki-krolewskie-image.webp");
+  }
+  main .image .container .image-postion .image-two {
+    display: flex;
+    margin-left: -20px;
+    margin-bottom: 10px;
+    width: 382px;
+  }
+  main .image .container .image-postion .image-two .img-two, main .image .container .image-postion .image-two .img-three {
+    width: 50%;
+    height: 184px;
+  }
+  main .image .container .image-postion .image-two .img-two {
+    margin-right: 10px;
+    content: url("../img/palac-images.webp");
+  }
+  main .image .container .image-postion .image-two .img-three {
+    content: url("../img/palac-krola-places.webp");
+  }
+  main .image .container .image-postion .img-one, main .image .container .image-postion .img-two, main .image .container .image-postion .img-three {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 576px) {
+  header {
+    width: 576px;
+  }
+  header .container-fix {
+    padding-top: 35px;
+    width: 560px;
+    height: 155px;
+  }
+  header .container-fix .container .photo {
+    position: absolute;
+    right: 0;
+    width: 560px;
+    height: 172px;
+  }
+  header .container-fix .container .photo .photo-one {
+    width: 100%;
+  }
+  header .container-fix .container .photo .photo-one img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .tag .container .tag-positon button {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  main .text .container .text-position {
+    max-height: 130px;
+  }
+  main .image .container .image-postion .image-one {
+    width: 576px;
+    margin-left: -18px;
+    height: 204px;
+  }
+  main .image .container .image-postion .image-one .img-one {
+    height: 204px;
+    width: 100%;
+  }
+  main .image .container .image-postion .image-two {
+    margin-left: -18px;
+    width: 576px;
+  }
+  main .image .container .image-postion .image-two .img-two, main .image .container .image-postion .image-two .img-three {
+    width: 50%;
+    height: 184px;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    width: 768px;
+  }
+  header .container-fix {
+    padding-top: 35px;
+    width: 745px;
+    height: 155px;
+  }
+  header .container-fix .container .photo {
+    position: absolute;
+    right: 0;
+    width: 745px;
+    height: 172px;
+  }
+  header .container-fix .container .photo .photo-one {
+    width: 100%;
+  }
+  header .container-fix .container .photo .photo-one img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .tag {
+    margin-top: 20px;
+    margin-bottom: 42px;
+  }
+  main .tag .container p {
+    margin-right: 16px;
+  }
+  main .tag .container .tag-positon button {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  main .text .container .text-position {
+    max-height: 120px;
+  }
+  main .image .container .image-postion .image-one {
+    width: 768px;
+    margin-left: -24px;
+    height: 250px;
+  }
+  main .image .container .image-postion .image-one .img-one {
+    height: 100%;
+    width: 100%;
+  }
+  main .image .container .image-postion .image-two {
+    margin-left: -24px;
+    width: 767px;
+  }
+  main .image .container .image-postion .image-two .img-two, main .image .container .image-postion .image-two .img-three {
+    width: 50%;
+    height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  h3 {
+    font-size: 18px;
+    font-weight: 1000;
+  }
+  header {
+    width: 992px;
+    height: 450px;
+  }
+  header .container-fix {
+    padding-top: 86px;
+    width: 975px;
+    height: 368px;
+  }
+  header .container-fix .container .photo {
+    position: absolute;
+    right: 0;
+    width: 975px;
+    height: 363px;
+  }
+  main .tag {
+    margin-top: 20px;
+    margin-bottom: 42px;
+  }
+  main .tag .container .tag-text {
+    font-size: 16px;
+  }
+  main .tag .container p {
+    margin-right: 30px;
+  }
+  main .tag .container .tag-positon .hiden-desktop {
+    display: none;
+  }
+  main .tag .container .tag-positon .arrow {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+  }
+  main .header-text .container .text {
+    display: block;
+    width: 100%;
+  }
+  main .header-text .container .text h1 {
+    margin-bottom: 32px;
+    font-size: 45px;
+  }
+  main .header-text .container .text .google {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 84px;
+    width: 264px;
+  }
+  main .header-text .container .text .google .google-logo {
+    margin: 20px 0px 20px 20px;
+    padding-right: 14px;
+    border-right: 1px solid black;
+  }
+  main .header-text .container .text .google .google-postion {
+    margin-left: 14px;
+  }
+  main .header-text .container .text .google .google-postion .points {
+    display: flex;
+    margin-top: 15px;
+  }
+  main .header-text .container .text .google .google-postion .points h2 {
+    margin-right: 6px;
+    font-size: 30px;
+  }
+  main .header-text .container .text .google .google-postion .points .star {
+    margin-top: 12px;
+    margin-right: 4px;
+    height: 16px;
+  }
+  main .header-text .container .text .icons .container .icons-text {
+    display: flex;
+    color: #808083;
+  }
+  main .header-text .container .text .icons .container .icons-text p {
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  main .header-text .container .text .icons .container .icons-text .strong {
+    font-weight: 800;
+  }
+  main .header-text .container .text .icons .container .icons-text .last-text {
+    margin-left: 42px;
+  }
+  main .header-text .container .text .icons .container .icons-text .fix-text {
+    margin-top: 4px;
+  }
+  main .header-text .container .text .icons .container .postion-destkop {
+    position: absolute;
+    top: 0;
+    left: 295px;
+  }
+  main .header-text .container .text .icons .container .details-ticket {
+    padding: 12px 35px;
+    margin-bottom: 96px;
+    margin-top: 16px;
+    margin-left: 44px;
+    width: 455px;
+  }
+  main .header-text .container .text .icons .container .hiden {
+    display: inline-block;
+  }
+  main .text .container .text-position {
+    display: flex;
+    max-height: none;
+  }
+  main .text .container .text-position .text-left h3, main .text .container .text-position .text-right h3 {
+    margin-bottom: 30px;
+  }
+  main .text .container .text-position .text-left p, main .text .container .text-position .text-right p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  main .text .container .text-position .text-left {
+    width: 50%;
+    margin-right: 20px;
+  }
+  main .text .container .text-position .text-right {
+    width: 50%;
+  }
+  main .text .container .zwin {
+    display: none;
+  }
+  main .info {
+    margin-top: 96px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  main .info .container h2 {
+    font-size: 34px;
+    margin-bottom: 60px;
+  }
+  main .info .container .info-postion {
+    display: flex;
+  }
+  main .info .container .info-postion .info-right {
+    margin-left: 20px;
+  }
+  main .info .container .info-postion .info-left, main .info .container .info-postion .info-right {
+    width: 50%;
+  }
+  main .info .container .info-postion .info-left p, main .info .container .info-postion .info-right p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  main .info .container .info-postion .info-left .p-three, main .info .container .info-postion .info-right .p-three {
+    margin-top: 60px;
+  }
+  main .info .container .info-postion .info-left .info-button-one, main .info .container .info-postion .info-right .info-button-one {
+    margin-top: 10px;
+    margin-bottom: 52px;
+  }
+  main .info .container .info-postion .info-left .info-button-two, main .info .container .info-postion .info-right .info-button-two {
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+  main .info .container .info-postion .info-left .info-button-three, main .info .container .info-postion .info-right .info-button-three {
+    margin-top: 22px;
+  }
+  main .info .container .info-postion .info-left .ticket-icon, main .info .container .info-postion .info-right .ticket-icon {
+    display: flex;
+    margin-top: 30px;
+  }
+  main .info .container .info-postion .info-left .ticket-icon img, main .info .container .info-postion .info-right .ticket-icon img {
+    margin-right: 20px;
+    height: 28px;
+    width: 28px;
+  }
+  main .info .container .info-postion .info-left .ticket-icon .fix-ticket, main .info .container .info-postion .info-right .ticket-icon .fix-ticket {
+    margin-top: 0px;
+  }
+  main .image .container .image-postion {
+    flex-direction: column-reverse;
+  }
+  main .image .container .image-postion .image-one {
+    margin-bottom: 96px;
+    margin-left: 0px;
+    width: 100%;
+    height: 678px;
+  }
+  main .image .container .image-postion .image-one .img-one {
+    height: 100%;
+    width: 100%;
+    content: url("../img/lazienki-krolewskie-image-right.webp");
+  }
+  main .image .container .image-postion .image-two {
+    margin-top: 96px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  main .image .container .image-postion .image-two .img-two, main .image .container .image-postion .image-two .img-three {
+    width: 50%;
+    height: 486px;
+  }
+  main .image .container .image-postion .image-two .img-two {
+    margin-right: 20px;
+    content: url("../img/most-image.webp");
+  }
+  main .image .container .image-postion .image-two .img-three {
+    content: url("../img/lazienki-krolewskie-image-two.webp");
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    width: 1200px;
+  }
+  header .container-fix {
+    width: 1170px;
+  }
+  header .container-fix .container .photo {
+    width: 1170px;
+  }
+  main .image .container .image-postion {
+    flex-direction: column-reverse;
+  }
+  main .image .container .image-postion .image-one {
+    margin-bottom: 96px;
+    margin-left: 0px;
+    width: 100%;
+    height: 678px;
+  }
+  main .image .container .image-postion .image-one .img-one {
+    height: 100%;
+    width: 100%;
+  }
+  main .image .container .image-postion .image-two {
+    margin-top: 96px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  main .image .container .image-postion .image-two .img-two, main .image .container .image-postion .image-two .img-three {
+    width: 50%;
+    height: 549px;
+  }
+}
+@media (min-width: 1400px) {
+  header {
+    width: 1400px;
+  }
+  header .container-fix {
+    width: 1360px;
+  }
+  header .container-fix .container .photo {
+    width: 1360px;
+  }
+}/*# sourceMappingURL=lazienki-krolewskie.css.map */

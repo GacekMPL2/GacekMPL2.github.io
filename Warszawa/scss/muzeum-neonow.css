@@ -1,0 +1,598 @@
+header {
+  margin: 0;
+}
+header .container-fix {
+  background-color: #28282A;
+}
+header .container-fix .container .photo {
+  display: flex;
+}
+
+button {
+  border: 0;
+  background-color: white;
+}
+
+.strong {
+  font-weight: 800;
+}
+
+.h2-text-weight {
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.h2-text-weight .span-text-weight {
+  font-weight: 1000;
+}
+
+.gray {
+  color: #808083;
+}
+
+main .tag .container .tag-positon {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .tag .container button, main .tag .container p {
+  margin: 0;
+  color: #808083;
+}
+main .tag .container p {
+  font-weight: 800;
+}
+main .tag .container-position {
+  display: flex;
+}
+
+@media (min-width: 380px) {
+  h1 {
+    font-size: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 25px;
+    margin: 0;
+    font-weight: 800;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 800;
+  }
+  header {
+    position: relative;
+    margin: 0 auto;
+    width: 380px;
+    height: 207px;
+  }
+  header .container-fix {
+    padding-top: 35px;
+    width: 360px;
+    height: 155px;
+  }
+  header .container-fix .container {
+    position: static;
+  }
+  header .container-fix .container .photo {
+    position: absolute;
+    right: 0;
+    width: 360px;
+    height: 172px;
+  }
+  header .container-fix .container .photo .photo-one {
+    width: 100%;
+  }
+  header .container-fix .container .photo .photo-one img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main p {
+    font-size: 12px;
+  }
+  main .tag {
+    margin-top: 20px;
+    margin-bottom: 42px;
+  }
+  main .tag .container p {
+    margin-right: 16px;
+  }
+  main .tag .container .tag-positon button {
+    font-size: 14px;
+    margin-right: 13px;
+  }
+  main .tag .container .arrow {
+    display: none;
+  }
+  main .text .container .text-position {
+    overflow: hidden;
+    max-height: 260px;
+  }
+  main .text .container .text-position.expanded {
+    max-height: 100%;
+  }
+  main .text .container .text-position .text-left h3, main .text .container .text-position .text-right h3 {
+    margin-bottom: 10px;
+  }
+  main .text .container .text-position .text-left p, main .text .container .text-position .text-right p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  main .text .container .zwin {
+    margin-top: 20px;
+  }
+  main .text .container .zwin .expandable-checkbox {
+    display: none;
+  }
+  main .text .container .zwin .expandable-checkbox:not(:checked) ~ .zwin .expand-button::after {
+    content: " tekst";
+  }
+  main .text .container .zwin label {
+    font-weight: 800;
+  }
+  main .text .container .zwin .expand-icon {
+    margin-left: 10px;
+    width: 13px;
+    height: 5px;
+  }
+  main .header-text .container .google {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 84px;
+    width: 264px;
+  }
+  main .header-text .container .google .google-logo {
+    margin: 20px 0px 20px 20px;
+    padding-right: 14px;
+  }
+  main .header-text .container .google .google-postion {
+    margin-left: 14px;
+  }
+  main .header-text .container .google .google-postion .points {
+    display: flex;
+    margin-top: 20px;
+  }
+  main .header-text .container .google .google-postion .points h2 {
+    margin-right: 10px;
+  }
+  main .header-text .container .google .google-postion .points .star {
+    margin-top: 12px;
+    margin-right: 4px;
+    height: 13px;
+  }
+  main .header-text .container .icons .container .icons-text {
+    display: flex;
+    color: #808083;
+  }
+  main .header-text .container .icons .container .icons-text img {
+    width: 28px;
+    height: 28px;
+  }
+  main .header-text .container .icons .container .icons-text p {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  main .header-text .container .icons .container .icons-text .strong {
+    font-weight: 800;
+  }
+  main .header-text .container .icons .container .icons-text .last-text {
+    margin-left: 42px;
+  }
+  main .header-text .container .icons .container .icons-text .fix-text {
+    margin-top: 4px;
+  }
+  main .header-text .container .icons .container .details-ticket {
+    padding: 12px 57px;
+    margin-bottom: 32px;
+    margin-top: 38px;
+    width: 351px;
+    text-align: center;
+    background-color: #FF5674;
+    color: #FFFFFF;
+  }
+  main .header-text .container .icons .container .hiden {
+    display: none;
+  }
+  main .info {
+    margin-top: 64px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: #28282A;
+    color: #FFFFFF;
+  }
+  main .info .container h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  main .info .container .info-postion .info-left p, main .info .container .info-postion .info-right p {
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 0;
+  }
+  main .info .container .info-postion .info-left .info-button, main .info .container .info-postion .info-right .info-button {
+    text-transform: uppercase;
+    padding: 12px 35px;
+    background-color: #FF5674;
+    color: #FFFFFF;
+  }
+  main .info .container .info-postion .info-left .info-button-three, main .info .container .info-postion .info-right .info-button-three {
+    margin-top: 52px;
+  }
+  main .info .container .info-postion .info-right h2 {
+    margin-top: 20px;
+    width: 90%;
+  }
+  main .image .container .image-postion {
+    width: 100%;
+  }
+  main .image .container .image-postion .image-postion-one {
+    margin-top: 10px;
+  }
+  main .image .container .image-postion .image-postion-one .img-one {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 209px;
+  }
+  main .image .container .image-postion .image-postion-one .img-one .neon-one {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .image .container .image-postion .image-postion-one .img-one .image-icon {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  main .image .container .image-postion .image-postion-two {
+    display: flex;
+  }
+  main .image .container .image-postion .image-postion-two img {
+    width: 50%;
+    height: 184px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .image .container .image-postion .image-postion-two .neon-three {
+    margin-right: 10px;
+  }
+  main .image .container .image-postion .neon-four {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 209px;
+  }
+}
+@media (min-width: 576px) {
+  header {
+    width: 576px;
+  }
+  header .container-fix {
+    padding-top: 35px;
+    width: 560px;
+    height: 155px;
+  }
+  header .container-fix .container .photo {
+    position: absolute;
+    right: 0;
+    width: 560px;
+    height: 172px;
+  }
+  header .container-fix .container .photo .photo-one {
+    width: 100%;
+  }
+  header .container-fix .container .photo .photo-one img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0px 30%;
+       object-position: 0px 30%;
+  }
+  main .tag .container .tag-positon button {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  main .text .container .text-position {
+    max-height: 130px;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    width: 768px;
+  }
+  header .container-fix {
+    padding-top: 35px;
+    width: 745px;
+    height: 155px;
+  }
+  header .container-fix .container .photo {
+    position: absolute;
+    right: 0;
+    width: 745px;
+    height: 172px;
+  }
+  header .container-fix .container .photo .photo-one {
+    width: 100%;
+  }
+  header .container-fix .container .photo .photo-one img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .tag {
+    margin-top: 20px;
+    margin-bottom: 42px;
+  }
+  main .tag .container p {
+    margin-right: 16px;
+  }
+  main .tag .container .tag-positon button {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  main .text .container .text-position {
+    max-height: 140px;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    width: 992px;
+    height: 450px;
+  }
+  header .container-fix {
+    padding-top: 86px;
+    width: 975px;
+    height: 368px;
+  }
+  header .container-fix .container .photo {
+    position: absolute;
+    right: 0;
+    width: 975px;
+    height: 363px;
+  }
+  header .container-fix .container .photo .photo-one {
+    width: 100%;
+  }
+  header .container-fix .container .photo .photo-one img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .tag {
+    margin-top: 20px;
+    margin-bottom: 42px;
+  }
+  main .tag .container .tag-text {
+    font-size: 16px;
+  }
+  main .tag .container p {
+    margin-right: 30px;
+  }
+  main .tag .container .tag-positon .hiden-desktop {
+    display: none;
+  }
+  main .tag .container .tag-positon .arrow {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+  }
+  main .header-text .container .text {
+    display: block;
+    width: 100%;
+  }
+  main .header-text .container .text h1 {
+    margin-bottom: 32px;
+    font-size: 45px;
+    width: 70%;
+  }
+  main .header-text .container .text .google {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 84px;
+    width: 264px;
+  }
+  main .header-text .container .text .google .google-logo {
+    margin: 20px 0px 20px 20px;
+    padding-right: 14px;
+    border-right: 1px solid black;
+  }
+  main .header-text .container .text .google .google-postion {
+    margin-left: 14px;
+  }
+  main .header-text .container .text .google .google-postion .points {
+    display: flex;
+    margin-top: 15px;
+  }
+  main .header-text .container .text .google .google-postion .points h2 {
+    margin-right: 6px;
+    font-size: 30px;
+  }
+  main .header-text .container .text .google .google-postion .points .star {
+    margin-top: 12px;
+    margin-right: 4px;
+    height: 16px;
+  }
+  main .header-text .container .text .icons .container .icons-text {
+    display: flex;
+    color: #808083;
+  }
+  main .header-text .container .text .icons .container .icons-text p {
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  main .header-text .container .text .icons .container .icons-text .strong {
+    font-weight: 800;
+  }
+  main .header-text .container .text .icons .container .icons-text .last-text {
+    margin-left: 42px;
+  }
+  main .header-text .container .text .icons .container .icons-text .fix-text {
+    margin-top: 4px;
+  }
+  main .header-text .container .text .icons .container .postion-destkop {
+    position: absolute;
+    top: 0;
+    left: 480px;
+  }
+  main .header-text .container .text .icons .container .details-ticket {
+    padding: 12px 35px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    margin-left: 44px;
+    width: 455px;
+  }
+  main .header-text .container .text .icons .container .hiden {
+    display: inline-block;
+  }
+  main .text {
+    margin-top: 72px;
+  }
+  main .text .container .text-position {
+    display: flex;
+    max-height: none;
+  }
+  main .text .container .text-position .text-left h3, main .text .container .text-position .text-right h3 {
+    margin-bottom: 30px;
+  }
+  main .text .container .text-position .text-left p, main .text .container .text-position .text-right p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  main .text .container .text-position .text-left {
+    width: 50%;
+    margin-right: 20px;
+  }
+  main .text .container .text-position .text-right {
+    width: 50%;
+  }
+  main .text .container .zwin {
+    display: none;
+  }
+  main .info {
+    margin-top: 96px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  main .info .container .info-postion {
+    display: flex;
+  }
+  main .info .container .info-postion .info-right {
+    margin-left: 20px;
+  }
+  main .info .container .info-postion .info-left, main .info .container .info-postion .info-right {
+    width: 50%;
+  }
+  main .info .container .info-postion .info-left p, main .info .container .info-postion .info-right p {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  main .info .container .info-postion .info-left h2, main .info .container .info-postion .info-right h2 {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    font-size: 34px;
+  }
+  main .info .container .info-postion .info-left .gray, main .info .container .info-postion .info-right .gray {
+    color: #FFFFFF;
+  }
+  main .info .container .info-postion .info-left .info-button-three, main .info .container .info-postion .info-right .info-button-three {
+    margin-top: 22px;
+  }
+  main .info .container .info-postion .info-left p {
+    width: 87%;
+  }
+  main .image .container .image-postion {
+    margin-top: 96px;
+  }
+  main .image .container .image-postion .image-postion-one {
+    display: flex;
+  }
+  main .image .container .image-postion .image-postion-one .img-one {
+    margin-bottom: 10px;
+    width: 33%;
+    height: 400px;
+    margin-right: 20px;
+  }
+  main .image .container .image-postion .image-postion-one .img-one .neon-one {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .image .container .image-postion .image-postion-two {
+    display: flex;
+    width: 66%;
+  }
+  main .image .container .image-postion .image-postion-two img {
+    width: 50%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .image .container .image-postion .image-postion-two .neon-three {
+    margin-right: 20px;
+  }
+  main .image .container .image-postion .neon-four {
+    margin-top: 20px;
+    margin-bottom: 96px;
+    width: 100%;
+    height: 679px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    width: 1200px;
+  }
+  header .container-fix {
+    width: 1170px;
+  }
+  header .container-fix .container .photo {
+    width: 1170px;
+  }
+  header .container-fix .container .photo .photo-one {
+    width: 100%;
+  }
+  header .container-fix .container .photo .photo-one img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 1400px) {
+  header {
+    width: 1400px;
+  }
+  header .container-fix {
+    width: 1360px;
+  }
+  header .container-fix .container .photo {
+    width: 1360px;
+  }
+  header .container-fix .container .photo .photo-one {
+    width: 100%;
+  }
+  header .container-fix .container .photo .photo-one img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=muzeum-neonow.css.map */

@@ -1,0 +1,1525 @@
+button {
+  border: 0;
+  background-color: #ffffff;
+}
+
+h2, button {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.intesting-slider::-webkit-scrollbar, .news-slider::-webkit-scrollbar {
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.intesting-slider::-webkit-scrollbar-track, .news-slider::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.intesting-slider::-webkit-scrollbar-thumb, .news-slider::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+header {
+  text-align: center;
+  margin-top: 40px;
+  font-family: "roboto";
+}
+header h1 {
+  position: relative;
+  font-weight: 900;
+  color: #FF5674;
+}
+header h1 .hiden {
+  color: #FFFFFF;
+}
+header .photo {
+  display: flex;
+  margin-bottom: 40px;
+}
+header .photo .photo-one, header .photo .photo-two, header .photo .photo-three {
+  position: relative;
+  filter: grayscale(1);
+}
+header .photo .photo-one .photo-text, header .photo .photo-two .photo-text, header .photo .photo-three .photo-text {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  transform: rotate(270deg);
+  font-weight: 200;
+  text-align: left;
+  color: #FFFFFF;
+}
+header .photo .photo-one .photo-shadow, header .photo .photo-two .photo-shadow, header .photo .photo-three .photo-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 9, 27, 0.3);
+}
+header .photo .photo-one:hover, header .photo .photo-two:hover, header .photo .photo-three:hover {
+  filter: grayscale(0%);
+}
+header .photo .photo-one:hover .photo-text, header .photo .photo-two:hover .photo-text, header .photo .photo-three:hover .photo-text {
+  display: none;
+}
+header .photo .photo-one:hover .photo-shadow, header .photo .photo-two:hover .photo-shadow, header .photo .photo-three:hover .photo-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 9, 27, 0);
+}
+
+main {
+  margin: 0 auto;
+}
+main .intesting-slider, main .news-slider {
+  display: flex;
+  overflow-x: scroll;
+}
+main .h2-text-weight {
+  font-weight: 200;
+}
+main .h2-text-weight .span-text-weight {
+  font-weight: 1000;
+}
+main .black-image:hover {
+  filter: saturate(0);
+}
+main .intesting-button:hover, main .restaurant-offer-button:hover, main .city-button:hover, main .news-button:hover {
+  background-color: #FD2F54 !important;
+  font-weight: 600;
+}
+main .button-places:hover {
+  background-color: #28282A !important;
+  font-weight: 600;
+}
+main .intesting-place {
+  padding: 67px 0 98px 50px;
+  overflow: hidden;
+  background-color: #28282A;
+  color: #ffffff;
+}
+main .intesting-place .intesting-place-text p {
+  margin-top: 60px;
+  color: rgba(255, 255, 255, 0.5960784314);
+}
+main .intesting-place .intesting-slider .slider {
+  margin-right: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .intesting-place .intesting-slider .slider h3 {
+  position: relative;
+  margin-top: 20px;
+  font-weight: 600;
+}
+main .intesting-place .intesting-slider .slider h3 .hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .intesting-place .intesting-slider .slider .star-full {
+  margin-right: 10px;
+}
+main .intesting-place .intesting-button {
+  padding: 12px 35px;
+  letter-spacing: 0.3px;
+  background-color: #FF5674;
+  color: #ffffff;
+}
+main .map {
+  background-color: #FF5674;
+}
+main .map .new-places-mobile {
+  display: block;
+}
+main .map .new-places-mobile .pin-mobile .border-pin-mobile {
+  padding: 7px 11px 7px 20px;
+  border: 2px solid white;
+  transform: rotate(7deg);
+  border-radius: 50%;
+}
+main .map .new-places-mobile .pin-mobile .border-pin-mobile p {
+  margin-top: 14px;
+  transform: rotate(-7deg);
+  font-weight: 600;
+  color: #FFE600;
+}
+main .map .new-places-mobile .warsaw-powisle-mobile {
+  display: flex;
+}
+main .map .new-places-mobile .warsaw-powisle-mobile h2 {
+  margin-left: 20px;
+  color: #FFFFFF;
+}
+main .map .new-places-mobile .warsaw-powisle-mobile h2 span {
+  font-weight: 1000;
+}
+main .map .maps svg path {
+  stroke: #FFFFFF;
+  stroke-width: 3;
+  fill: #FF5674;
+  z-index: 1;
+}
+main .map .maps svg path:hover, main .map .maps svg .srodmiescie {
+  stroke-width: 3;
+  fill: #FFE600;
+}
+main .map .maps svg path:hover + text, main .map .maps svg .srodmiescie-text {
+  fill: #000000;
+}
+main .map .maps svg text {
+  fill: #FFFFFF;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+main .map .maps svg .rotation-left {
+  transform: rotate(-30deg);
+}
+main .map .maps svg .rotation-right {
+  transform: rotate(62deg);
+}
+main .map .maps svg image {
+  width: 59px;
+}
+main .map .map-top {
+  margin-left: -50px;
+}
+main .map .map-top .new-places-desktop .pin, main .map .map-top .new-places-desktop .warsaw-powisle, main .map .map-top .new-places-desktop .srodmiescie {
+  display: flex;
+  align-items: center;
+}
+main .map .map-top .new-places-desktop .pin img {
+  margin-right: 30px;
+  width: 65%;
+  height: 20px;
+}
+main .map .map-top .new-places-desktop .pin p {
+  color: #FFE600;
+}
+main .map .map-top .new-places-desktop .warsaw-powisle img {
+  width: 110px;
+  height: 96px;
+}
+main .map .map-top .new-places-desktop .warsaw-powisle h2 {
+  margin-left: 20px;
+  color: #FFFFFF;
+}
+main .map .map-top .new-places-desktop .srodmiescie h3 {
+  color: #FFE600;
+}
+main .map .map-top .new-places-desktop .srodmiescie .button-places {
+  padding: 12px 35px;
+  background-color: #28282A;
+  color: #FFFFFF;
+}
+main .map .map-top .list {
+  color: #FFFFFF;
+}
+main .map .map-top .list ol {
+  padding: 0;
+}
+main .map .map-top .list ol li {
+  position: relative;
+  padding: 12px 20px;
+  list-style-position: inside;
+  border-bottom: 1px solid #FFFFFF;
+}
+main .map .map-top .list ol li .star-full-list {
+  position: absolute;
+  top: 23%;
+  right: 0;
+}
+main .restaurant .container .restaurant-text h2 p {
+  color: #808083;
+}
+main .restaurant .container .restaurant-text .restaurant-offer-button {
+  padding: 12px 78px;
+  font-size: 14px;
+  background-color: #FF5674;
+  color: #ffffff;
+}
+main .restaurant .container .restaurant-image .mobile-food-image {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .restaurant .container .restaurant-image .button-restaurant {
+  position: relative;
+  text-align: left;
+  font-weight: 800;
+}
+main .restaurant .container .restaurant-image .button-restaurant img {
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+main .other-cities {
+  background-color: #28282A;
+  color: #FFFFFF;
+}
+@media (min-width: 380px) {
+  header .container h1 {
+    font-size: 70px;
+  }
+  header .container h1 img {
+    width: 34px;
+    height: 34px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .container h1 .line {
+    position: absolute;
+    bottom: 5px;
+    right: 10%;
+    height: 2px;
+    width: 86%;
+    border-top: 1px solid #FF5674;
+  }
+  header .container .intesting {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    letter-spacing: 0.3px;
+    font-size: 11px;
+  }
+  header .container .intesting span {
+    font-weight: 1000;
+  }
+  header .container .siren {
+    position: absolute;
+    top: -20px;
+    left: 69px;
+    width: 110px;
+    z-index: 3;
+  }
+  header .container .photo {
+    width: 362px;
+  }
+  header .container .photo .photo-one img, header .container .photo .photo-three img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .container .photo .photo-one .photo-text, header .container .photo .photo-three .photo-text {
+    top: 50%;
+    font-size: 6px;
+  }
+  header .container .photo .photo-one {
+    width: 550px;
+  }
+  header .container .photo .photo-one img {
+    width: 100%;
+  }
+  header .container .photo .photo-one .photo-text {
+    top: 45%;
+  }
+  header .container .photo .photo-two {
+    display: none;
+  }
+  header .container .photo .photo-three img {
+    width: 100%;
+  }
+  main h2 {
+    font-size: 26px;
+  }
+  main p {
+    font-size: 14px;
+  }
+  main h3 {
+    font-size: 16px;
+    font-weight: 1000;
+  }
+  main .visable-desktop {
+    display: none;
+  }
+  main .intesting-place {
+    padding: 62px 0px;
+  }
+  main .intesting-place .container {
+    padding-right: 0px;
+  }
+  main .intesting-place .container .intesting-place-text {
+    margin-bottom: 60px;
+  }
+  main .intesting-place .container .intesting-place-text p {
+    width: 90%;
+  }
+  main .intesting-place .container .intesting-slider .slider {
+    margin-left: 0px;
+    margin-right: 14px;
+  }
+  main .intesting-place .container .intesting-slider .slider .star-full {
+    width: 11px;
+    margin-right: 7px;
+  }
+  main .intesting-place .container .intesting-slider .slider .slider-one, main .intesting-place .container .intesting-slider .slider .slider-three {
+    width: 222px;
+    height: 286px;
+  }
+  main .intesting-place .container .intesting-slider .slider .slider-two {
+    width: 226px;
+    height: 225px;
+  }
+  main .intesting-place .container .intesting-button {
+    margin-top: 52px;
+  }
+  main .map {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+  main .map .container .new-places-mobile .pin-mobile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  main .map .container .new-places-mobile .pin-mobile img {
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 40%;
+  }
+  main .map .container .new-places-mobile .pin-mobile .border-pin-mobile {
+    margin-left: 11px;
+  }
+  main .map .container .new-places-mobile .warsaw-powisle-mobile img {
+    width: 58px;
+    height: 58px;
+  }
+  main .map .container .new-places-mobile .warsaw-powisle-mobile h2 {
+    margin-left: 10px;
+  }
+  main .map .container .maps {
+    margin-top: 40px;
+  }
+  main .map .container .map-top .new-places-desktop {
+    margin-left: 50px;
+  }
+  main .map .container .map-top .new-places-desktop .pin, main .map .container .map-top .new-places-desktop .warsaw-powisle {
+    display: none;
+  }
+  main .map .container .map-top .new-places-desktop .srodmiescie {
+    display: block;
+  }
+  main .map .container .map-top .new-places-desktop .srodmiescie h3 {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+  main .map .container .map-top .new-places-desktop .list {
+    margin-top: 40px;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li .hidden-mobile {
+    display: none;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li .star-full-list img {
+    margin-right: 6px;
+  }
+  main .restaurant {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  main .restaurant .container .restaurant-text h2 {
+    margin-bottom: 32px;
+  }
+  main .restaurant .container .restaurant-text .restaurant-offer-button {
+    position: absolute;
+    bottom: -35px;
+  }
+  main .restaurant .container .restaurant-image {
+    position: relative;
+  }
+  main .restaurant .container .restaurant-image .mobile-food-image {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  main .restaurant .container .restaurant-image .button-restaurant {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    font-size: 16px;
+  }
+  main .restaurant .container .restaurant-image .el-food {
+    width: 100%;
+    height: 570px;
+  }
+  main .restaurant .container .restaurant-image .el-food .fix-height {
+    height: 200px;
+    width: 100;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .other-cities {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  main .other-cities .other-cities-text {
+    margin-bottom: 40px;
+  }
+  main .other-cities .other-cities-city {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .other-cities .other-cities-city .city-button {
+    margin-bottom: 35px;
+    margin-right: 27px;
+    padding: 12px 32px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #FF5674;
+    color: #FFFFFF;
+  }
+  main .other-cities .other-cities-image {
+    margin-left: -29.5px;
+    width: 379px;
+  }
+  main .other-cities .other-cities-image img {
+    width: 379px;
+  }
+  main .other-cities .other-cities-image p {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  main .news {
+    position: relative;
+    padding-top: 64px;
+    padding-bottom: 100px;
+  }
+  main .news .container .news-text p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  main .news .container .news-text .news-button {
+    position: absolute;
+    bottom: -74px;
+    padding: 12px 48px;
+    background-color: #FF5674;
+    color: #FFFFFF;
+  }
+  main .news .container .news-slider {
+    height: 390px;
+  }
+  main .news .container .news-slider .new-slider {
+    margin-right: 11px;
+    height: 335px;
+  }
+  main .news .container .news-slider .new-slider .slider-new-one, main .news .container .news-slider .new-slider .slider-new-three {
+    width: 227px;
+    height: 228px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .news .container .news-slider .new-slider .slider-new-two {
+    width: 228px;
+    height: 141px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0px 30%;
+       object-position: 0px 30%;
+  }
+  main .news .container .news-slider .new-slider h3 {
+    position: relative;
+    margin-top: 11px;
+    margin-bottom: 11px;
+  }
+  main .news .container .news-slider .new-slider h3 img {
+    position: absolute;
+    top: 0%;
+    right: 0;
+  }
+}
+@media (min-width: 576px) {
+  header {
+    margin-top: 80px;
+  }
+  header .container h1 {
+    font-size: 100px;
+    margin-right: 10px;
+    letter-spacing: 5px;
+  }
+  header .container h1 img {
+    width: 50px;
+    height: 50px;
+  }
+  header .container h1 .line {
+    position: absolute;
+    bottom: 8px;
+    right: 10%;
+    height: 2px;
+    width: 85%;
+    border-top: 2px solid #FF5674;
+  }
+  header .container .intesting {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    letter-spacing: 2.5px;
+    font-size: 14px;
+  }
+  header .container .intesting span {
+    font-weight: 1000;
+  }
+  header .container .siren {
+    position: absolute;
+    top: -30px;
+    left: 95px;
+    width: 170px;
+    z-index: 3;
+  }
+  header .container .photo {
+    width: 558px;
+  }
+  header .container .photo .photo-one img, header .container .photo .photo-three img {
+    height: 100%;
+  }
+  header .container .photo .photo-one .photo-text, header .container .photo .photo-three .photo-text {
+    top: 50%;
+    font-size: 12px;
+  }
+  header .container .photo .photo-one {
+    width: 400px;
+  }
+  header .container .photo .photo-one img {
+    width: 100%;
+  }
+  header .container .photo .photo-one .photo-text {
+    top: 45%;
+  }
+  header .container .photo .photo-two {
+    display: none;
+  }
+  header .container .photo .photo-three {
+    width: 73%;
+  }
+  header .container .photo .photo-three img {
+    width: 100%;
+  }
+  main h2 {
+    font-size: 38px;
+  }
+  main p {
+    font-size: 18px;
+  }
+  main h3 {
+    font-size: 16px;
+  }
+  main .intesting-place .container .intesting-place-text {
+    width: 540px;
+    margin-bottom: 60px;
+  }
+  main .intesting-place .container .intesting-place-text p {
+    width: 90%;
+  }
+  main .intesting-place .container .intesting-slider .slider {
+    margin-left: 0px;
+    margin-right: 14px;
+  }
+  main .intesting-place .container .intesting-slider .slider .star-full {
+    width: 11px;
+    margin-right: 7px;
+  }
+  main .intesting-place .container .intesting-button {
+    margin-top: 52px;
+  }
+  main .map .container .new-places-mobile .pin-mobile img {
+    margin-left: 40px;
+    width: 56%;
+    height: 20px;
+  }
+  main .map .container .new-places-mobile .warsaw-powisle-mobile img {
+    width: 100px;
+    height: 85px;
+  }
+  main .map .container .new-places-mobile .warsaw-powisle-mobile h2 {
+    margin-left: 10px;
+  }
+  main .map .container .maps {
+    margin-top: 40px;
+  }
+  main .map .container .map-top .new-places-desktop {
+    margin-left: 50px;
+  }
+  main .map .container .map-top .new-places-desktop .pin, main .map .container .map-top .new-places-desktop .warsaw-powisle {
+    display: none;
+  }
+  main .map .container .map-top .new-places-desktop .list {
+    margin-top: 40px;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li {
+    padding: 12px 10px;
+    font-size: 18px;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li .hidden-mobile {
+    display: none;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li .star-full-list img {
+    margin-right: 6px;
+  }
+  main .restaurant .container .restaurant-text .restaurant-offer-button {
+    bottom: -35px;
+    left: 25%;
+  }
+  main .restaurant .container .restaurant-image .button-restaurant {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  main .restaurant .container .restaurant-image .el-food {
+    width: 100%;
+    height: 970px;
+  }
+  main .restaurant .container .restaurant-image .el-food .fix-height {
+    height: 400px;
+    width: 100;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .other-cities .other-cities-text h2 {
+    width: 70%;
+  }
+  main .other-cities .other-cities-city {
+    width: 91%;
+  }
+  main .other-cities .other-cities-city .city-gizycko {
+    order: 4;
+  }
+  main .other-cities .other-cities-city .city-poznan {
+    order: 5;
+  }
+  main .other-cities .other-cities-city .city-gdansk {
+    order: 3;
+  }
+  main .other-cities .other-cities-image {
+    width: 574px;
+  }
+  main .other-cities .other-cities-image img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    margin-top: 80px;
+  }
+  header .container h1 {
+    font-size: 131px;
+    margin-right: 10px;
+    letter-spacing: 5px;
+  }
+  header .container h1 img {
+    width: 68px;
+    height: 68px;
+  }
+  header .container h1 .line {
+    position: absolute;
+    bottom: 15px;
+    right: 10%;
+    height: 2px;
+    width: 87%;
+    border: 2px solid #FF5674;
+  }
+  header .container .intesting {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    letter-spacing: 3.7px;
+    font-size: 18px;
+  }
+  header .container .intesting span {
+    font-weight: 1000;
+  }
+  header .container .siren {
+    position: absolute;
+    top: -45px;
+    left: 143px;
+    width: 225px;
+    z-index: 3;
+  }
+  header .container .photo {
+    width: 744px;
+  }
+  header .container .photo .photo-one img, header .container .photo .photo-three img {
+    height: 100%;
+  }
+  header .container .photo .photo-one .photo-text, header .container .photo .photo-three .photo-text {
+    top: 50%;
+    font-size: 12px;
+  }
+  header .container .photo .photo-one {
+    width: 400px;
+  }
+  header .container .photo .photo-one img {
+    width: 100%;
+  }
+  header .container .photo .photo-one .photo-text {
+    top: 45%;
+  }
+  header .container .photo .photo-two {
+    display: none;
+  }
+  header .container .photo .photo-three {
+    width: 70%;
+  }
+  header .container .photo .photo-three img {
+    width: 100%;
+  }
+  main h2 {
+    font-size: 40px;
+  }
+  main p {
+    font-size: 19px;
+  }
+  main h3 {
+    font-size: 19px;
+  }
+  main .intesting-place .container {
+    padding-right: 0px;
+  }
+  main .intesting-place .container .intesting-place-text {
+    width: 540px;
+    margin-bottom: 60px;
+  }
+  main .intesting-place .container .intesting-place-text p {
+    width: 90%;
+  }
+  main .intesting-place .container .intesting-slider .slider {
+    margin-left: 0px;
+    margin-right: 14px;
+  }
+  main .intesting-place .container .intesting-slider .slider .star-full {
+    width: 16px;
+    margin-right: 7px;
+  }
+  main .intesting-place .container .intesting-slider .slider .slider-one, main .intesting-place .container .intesting-slider .slider .slider-three {
+    width: 305px;
+    height: 386px;
+  }
+  main .intesting-place .container .intesting-slider .slider .slider-two {
+    width: 305px;
+    height: 305px;
+  }
+  main .intesting-place .intesting-button {
+    margin-top: 52px;
+  }
+  main .map .container .new-places-mobile .pin-mobile {
+    display: flex;
+  }
+  main .map .container .new-places-mobile .pin-mobile img {
+    margin-left: 40px;
+    width: 66%;
+  }
+  main .map .container .new-places-mobile .warsaw-powisle-mobile img {
+    width: 100px;
+    height: 85px;
+  }
+  main .map .container .new-places-mobile .warsaw-powisle-mobile h2 {
+    margin-left: 10px;
+  }
+  main .map .container .maps {
+    margin-top: 40px;
+  }
+  main .map .container .map-top .new-places-desktop {
+    margin-left: 50px;
+  }
+  main .map .container .map-top .new-places-desktop .pin, main .map .container .map-top .new-places-desktop .warsaw-powisle {
+    display: none;
+  }
+  main .map .container .map-top .new-places-desktop .srodmiescie h3 {
+    font-size: 34px;
+  }
+  main .map .container .map-top .new-places-desktop .list {
+    margin-top: 40px;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li {
+    padding: 12px 10px;
+    font-size: 20px;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li .hidden-mobile {
+    display: none;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li .star-full-list img {
+    margin-right: 6px;
+  }
+  main .restaurant .container .restaurant-text .restaurant-offer-button {
+    bottom: -35px;
+    left: 30%;
+  }
+  main .restaurant .container .restaurant-image .button-restaurant {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  main .restaurant .container .restaurant-image .el-food {
+    width: 100%;
+    height: 1150px;
+  }
+  main .restaurant .container .restaurant-image .el-food .fix-height {
+    height: 500px;
+    width: 100;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .other-cities .other-cities-text h2 {
+    width: 60%;
+  }
+  main .other-cities .other-cities-city {
+    width: 70%;
+  }
+  main .other-cities .other-cities-city .city-gizycko {
+    order: 4;
+  }
+  main .other-cities .other-cities-city .city-poznan {
+    order: 5;
+  }
+  main .other-cities .other-cities-city .city-gdansk {
+    order: 3;
+  }
+  main .other-cities .other-cities-image {
+    margin-left: -36px;
+    width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    margin-top: 192px;
+  }
+  header .container h1 {
+    font-size: 165px;
+    margin-right: 10px;
+    letter-spacing: 5px;
+  }
+  header .container h1 img {
+    width: 87px;
+    height: 87px;
+  }
+  header .container h1 .line {
+    position: absolute;
+    bottom: 15px;
+    right: 10%;
+    height: 2px;
+    width: 84%;
+    border-top: 2px solid #FF5674;
+  }
+  header .container .intesting {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    letter-spacing: 5px;
+    font-size: 24px;
+  }
+  header .container .intesting span {
+    font-weight: 1000;
+  }
+  header .container .siren {
+    position: absolute;
+    top: -50px;
+    left: 208px;
+    width: 275px;
+    z-index: 3;
+  }
+  header .container .photo {
+    width: 976px;
+    margin-bottom: 96px;
+  }
+  header .container .photo .photo-one, header .container .photo .photo-two, header .container .photo .photo-three {
+    height: 136.8px;
+  }
+  header .container .photo .photo-one img, header .container .photo .photo-two img, header .container .photo .photo-three img {
+    width: 100%;
+    height: 100%;
+  }
+  header .container .photo .photo-one .photo-text, header .container .photo .photo-two .photo-text, header .container .photo .photo-three .photo-text {
+    font-size: 12px;
+  }
+  header .container .photo .photo-one .photo-text {
+    top: 50%;
+  }
+  header .container .photo .photo-two {
+    display: block;
+  }
+  main h2 {
+    font-size: 39px;
+  }
+  main p {
+    font-size: 14px;
+  }
+  main h3 {
+    font-size: 16px;
+  }
+  main .visable-desktop {
+    display: inline-block;
+  }
+  main .intesting-place-postion {
+    width: 960px;
+    margin: 0 auto;
+  }
+  main .intesting-place-postion .intesting-place {
+    position: relative;
+    margin-left: -20px;
+  }
+  main .intesting-place-postion .intesting-place .container {
+    max-width: 960px;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-place-text {
+    margin-left: 5px;
+    width: 350px;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-place-text p {
+    width: 85%;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-slider .slider h3 {
+    position: relative;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-slider .slider .slider-one, main .intesting-place-postion .intesting-place .container .intesting-slider .slider .slider-three {
+    width: 226px;
+    height: 286px;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-slider .slider .slider-two {
+    width: 226px;
+    height: 225px;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-slider .slider .star-full {
+    margin-right: 10px;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-button {
+    margin-left: 5px;
+    margin-top: 200px;
+  }
+  main .map {
+    margin-top: -400px;
+    padding-top: 460px;
+    padding-bottom: 100px;
+  }
+  main .map .container {
+    display: flex;
+  }
+  main .map .container .maps {
+    margin-top: 50px;
+    width: 50%;
+  }
+  main .map .container .new-places-mobile {
+    display: none;
+  }
+  main .map .container .map-top {
+    width: 50%;
+    margin-top: -30px;
+  }
+  main .map .container .map-top .new-places-desktop {
+    margin-left: 0px;
+    width: 113%;
+  }
+  main .map .container .map-top .new-places-desktop .pin, main .map .container .map-top .new-places-desktop .warsaw-powisle, main .map .container .map-top .new-places-desktop .srodmiescie {
+    display: flex;
+  }
+  main .map .container .map-top .new-places-desktop .pin img {
+    width: 64%;
+  }
+  main .map .container .map-top .new-places-desktop .pin .border-pin {
+    padding: 3%;
+    border: 2px solid white;
+    border-radius: 50%;
+    transform: rotate(10deg);
+  }
+  main .map .container .map-top .new-places-desktop .pin .border-pin p {
+    margin-top: 14px;
+    transform: rotate(-10deg);
+    font-weight: 600;
+  }
+  main .map .container .map-top .new-places-desktop .warsaw-powisle {
+    align-items: center;
+  }
+  main .map .container .map-top .new-places-desktop .warsaw-powisle img {
+    width: 106px;
+    height: 90px;
+  }
+  main .map .container .map-top .new-places-desktop .warsaw-powisle h2 {
+    margin-left: 20px;
+  }
+  main .map .container .map-top .new-places-desktop .srodmiescie {
+    margin-top: 30px;
+  }
+  main .map .container .map-top .new-places-desktop .srodmiescie h3 {
+    font-size: 25px;
+  }
+  main .map .container .map-top .new-places-desktop .srodmiescie button {
+    margin-left: 36px;
+    width: 302px;
+  }
+  main .map .container .map-top .new-places-desktop .list {
+    margin-top: 30px;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li {
+    font-size: 16px;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li .hidden-mobile {
+    display: inline;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li .hiden-dekstop {
+    display: none;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li .star-full-list img {
+    margin-right: 10px;
+  }
+  main .restaurant .container {
+    display: flex;
+    flex-direction: row;
+  }
+  main .restaurant .container .restaurant-text {
+    margin-left: 40px;
+    position: relative;
+    order: 2;
+    width: 35%;
+  }
+  main .restaurant .container .restaurant-text .restaurant-offer-button {
+    padding: 12px 35px;
+    left: 0;
+    bottom: 80px;
+  }
+  main .restaurant .container .restaurant-image {
+    display: flex;
+    order: 1;
+    width: 65%;
+  }
+  main .restaurant .container .restaurant-image .bota-food {
+    margin-left: 20px;
+    order: 2;
+    width: 68%;
+  }
+  main .restaurant .container .restaurant-image .bota-food .bota-food-image {
+    width: 100%;
+  }
+  main .restaurant .container .restaurant-image .el-food {
+    height: 437px;
+    order: 1;
+    width: 40%;
+  }
+  main .restaurant .container .restaurant-image .el-food .fix-height {
+    height: 137px;
+  }
+  main .other-cities .container .other-cities-text {
+    flex: 1;
+  }
+  main .other-cities .container .other-cities-text h2 {
+    margin-top: 3px;
+    width: 70%;
+  }
+  main .other-cities .container .other-cities-text h2 .visable-desktop {
+    margin-left: 20px;
+    margin-top: -10px;
+    height: 15px;
+    width: 190px;
+  }
+  main .other-cities .container .other-cities-city {
+    width: 60%;
+  }
+  main .other-cities .container .other-cities-city .city-gizycko {
+    order: 4;
+  }
+  main .other-cities .container .other-cities-city .city-poznan {
+    order: 5;
+  }
+  main .other-cities .container .other-cities-city .city-gdansk {
+    order: 3;
+  }
+  main .other-cities .container .other-cities-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 41%;
+    height: 100%;
+  }
+  main .other-cities .container .other-cities-image .rotation {
+    position: absolute;
+    left: -70px;
+    bottom: 40px;
+    transform: rotate(270deg);
+  }
+  main .news {
+    padding-top: 64px;
+    padding-bottom: 100px;
+  }
+  main .news .container .news-text h2 {
+    position: relative;
+  }
+  main .news .container .news-text p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  main .news .container .news-text .news-button {
+    position: absolute;
+    right: 0;
+    bottom: 93%;
+    padding: 12px 48px;
+  }
+  main .news .container .news-slider {
+    height: 600px;
+  }
+  main .news .container .news-slider .new-slider {
+    margin-right: 20px;
+    height: 335px;
+  }
+  main .news .container .news-slider .new-slider .slider-new-one, main .news .container .news-slider .new-slider .slider-new-three {
+    width: 414px;
+    height: 414px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .news .container .news-slider .new-slider .slider-new-two {
+    width: 413px;
+    height: 302px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0px 30%;
+       object-position: 0px 30%;
+  }
+  main .news .container .news-slider .new-slider h3 {
+    position: relative;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    font-weight: 1000;
+  }
+  main .news .container .news-slider .new-slider h3 img {
+    position: absolute;
+    top: 0%;
+    right: 0;
+  }
+  main .news .container .news-slider .new-slider p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  header .container h1 {
+    font-size: 200px;
+    margin-right: 10px;
+    letter-spacing: 5px;
+  }
+  header .container h1 img {
+    width: 107px;
+    height: 107px;
+  }
+  header .container h1 .line {
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+    height: 2px;
+    width: 84%;
+    border: 2px solid #FF5674;
+  }
+  header .container .intesting {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    letter-spacing: 5px;
+    font-size: 30px;
+  }
+  header .container .intesting span {
+    font-weight: 1000;
+  }
+  header .container .siren {
+    position: absolute;
+    top: -75px;
+    left: 248px;
+    width: 350px;
+    z-index: 3;
+  }
+  header .container .photo {
+    width: 1172px;
+  }
+  header .container .photo .photo-one, header .container .photo .photo-two, header .container .photo .photo-three {
+    height: 163.33px;
+  }
+  header .container .photo .photo-one img, header .container .photo .photo-two img, header .container .photo .photo-three img {
+    width: 100%;
+    height: 100%;
+  }
+  header .container .photo .photo-one .photo-text, header .container .photo .photo-two .photo-text, header .container .photo .photo-three .photo-text {
+    font-size: 14px;
+  }
+  main h2 {
+    font-size: 45px;
+  }
+  main p {
+    font-size: 14px;
+  }
+  main .intesting-place-postion {
+    width: 1140px;
+  }
+  main .intesting-place-postion .intesting-place {
+    margin-left: -30px;
+    padding-left: 30px;
+  }
+  main .intesting-place-postion .intesting-place .container {
+    padding: 0px;
+    margin-left: 10px;
+    max-width: 1140px;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-place-text p {
+    width: 100%;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-slider .slider .slider-one, main .intesting-place-postion .intesting-place .container .intesting-slider .slider .slider-three {
+    width: 305px;
+    height: 386px;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-slider .slider .slider-two {
+    width: 305px;
+    height: 305px;
+  }
+  main .map {
+    margin-top: -350px;
+    padding-top: 410px;
+  }
+  main .map .container .map-top .new-places-desktop .warsaw-powisle img {
+    width: 110px;
+    height: 96px;
+  }
+  main .map .container .map-top .new-places-desktop .warsaw-powisle h2 {
+    margin-left: 20px;
+  }
+  main .map .container .map-top .new-places-desktop .srodmiescie {
+    margin-top: 50px;
+  }
+  main .map .container .map-top .new-places-desktop .srodmiescie button {
+    margin-left: 128px;
+  }
+  main .map .container .map-top .new-places-desktop .list {
+    margin-top: 50px;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li {
+    width: 98%;
+  }
+  main .restaurant .container .restaurant-text {
+    margin-left: 40px;
+  }
+  main .restaurant .container .restaurant-text .restaurant-offer-button {
+    left: 0;
+    bottom: 80px;
+  }
+  main .restaurant .container .restaurant-image .bota-food {
+    margin-left: 20px;
+    width: 65%;
+  }
+  main .restaurant .container .restaurant-image .bota-food .bota-food-image {
+    width: 100%;
+  }
+  main .restaurant .container .restaurant-image .el-food {
+    width: 40%;
+    height: 503px;
+  }
+  main .restaurant .container .restaurant-image .el-food .fix-height {
+    height: 170px;
+  }
+  main .other-cities .container {
+    position: relative;
+  }
+  main .other-cities .container .other-cities-text {
+    flex: 1;
+  }
+  main .other-cities .container .other-cities-text h2 {
+    width: 50%;
+  }
+  main .other-cities .container .other-cities-city {
+    width: 50%;
+  }
+  main .other-cities .container .other-cities-city .city-gizycko {
+    order: 4;
+  }
+  main .other-cities .container .other-cities-city .city-poznan {
+    order: 5;
+  }
+  main .other-cities .container .other-cities-city .city-gdansk {
+    order: 3;
+  }
+  main .other-cities .container .other-cities-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36%;
+    height: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  header .container h1 {
+    font-size: 238px;
+    margin-right: 10px;
+    letter-spacing: 5px;
+  }
+  header .container h1 img {
+    width: 126px;
+    height: 126px;
+  }
+  header .container h1 .line {
+    position: absolute;
+    bottom: 25px;
+    right: 10%;
+    height: 2px;
+    width: 84%;
+    border-top: 2px solid #FF5674;
+  }
+  header .container .intesting {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    letter-spacing: 5px;
+    font-size: 36px;
+  }
+  header .container .intesting span {
+    font-weight: 1000;
+  }
+  header .container .siren {
+    position: absolute;
+    top: -75px;
+    left: 280px;
+    width: 404px;
+    z-index: 3;
+  }
+  header .container .photo {
+    width: 1348px;
+  }
+  header .container .photo .photo-one, header .container .photo .photo-two, header .container .photo .photo-three {
+    height: 193px;
+  }
+  header .container .photo .photo-one .photo-text, header .container .photo .photo-two .photo-text, header .container .photo .photo-three .photo-text {
+    font-size: 16px;
+  }
+  header .container .photo .photo-one {
+    width: 391px;
+  }
+  header .container .photo .photo-one .photo-text {
+    top: 55%;
+  }
+  header .container .photo .photo-one img {
+    width: 391px;
+  }
+  header .container .photo .photo-two {
+    width: 219px;
+  }
+  header .container .photo .photo-two img {
+    width: 219px;
+  }
+  header .container .photo .photo-three {
+    width: 750px;
+  }
+  header .container .photo .photo-three img {
+    width: 750px;
+  }
+  main h2 {
+    font-size: 48px;
+  }
+  main p {
+    font-size: 14px;
+  }
+  main .intesting-place-postion {
+    width: 1340px;
+  }
+  main .intesting-place-postion .intesting-place {
+    padding-left: 50px;
+    margin-left: -30px;
+    width: 1320px;
+  }
+  main .intesting-place-postion .intesting-place .container {
+    max-width: 1320px;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-place-text {
+    margin-left: -20px;
+  }
+  main .intesting-place-postion .intesting-place .container .intesting-button {
+    margin-left: -20px;
+  }
+  main .map .container .map-top .new-places-desktop .warsaw-powisle {
+    display: flex;
+    align-items: center;
+  }
+  main .map .container .map-top .new-places-desktop .warsaw-powisle img {
+    width: 110px;
+    height: 96px;
+  }
+  main .map .container .map-top .new-places-desktop .warsaw-powisle h2 {
+    margin-left: 20px;
+  }
+  main .map .container .map-top .new-places-desktop .srodmiescie {
+    margin-top: 70px;
+  }
+  main .map .container .map-top .new-places-desktop .srodmiescie button {
+    margin-left: 175px;
+  }
+  main .map .container .map-top .new-places-desktop .list {
+    margin-top: 60px;
+  }
+  main .map .container .map-top .new-places-desktop .list ol li {
+    width: 92%;
+  }
+  main .restaurant .container .restaurant-text {
+    margin-left: -40px;
+  }
+  main .restaurant .container .restaurant-text .restaurant-offer-button {
+    padding: 12px 55px;
+    left: 0;
+    bottom: 80px;
+  }
+  main .restaurant .container .restaurant-image .bota-food {
+    margin-left: 20px;
+    width: 53.5%;
+  }
+  main .restaurant .container .restaurant-image .bota-food .bota-food-image {
+    width: 100%;
+  }
+  main .restaurant .container .restaurant-image .el-food {
+    width: 33.1%;
+    height: 531px;
+  }
+  main .restaurant .container .restaurant-image .el-food .fix-height {
+    height: 183px;
+  }
+  main .other-cities .container {
+    position: relative;
+  }
+  main .other-cities .container .other-cities-text {
+    flex: 1;
+  }
+  main .other-cities .container .other-cities-text h2 {
+    width: 50%;
+  }
+  main .other-cities .container .other-cities-city {
+    width: 40%;
+  }
+  main .other-cities .container .other-cities-city .city-gizycko {
+    order: 4;
+  }
+  main .other-cities .container .other-cities-city .city-poznan {
+    order: 5;
+  }
+  main .other-cities .container .other-cities-city .city-gdansk {
+    order: 3;
+  }
+  main .other-cities .container .other-cities-image {
+    position: absolute;
+    top: 0;
+    right: 36px;
+    width: 32%;
+    height: 100%;
+  }
+  main .news .container .news-text .news-button {
+    right: 36px;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,775 @@
+@use './colors' as *;
+
+.h2-text-weight{
+    font-weight: 200;
+    text-transform: uppercase;
+    .span-text-weight{
+        font-weight: 1000
+    }
+}
+
+.strong{
+    font-weight: 800;
+}
+
+.gray{
+    color: $color-palac-krola-info-text-color-two;
+}
+
+button{
+    border: 0;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    margin: 0;
+    .container-fix{
+        background-color: $color-palac-krola-header;
+        .container{
+            .photo{
+                display: flex;
+                .photo-one{
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+main{
+    .tag{
+        .container{
+            .tag-positon{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            button, p{
+                margin: 0;
+                color: $color-palac-krola-tag;
+            }
+            p{
+                font-weight: 800;
+            }
+        }
+        .container-position{
+            display: flex;
+        }
+    }
+}
+
+
+@media (min-width: 380px) { 
+    html{
+        scroll-padding-top: 150px;
+    }
+    h1{
+        font-size: 34px;
+        font-weight: 1000;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 25px;
+        margin: 0;
+        font-weight: 800;
+    }
+    h3{
+        font-size: 14px;
+        font-weight: 800;
+    }
+    header{
+        position: relative;
+        margin: 0 auto;
+        width: 380px;
+        height: 207px;
+        .container-fix{
+            padding-top: 35px;
+            width: 360px;
+            height: 155px;
+            .container{
+                position: static;
+                .photo{
+                    position: absolute;
+                    right: 0;
+                    width: 360px;
+                    height: 172px;
+                    .photo-one {
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        p{
+            margin: 0;
+        }
+        .tag{
+            margin-top: 20px;
+            margin-bottom: 42px;
+            .container{
+                p{
+                    margin-right: 16px;
+                }
+                .tag-positon{
+                    button{
+                        font-size: 14px;
+                        margin-right: 13px;
+                    }
+                }
+                .arrow{
+                    display: none;
+                }
+            }
+        }
+
+        .header-text{
+            .container{
+                .google{
+                    display: flex;
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                    height: 84px;
+                    width: 264px;
+                    .google-logo{
+                        margin: 20px 0px 20px 20px;
+                        padding-right: 14px;
+                        border-right: 1px solid black;
+                    }
+                    .google-postion{
+                        margin-left: 14px;
+                        p{
+                            font-size: 12px;  
+                        }
+                        .points{
+                            display: flex;
+                            margin-top: 20px;
+                            h2{
+                                margin-right: 10px;
+                            }
+                            .star{
+                                margin-top: 12px;
+                                margin-right: 4px;
+                                height: 13px;
+                            }
+                        }
+                    }
+                }
+                .icons{
+                    .container{
+                        .icons-text{
+                            display: flex;
+                            color: $color-palac-krola-tag;
+                            margin-bottom: 20px;
+                            img{
+                                width: 28px;
+                                height: 28px;
+                            }
+                            p{
+                                margin-left: 15px;
+                                font-size: 14px;
+                            }
+                            .last-text{
+                                margin-left: 42px;
+                            }
+                            .fix-text{
+                                margin-top: 4px;
+                            }
+                        }
+                        .details-ticket{
+                            padding: 12px 57px;
+                            margin-bottom: 32px;
+                            margin-top: 38px;
+                            width: 351px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            background-color: $color-palac-krola-details-button;
+                            a{
+                                color: $color-palac-krola-button-text-color;
+                            }
+                        }
+                        .hiden{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .text {
+            .container {
+              .text-position {
+                overflow: hidden;
+                max-height: 193px; 
+          
+                &.expanded {
+                  max-height: 100%; 
+                }
+    
+                .text-left,.text-right {
+                  h3 {
+                    margin-bottom: 10px;
+                  }
+                  p {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                  }
+                }
+              }
+              .zwin{
+                margin-top: 20px;
+                .expandable-checkbox {
+                    display: none; 
+                  }
+                .expandable-checkbox:not(:checked) ~ .zwin .expand-button::after {
+                    content: " tekst"; 
+                }
+                label{
+                    font-weight: 800;
+                }
+                .expand-icon {
+                    margin-left: 10px;
+                    width: 13px; 
+                    height: 5px;
+                  }
+            }
+            }
+        }
+        .info{
+             margin-top: 64px;   
+             padding-top: 64px;
+             padding-bottom: 64px;
+             background-color: $color-palac-krola-header;
+             color: $color-palac-krola-button-text-color;
+             .container{
+                 h2{
+                     margin-bottom: 20px;
+                 }
+                .info-postion{
+                    .info-left, .info-right{
+                        p{
+                            margin-bottom: 20px;
+                            font-size: 14px;
+                            font-weight: 200;
+                        }
+                        h3{
+                            font-size: 16px;
+                            margin-bottom: 20px;
+                        }
+                        .info-button{
+                            text-transform: uppercase;
+                            padding: 12px 35px;
+                            background-color: $color-palac-krola-info-button;
+                            a{
+                                color: $color-palac-krola-info-text-color;
+                            }
+                        }
+                        .info-button-one{
+                            margin-top: 32px;
+                            margin-bottom: 52px;
+                        }
+                        .info-button-three{
+                            margin-top: 52px;
+                            margin-bottom: 40px;
+                        }
+                    }
+                    .ticket-icon{
+                        display: flex;
+                        img{
+                            margin-right: 20px;
+                            height: 28px;
+                            width: 28px;
+                        }
+                        .fix-ticket{
+                            margin-top: 4px;
+                        }
+                    }
+                }
+             }
+        }
+        .image{
+            .container{
+                .image-postion{
+                    .image-one{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: -20px;
+                        width: 382px;
+                        height: 204px;
+                        .img-one{
+                            height: 204px;
+                            width: 382px;
+                        }
+                    }
+                    .image-two{
+                        display: flex;
+                        margin-left: -20px;
+                        margin-bottom: 10px;
+                        width: 382px;
+                        .img-two, .img-three{
+                            width: 50%;
+                            height: 184px;
+                        }
+                        .img-two{
+                            margin-right: 10px;
+                        }
+                        .img-three{
+                        }
+                    }
+                    .img-one, .img-two, .img-three{
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 576px) { 
+    header{
+        width: 576px;
+        .container-fix{
+            padding-top: 35px;
+            width: 560px;
+            height: 155px;
+            .container{
+                .photo{
+                    position: absolute;
+                    right: 0;
+                    width: 560px;
+                    height: 172px;
+                    .photo-one {
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .tag{
+            .container{
+                .tag-positon{
+                    button{
+                        font-size: 16px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        .text{
+            .container{
+                .text-position{
+                    max-height: 130px;
+                }
+            }
+        }
+        .image{
+            .container{
+                .image-postion{
+                    .image-one{
+                        width: 576px;
+                        margin-left: -18px;
+                        height: 204px;
+                        .img-one{
+                            height: 204px;
+                            width: 100%;
+                        }
+                    }
+                    .image-two{
+                        margin-left: -18px;
+                        width: 576px;
+                        .img-two, .img-three{
+                            width: 50%;
+                            height: 184px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) { 
+    header{
+        width: 768px;
+        .container-fix{
+            padding-top: 35px;
+            width: 745px;
+            height: 155px;
+            .container{
+                .photo{
+                    position: absolute;
+                    right: 0;
+                    width: 745px;
+                    height: 172px;
+                    .photo-one {
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .tag{
+            margin-top: 20px;
+            margin-bottom: 42px;
+            .container{
+                p{
+                    margin-right: 16px;
+                }
+                .tag-positon{
+                    button{
+                        font-size: 16px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        .text{
+            .container{
+                .text-position{
+                    max-height: 120px;
+                }
+            }
+        }
+        .image{
+            .container{
+                .image-postion{
+                    .image-one{
+                        width: 768px;
+                        margin-left: -24px;
+                        height: 250px;
+                        .img-one{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .image-two{
+                        margin-left: -24px;
+                        width: 767px;
+                        .img-two, .img-three{
+                            width: 50%;
+                            height: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 992px) { 
+    header{
+        width: 992px;
+        height: 450px;
+        .container-fix{
+            padding-top: 86px;
+            width: 975px;
+            height: 368px;
+            .container{
+                .photo{
+                    position: absolute;
+                    right: 0;
+                    width: 975px;
+                    height: 363px;
+                }
+            }
+        }
+    }
+    h3{
+        font-size: 18px;
+        font-weight: 1000;
+    }
+    main{
+        .tag{
+            margin-top: 20px;
+            margin-bottom: 42px;
+            .container{
+                .tag-text{
+                    font-size: 16px;
+                }
+                p{
+                    margin-right: 30px;
+                }
+                .tag-positon{
+                    .hiden-desktop{
+                        display: none;
+                    }
+                    .arrow{
+                        position: absolute;
+                        display: inline-block;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+        .header-text{
+            .container{
+                .text{
+                    display: block;
+                    width: 100%;
+                    h1{
+                        margin-bottom: 32px;
+                        font-size: 45px;
+                        width: 55%;
+                    }
+                    .google{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        height: 84px;
+                        width: 264px;
+                        .google-logo{
+                            margin: 20px 0px 20px 20px;
+                            padding-right: 14px;
+                            border-right: 1px solid black;
+                        }
+                        .google-postion{
+                            margin-left: 14px;
+                            .points{
+                                display: flex;
+                                margin-top: 15px;
+                                h2{
+                                    margin-right: 6px;
+                                    font-size: 30px;
+                                }
+                                .star{
+                                    margin-top: 12px;
+                                    margin-right: 4px;
+                                    height: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .icons{
+                        .container{
+                            .icons-text{
+                                display: flex;
+                                color: $color-palac-krola-tag;
+                                p{
+                                    margin-left: 15px;
+                                    font-size: 16px;
+                                }
+                                .strong{
+                                    font-weight: 800;
+                                }
+                                .last-text{
+                                    margin-left: 42px;
+                                }
+                                .fix-text{
+                                    margin-top: 4px;
+                                }
+                                .p-width{
+                                    width: 70%;
+                                }
+                            }
+                            .postion-destkop{
+                                position: absolute;
+                                top: 0;
+                                left: 475px;
+                            }
+                            .details-ticket{
+                                padding: 12px 35px;
+                                margin-bottom: 96px;
+                                margin-top: 16px;
+                                margin-left: 44px;
+                                width: 455px;
+                            }
+                            .hiden{
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .text{
+            .container{
+                .text-position{
+                    display: flex;
+                    max-height: none;
+                    .text-left, .text-right{
+                        h3{
+                            margin-bottom: 30px;
+                        }
+                        p{
+                            font-size: 16px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                    .text-left{
+                        width: 50%;
+                        margin-right: 20px;
+                    }
+                    .text-right{
+                        width: 50%;
+                    }
+                }
+                .zwin{
+                    display: none;
+                }
+            }
+        }
+        .info{
+            margin-top: 96px;   
+            padding-top: 96px;
+            padding-bottom: 96px;
+            .container{
+                h2{
+                    font-size: 34px;
+                    margin-bottom: 60px;
+                }
+                .info-postion{
+                    display: flex;
+                    .info-right{
+                        margin-left: 20px;
+                    }
+                    .info-left, .info-right{
+                        width: 50%;
+                        p{
+                            margin-bottom: 20px;
+                            font-size: 16px;
+                            font-weight: 200;
+                        }
+                        h3{
+                            font-size: 19px;
+                        }
+                        .p-three{
+                            margin-top: 60px;
+                        }
+                        .info-button-one{
+                            margin-top: 10px;
+                            margin-bottom: 52px;
+                        }
+                        .info-button-two{
+                            margin-top: 10px;
+                            margin-bottom: 60px;
+                        }
+                        .info-button-three{
+                            margin-top: 22px;
+                        }
+                        .ticket-icon{
+                            display: flex;
+                            margin-top: 30px;
+                            img{
+                                margin-right: 20px;
+                                height: 28px;
+                                width: 28px;
+                            }
+                            .fix-ticket{
+                                margin-top: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .image{
+            .container{
+                .image-postion{
+                    .image-one{
+                        margin-bottom: 0px;
+                        margin-left: 0px;
+                        width: 100%;
+                        height: 678px;
+                        .img-one{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .image-two{
+                        margin-top: 20px;
+                        margin-bottom: 96px;
+                        margin-left: 0px;
+                        width: 100%;
+                        .img-two, .img-three{
+                            width: 50%;
+                            height: 486px;
+                        }
+                        .img-two{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1200px) { 
+    header{
+        width: 1200px;
+        .container-fix{
+            width: 1170px;
+            .container{
+                .photo{
+                    width: 1170px;
+                }
+            }
+        }
+    }
+    main{
+        .image{
+            .container{
+                .image-postion{
+                    .image-one{
+                        margin-left: 0px;
+                        width: 100%;
+                        height: 678px;
+                        .img-one{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .image-two{
+                        margin-left: 0px;
+                        width: 100%;
+                        .img-two, .img-three{
+                            width: 50%;
+                            height: 549px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1400px) { 
+    header{
+        width: 1400px;
+        .container-fix{
+            width: 1360px;
+            .container{
+                .photo{
+                    width: 1360px;
+                }
+            }
+        }
+    }
+}

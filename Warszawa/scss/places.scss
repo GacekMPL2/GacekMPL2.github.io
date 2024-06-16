@@ -1,0 +1,618 @@
+@use './colors' as *;
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1, .suggestions, .offer{
+    text-transform: uppercase;
+}
+
+.suggestions{
+    padding: 12px 0px;
+    margin-bottom: 72px;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    border: 1px solid $color-suggestions-button-broder;
+}
+
+.offer{
+    padding: 12px 0px;
+    margin-bottom: 72px;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    background-color: $color-offer-button;
+    color: $color-offer-text;
+}
+
+.h2-text-weight{
+    font-weight: 200;
+    .span-text-weight{
+        font-weight: 1000
+    }
+}
+
+header{
+    margin: 0;
+    .container-fix{
+        background-color: $color-places-header;
+        .container{
+            .photo{
+                display: flex;
+                .photo-one, .photo-two, .photo-three{
+                    position: relative;
+                    -webkit-filter: grayscale(1);
+                    filter: grayscale(1);
+                    .photo-shadow{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgb(0, 9, 27, 0.30);
+                    }
+                    .photo-text{
+                        position: absolute;
+                        top: 60%;
+                        right: 0;
+                        transform: rotate(270deg);
+                        font-weight: 200;
+                        text-align: left;
+                        color: $color-photo-text;
+                    }
+                }
+                .photo-one:hover, .photo-two:hover, .photo-three:hover{
+                    filter: grayscale(0%);
+                    .photo-shadow{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgb(0, 9, 27, 0.00);
+                    }
+                    .photo-text{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+button{
+    position: relative;
+    width: 100%;
+    border: 0;
+    text-align: left;
+    font-weight: 800;
+    background-color: #FFFFFF;
+    .hover{
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media(min-width:380px) {
+    header{
+        position: relative;
+        margin: 0 auto;
+        height: 170px;
+        width: 380px;
+        .container-fix{
+            padding-top: 35px;
+            width: 370px;
+            height: 170px;
+            .container{
+                position: static;
+                .photo{
+                    position: absolute;
+                    right: 0;
+                    height: 172px;
+                    .photo-one, .photo-three{
+                        img{
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        .hiden-mobile{
+                            display: none;
+                        }
+                        .photo-text{
+                            top: 75%;
+                            font-size: 6px;
+                        }
+                    }
+                    .photo-one{
+                        width: 162px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .photo-three{
+                        width: 200px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .photo-two{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    h1{
+        font-size: 34px;
+        text-align: center;
+    }
+    main{
+        .text{
+            margin-top: 116px;
+            margin-bottom: 64px;
+        }
+        .images{
+            .image{
+                width: 345px;
+                height: 100%;
+                object-fit: cover;
+            }
+            .images-cards{
+                .image{
+                    height: 250px;
+                }
+                button{
+                    margin-top: 20px;
+                    font-size: 19px;
+                }
+                .star-full{
+                    margin-top: 6px;
+                    margin-bottom: 30px;
+                    margin-right: 10px;
+                }
+            }
+            .cards-one, .cards-five{
+                .image{
+                    height: 472px;
+                }
+            }
+            .hidden-mobile{
+                display: none;
+            }
+        }
+        .suggestions{
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    header{
+        height: 200px;
+        width: 576px;
+        .container-fix{
+            height: 200px;
+            width: 560px;
+            .container{
+                .photo{
+                    width: 560px;
+                    height: 230px;
+                    .photo-one, .photo-three{
+                        img{
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        .photo-text{
+                            top: 65%;
+                            font-size: 12px;
+                        }
+                    }
+                    .photo-one{
+                        width: 250px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .photo-three{
+                        width: 322px;
+                        img{
+                            width: 100%;
+                        }
+                        .photo-text{
+                            top: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h1{
+        font-size: 36px;
+        text-align: center;
+    }
+    main{
+        .images{
+            .image{
+                width: 540px;
+            }
+            .images-cards{
+                .image{
+                    height: 350px;
+                }
+            }
+            .cards-one, .cards-five{
+                .image{
+                    height: 520px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+    header{
+        width: 768px;
+        height: 260px;
+        .container-fix{
+            padding-top: 50px;
+            height: 260px;
+            width: 745px;
+            .container{
+                height: 250px;
+                width: 760px;
+                .photo{
+                    width: 745px;
+                    height: 300px;
+                    .photo-one, .photo-three{
+                        img{
+                            height: 100%;
+                        }
+                        .photo-text{
+                            top: 74%;
+                            font-size: 12px;
+                        }
+                    }
+                    .photo-one{
+                        width: 335px;
+                        img{
+                            width: 100%;
+                        }
+                        .photo-text{
+                            top: 70%;
+                        }
+                    }
+                    .photo-three{
+                        width: 410px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h1{
+        font-size: 40px;
+    }
+    main{
+        .images{
+            .image{
+                width: 720px;
+            }
+            .images-cards{
+                .image{
+                    height: 450px;
+                }
+            }
+            .cards-one, .cards-five{
+                .image{
+                    height: 620px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) { 
+    header{
+        width: 992px;
+        height: 350px;
+        .container-fix{
+            padding-top: 0px;
+            width: 975px;
+            height: 350px;
+            .container{
+                padding-top: 85px;
+                padding-bottom: 86px;
+                height: 100%;
+                .photo{
+                    width: 975px;
+                    height: 193px;
+                    .photo-one, .photo-two, .photo-three{
+                        height: 193px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .photo-text{
+                            top: 60%;
+                            font-size: 12px;
+                        }
+                    }
+                    .photo-one{
+                        width: 350px;
+                        .photo-text{
+                            top: 55%;
+                        }
+                    }
+                    .photo-two{
+                        display: block;
+                    }
+                    .photo-three{
+                        .hiden-mobile{
+                            display: inline-block;
+                        }
+                        .hiden-desktop{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h1{
+        font-size: 45px;
+    }
+    main{
+        .text{
+            margin-top: 72px;
+            margin-bottom: 80px;
+        }
+        .images{
+            .images-one, .images-two, .images-three{
+                display: flex;
+                .images-cards{
+                    .image{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+            .images-one{
+                .cards-one{
+                    margin-right: 20px;
+                    width: 720px;
+                    height: 382px;
+                }
+                .cards-two{
+                    width: 220px;
+                    height: 302px;
+                    .image{
+                        height: 100%;
+                    }
+                }
+            }
+            .images-two{
+                margin-top: 132px;
+                .cards-three{
+                    margin-right: 20px;
+                    width: 480px;
+                    height: 386px;
+                    .images{
+                        width: 400%;
+                    }
+                }
+                .cards-four{
+                    margin-right: 20px;
+                    width: 220px;
+                    height: 305px;
+                }
+                .cards-five{
+                    height: 386px;
+                    width: 220px;
+                }
+            }
+            .images-three{
+                margin-top: 132px;
+                padding-bottom: 132px;
+                .cards-six, .cards-seven{
+                    margin-right: 20px;
+                    height: 305px;
+                    width: 230px;
+                }
+                .cards-eight, .cards-nine{
+                    margin-right: 20px;
+                    display: inline-block;
+                    width: 220px;
+                    height: 386px;
+                }
+                .cards-nine{
+                    margin-right: 0px;
+                }
+            }
+        }
+        .suggestions{
+            display: block;
+        }
+        .offer{
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {  
+    header{
+        width: 1200px;
+        .container-fix{
+            width: 1170px;
+            .container{
+                .photo{
+                    width: 1170px;
+                    height: 193px;
+                    .photo-one, .photo-two, .photo-three{
+                        height: 193px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .photo-text{
+                            font-size: 14px;
+                        }
+                    }
+                    .photo-one{
+                        width: 391px;
+                    }
+                    .photo-two{
+                        width: 219px;
+                    }
+                    .photo-three{
+                        width: 750px;
+                    }
+                }
+            }
+        }
+    }
+    h1{
+        font-size: 50px;
+    }
+    main{
+        .images{
+            .images-one, .images-two, .images-three{
+                display: flex;
+            }
+            .images-one{
+                .cards-one{
+                    margin-right: 20px;
+                    width: 953px;
+                    height: 382px;
+                }
+                .cards-two{
+                    width: 305px;
+                    height: 305px;
+                }
+            }
+            .images-two{
+                .cards-three{
+                    margin-right: 20px;
+                    width: 630px;
+                    height: 386px;
+                }
+                .cards-four{
+                    margin-right: 20px;
+                    width: 305px;
+                    height: 305px;
+                }
+                .cards-five{
+                    width: 305px;
+                    height: 386px;
+                }
+            }
+            .images-three{
+                padding-bottom: 152px;
+                .cards-six, .cards-seven{
+                    margin-right: 20px;
+                    height: 305px;
+                    width: 305px;
+                }
+                .cards-eight, .cards-nine{
+                    margin-right: 20px;
+                    display: inline-block;
+                    width: 305px;
+                    height: 386px;
+                }
+                .cards-nine{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) { 
+    header{
+        width: 1400px;
+        .container-fix{
+            width: 1360px;
+            .container{
+                .photo{
+                    width: 1360px;
+                    height: 193px;
+                    .photo-one, .photo-two, .photo-three{
+                        height: 193px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .photo-text{
+                            font-size: 14px;
+                        }
+                    }
+                    .photo-one{
+                        width: 391px;
+                    }
+                    .photo-two{
+                        width: 219px;
+                    }
+                    .photo-three{
+                        width: 750px;
+                    }
+                }
+            }
+        }
+    }
+    h1{
+        font-size: 55px;
+    }
+    main{
+        .text{
+            margin-top: 72px;
+            margin-bottom: 80px;
+        }
+        .images{
+            .images-one{
+                .cards-one{
+                    margin-right: 20px;
+                    width: 985px;
+                    height: 382px;
+                }
+                .cards-two{
+                    width: 315px;
+                    height: 305px;
+                    .image{
+                        height: 100%;
+                    }
+                }
+            }
+            .images-two{
+                .cards-three{
+                    margin-right: 20px;
+                    width: 650px;
+                    height: 386px;
+                }
+                .cards-four{
+                    margin-right: 20px;
+                    width: 315px;
+                    height: 305px;
+                }
+                .cards-five{
+                    width: 315px;
+                    height: 386px;
+                }
+            }
+            .images-three{
+                .cards-six, .cards-seven{
+                    margin-right: 20px;
+                    height: 325px;
+                    width: 315px;
+                }
+                .cards-eight, .cards-nine{
+                    margin-right: 20px;
+                    display: inline-block;
+                    width: 315px;
+                    height: 386px;
+                }
+                .cards-nine{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
