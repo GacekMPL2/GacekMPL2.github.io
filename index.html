@@ -4,7 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="scss/index.css">
+    <style>
+        body {
+            color: white;
+            background-color: black;
+        }
+        body h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        body main {
+            display: flex;
+        }
+        body main a {
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 40px;
+            text-shadow: 1px 1px black;
+        }
+        body main .project {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 33%;
+        }
+        body main .project .projects {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+            width: 250px;
+            height: 250px;
+            background-color: gray;
+            border-radius: 25px;
+        }
+        body main .project .project-one {
+            background-image: url(/Warszawa/img/warszawka-syrena.webp);
+            background-size: cover;
+            background-position: 0 50%;
+        }
+        body main .video {
+            width: 33%;
+            text-align: center;
+        }
+        body main .video video {
+            height: 60%;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <h1>Projekty</h1>
