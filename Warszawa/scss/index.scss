@@ -45,6 +45,13 @@ header{
             color: $color-header-waw-hiden;
         }
     }
+    .back{
+        position: absolute;
+        top: -10%;
+        a{
+            color: black;
+        }
+    }
 
     .photo{
         display: flex;

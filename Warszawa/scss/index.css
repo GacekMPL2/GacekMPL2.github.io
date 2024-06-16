@@ -42,6 +42,13 @@ header h1 {
 header h1 .hiden {
   color: #FFFFFF;
 }
+header .back {
+  position: absolute;
+  top: -10%;
+}
+header .back a {
+  color: black;
+}
 header .photo {
   display: flex;
   margin-bottom: 40px;
