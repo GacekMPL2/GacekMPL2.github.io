@@ -238,9 +238,6 @@ body .container {
   body .navbar .navbar-collapse .navbar-nav .item-six {
     margin-right: 0px !important;
   }
-  body .navbar .drop {
-    margin-right: 0 !important;
-  }
   body .navbar .drop .dropdown a {
     font-size: 24px;
     font-weight: 1000;
@@ -368,6 +365,14 @@ body .container {
   body footer .container .footer-flex .contact-dekstop p {
     margin-bottom: 0;
     font-weight: 300;
+  }
+}
+@media (min-width: 1400px) {
+  body .navbar .navbar-collapse .navbar-nav .item-one {
+    margin-left: 0px;
+  }
+  body .drop .dropdown {
+    margin-left: 30px;
   }
 }
 @media (min-width: 380px) {

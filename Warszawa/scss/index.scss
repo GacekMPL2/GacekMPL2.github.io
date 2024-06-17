@@ -199,6 +199,7 @@ main{
                   }
                   text{
                     fill: $color-maps-text;
+                    pointer-events: none;
                     font-size: 14px;
                     letter-spacing: 1px;
                     font-weight: 800;
@@ -540,7 +541,7 @@ main{
                 .city-button{                    
                     margin-bottom: 35px;
                     margin-right: 27px;
-                    padding: 12px 32px;
+                    padding: 12px 35px;
                     font-size: 14px;
                     text-transform: uppercase;
                     background-color: $color-other-cities-button;
@@ -581,7 +582,6 @@ main{
                     height: 390px;
                     .new-slider{
                         margin-right: 11px;
-                        height: 335px;
                         .slider-new-one, .slider-new-three {
                             width: 227px;
                             height: 228px;  
@@ -602,6 +602,19 @@ main{
                                 top: 0%;
                                 right: 0;
                             }
+                        }
+                        .slider-hiden{
+                            height: 83%;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                        .slider-hiden-syrena{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4;                             
                         }
                     }
                 }
@@ -815,6 +828,18 @@ main{
                 width: 574px;
                 img{
                     width: 100%;
+                }
+            }
+        }
+        .news{
+            .container{
+                .news-slider{
+                    .new-slider{
+                        .slider-hiden{
+                            height: 93%;
+                            -webkit-line-clamp: 5; 
+                        }
+                    }
                 }
             }
         }
@@ -1041,6 +1066,19 @@ main{
                     width: 768px;
                 }
             }
+            .news{
+                .container{
+                    .news-slider{
+                        height: 400px;
+                        .new-slider{
+                            .slider-hiden{
+                                height: 93.5%;
+                                -webkit-line-clamp: 5; 
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1115,7 +1153,7 @@ main{
             font-size: 14px;
         }
         h3{
-            font-size: 16px;
+            font-size: 19px;
         }
         .visable-desktop{
             display: inline-block;
@@ -1139,9 +1177,10 @@ main{
                         position: absolute;
                         top: 0;
                         right: 0;
-                        width: 60%;
+                        width: 63.2%;
                         height: 100%;
                         .slider{
+                            margin-right: 20px;
                             h3{
                                 position: relative;
                                 margin-top: 20px;
@@ -1289,44 +1328,53 @@ main{
         }
         .other-cities{
             .container{
-                .other-cities-text{
-                    flex: 1;
-                    h2{
-                        margin-top: 3px;
+                .other-cities-postion{
+                    display: flex;
+                    .other-cities-postion-text{
                         width: 70%;
-                        .visable-desktop{
-                            margin-left: 20px;
-                            margin-top: -10px;
-                            height: 15px;
-                            width: 190px;
+                        .other-cities-text{
+                            flex: 1;
+                            h2{
+                                margin-top: 3px;
+                                margin-bottom: 40px;
+                                width: 100%;
+                                .visable-desktop{
+                                    margin-left: 20px;
+                                    margin-top: -10px;
+                                    height: 15px;
+                                    width: 190px;
+                                }
+                            }
+                        }
+                        .other-cities-city{
+                            width: 100%;
+                            .city-gizycko {
+                                order: 4; 
+                            } 
+                            .city-poznan {
+                                order: 5;
+                            }
+                            
+                            .city-gdansk {
+                                order: 3; 
+                            }
                         }
                     }
-                }
-                .other-cities-city{
-                    width: 60%;
-                    .city-gizycko {
-                        order: 4; 
-                    }
-                    
-                    .city-poznan {
-                        order: 5;
-                    }
-                    
-                    .city-gdansk {
-                        order: 3; 
-                    }
-                }
-                .other-cities-image{
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    width: 41%;
-                    height: 100%;
-                    .rotation{
-                        position: absolute;
-                        left: -70px;
-                        bottom: 40px;
-                        transform: rotate(270deg);
+                    .other-cities-image{
+                        position: relative;
+                        width: 450px;
+                        height: 270px;
+                        object-fit: cover;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                        .rotation{
+                            position: absolute;
+                            left: -70px;
+                            bottom: 0px;
+                            transform: rotate(270deg);
+                        }
                     }
                 }
             }
@@ -1353,8 +1401,7 @@ main{
                 .news-slider{
                     height: 600px;
                     .new-slider{
-                        margin-right: 20px;
-                        height: 335px;
+                        margin-right: 23px;
                         .slider-new-one, .slider-new-three {
                             width: 414px;
                             height: 414px;  
@@ -1364,12 +1411,12 @@ main{
                             width: 413px;
                             height: 302px;
                             object-fit: cover;
-                            object-position: 0px 30%;
+                            object-position: 0px 33%;
                         }
                         h3{
                             position: relative;
-                            margin-top: 11px;
-                            margin-bottom: 11px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
                             font-weight: 1000;
                             img{
                                 position: absolute;
@@ -1378,7 +1425,11 @@ main{
                             }
                         }
                         p{
-                            font-size: 15px;
+                            font-size: 16px;
+                        }
+                        .slider-hiden{
+                            height: 89%;
+                            -webkit-line-clamp: 4; 
                         }
                     }
                 }
@@ -1539,32 +1590,36 @@ main{
         .other-cities{
             .container{
                 position: relative;
-                .other-cities-text{
-                    flex: 1;
-                    h2{
-                        width: 50%;
+                .other-cities-postion{
+                    .other-cities-postion-text{
+                        .other-cities-text{
+                            width: 80%;
+                            flex: 1;
+                            h2{
+                                width: 100%;
+                            }
+                        }
+                        .other-cities-city{
+                            width: 70%;
+                            .city-gizycko {
+                                order: 4; 
+                            }
+                            .city-poznan {
+                                order: 5;
+                            }
+                            
+                            .city-gdansk {
+                                order: 3; 
+                            }
+                        }
                     }
-                }
-                .other-cities-city{
-                    width: 50%;
-                    .city-gizycko {
-                        order: 4; 
+                    .other-cities-image{
+                        width: 520px;
+                        height: 280px;
+                        img{
+                            height: 100%;
+                        }
                     }
-                    
-                    .city-poznan {
-                        order: 5;
-                    }
-                    
-                    .city-gdansk {
-                        order: 3; 
-                    }
-                }
-                .other-cities-image{
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    width: 36%;
-                    height: 100%;
                 }
             }
         } 
@@ -1646,7 +1701,7 @@ main{
             font-size: 48px;            
         }
         p{
-            font-size: 14px;
+            font-size: 16px;
         }
         .intesting-place-postion{
             width: 1340px;
@@ -1701,26 +1756,29 @@ main{
         .restaurant{
             .container{
                 .restaurant-text{
-                    margin-left: -40px;
+                    margin-left: -20px;
                     .restaurant-offer-button{
                         padding: 12px 55px;
                         left: 0;
                         bottom: 80px;
                     }
+                    p{
+                        width: 95%;
+                    }
                 }
                 .restaurant-image{
                     .bota-food{
                         margin-left: 20px;
-                        width: 53.5%;
+                        width: 460px;
                         .bota-food-image{
                             width: 100%;
                         }
                     }
                     .el-food{
-                        width: 33.1%;
+                        width: 300px;
                         height: 531px;
                         .fix-height{
-                            height: 183px;
+                            height: 185px;
                         }
                     }
                 }
@@ -1728,33 +1786,40 @@ main{
         }
         .other-cities{
             .container{
-                position: relative;
-                .other-cities-text{
-                    flex: 1;
-                    h2{
-                        width: 50%;
+                .other-cities-postion{
+                    position: relative;
+                    .other-cities-postion-text{
+                        width: 60%;
+                        .other-cities-text{
+                            flex: 1;
+                            h2{
+                                margin-bottom: 80px;
+                                width: 100%;
+                                .visable-desktop{
+                                    width: 260px;
+                                }
+                            }
+                        }
+                        .other-cities-city{
+                            width: 70%;
+                            .city-gizycko {
+                                order: 4; 
+                            }
+                            
+                            .city-poznan {
+                                order: 5;
+                            }
+                            
+                            .city-gdansk {
+                                order: 3; 
+                            }
+                        }
                     }
-                }
-                .other-cities-city{
-                    width: 40%;
-                    .city-gizycko {
-                        order: 4; 
+                    .other-cities-image{
+                        margin-right: 40px;
+                        width: 520px;
+                        height: 330px;
                     }
-                    
-                    .city-poznan {
-                        order: 5;
-                    }
-                    
-                    .city-gdansk {
-                        order: 3; 
-                    }
-                }
-                .other-cities-image{
-                    position: absolute;
-                    top: 0;
-                    right: 36px;
-                    width: 32%;
-                    height: 100%;
                 }
             }
         } 
@@ -1764,6 +1829,9 @@ main{
                     .news-button{
                         right: 36px;
                     }
+                }
+                .news-slider{
+                   width: 1309px;
                 }
             }
         }

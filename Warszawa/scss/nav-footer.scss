@@ -274,7 +274,6 @@ body{
             }
         }
         .drop{
-          margin-right: 0 !important;
           .dropdown{
             a{
                 font-size: 24px;
@@ -408,6 +407,23 @@ body{
             }
           }
         }
+      }
+    }
+  }
+
+  @media (min-width: 1400px) { 
+    .navbar{
+      .navbar-collapse{
+        .navbar-nav{
+          .item-one{
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+    .drop{
+      .dropdown{
+        margin-left: 30px;
       }
     }
   }
