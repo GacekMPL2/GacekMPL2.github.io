@@ -999,6 +999,8 @@ main .other-cities {
   }
   main .intesting-place-postion .intesting-place {
     position: relative;
+    padding-top: 87px;
+    padding-bottom: 98px;
     margin-left: -20px;
   }
   main .intesting-place-postion .intesting-place .container {
