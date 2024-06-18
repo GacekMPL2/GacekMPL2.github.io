@@ -248,6 +248,9 @@ main .map .map-top .list ol li .star-full-list {
   top: 23%;
   right: 0;
 }
+main .map .map-top .list ol li:hover {
+  background-color: #28282A;
+}
 main .restaurant .container .restaurant-text h2 p {
   color: #808083;
 }
