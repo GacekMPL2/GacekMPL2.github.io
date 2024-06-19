@@ -1,3 +1,265 @@
 * {
   box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #171717;
+}
+
+.container-xxl {
+  padding: 0px 20px;
+}
+
+.notification {
+  z-index: 1030;
+  background-color: #E3D4C5;
+  color: #000000;
+}
+.notification .notification-postion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.notification .notification-postion .close-btn img {
+  width: 32px;
+}
+
+.navbar {
+  padding: 0;
+  display: block;
+}
+
+@media (min-width: 380px) {
+  .container-xxl {
+    padding: 0px 20px 0px 20px;
+  }
+  .notification {
+    padding-top: 13px;
+    padding-bottom: 15px;
+  }
+  .navbar {
+    top: 62px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+  .navbar .nav-flex .navbar-toggler {
+    padding: 4px 6px;
+    border: none;
+  }
+  .navbar .nav-flex .navbar-toggler .navbar-toggler-icon {
+    height: 32px;
+    width: 32px;
+    background-image: url(../img/hamburger.png);
+  }
+  .navbar .nav-flex .navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+    background-image: url(../img/x.png);
+  }
+  .navbar .nav-flex .nav-flex-one img {
+    width: 90px;
+  }
+  .navbar .nav-flex .nav-flex-two {
+    order: 1;
+  }
+  .navbar .nav-flex .nav-flex-two .nav-link, .navbar .nav-flex .nav-flex-three .nav-link {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: black;
+  }
+  .navbar .nav-flex .nav-flex-two .nav-contact p, .navbar .nav-flex .nav-flex-three .nav-contact p {
+    margin-bottom: 9px;
+    font-size: 18px;
+    color: #6A6A6A;
+  }
+  .navbar .nav-flex .nav-flex-three {
+    margin-top: 25px;
+  }
+  .navbar .nav-flex .navbar-flex .item-one {
+    order: 3;
+  }
+  .navbar .nav-flex .navbar-flex .navbar-postion {
+    display: flex;
+    margin-bottom: 32px;
+    order: 2;
+  }
+  .navbar .nav-flex .navbar-flex .navbar-postion .nav-item {
+    margin-right: 20px;
+  }
+  .navbar .nav-flex .navbar-flex .glass {
+    order: 1;
+  }
+  .navbar .nav-flex .navbar-flex .glass .nav-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 172px;
+  }
+  .navbar .nav-flex .navbar-flex .glass .nav-input input {
+    border: none;
+  }
+  .navbar .nav-flex .navbar-flex .glass .nav-input button img {
+    width: 32px;
+  }
+  .navbar .nav-border {
+    position: absolute;
+    top: 83px;
+    width: 100%;
+    border-bottom: 1px solid #DADADA;
+  }
+  footer {
+    padding-top: 64px;
+  }
+  footer .container-xxl .footer-postion .footer-postion-text .footer-nav {
+    display: flex;
+  }
+  footer .container-xxl .footer-postion .footer-postion-text .footer-nav .footer-nav-one, footer .container-xxl .footer-postion .footer-postion-text .footer-nav .footer-nav-two {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .container-xxl .footer-postion .footer-slider {
+    display: flex;
+  }
+  footer .container-xxl .footer-postion .footer-slider img {
+    margin-right: 24px;
+    width: 100px;
+    height: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer .container-xxl .footer-postion .footer-slider .hiden-mobile {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .notification .notification-postion .close-btn img {
+    width: 22px;
+  }
+  .navbar {
+    top: 52px;
+    padding-top: 27px;
+    padding-bottom: 32px;
+  }
+  .navbar .nav-flex .nav-flex-one {
+    padding: 0;
+  }
+  .navbar .nav-flex .nav-flex-one img {
+    width: 117px;
+  }
+  .navbar .nav-flex .navbar-toggler {
+    padding: 0;
+  }
+  .navbar .nav-flex .navbar-toggler .navbar-toggler-icon {
+    height: 48px;
+    width: 48px;
+  }
+  .navbar .nav-flex .nav-flex-two .nav-link, .navbar .nav-flex .nav-flex-three .nav-link {
+    font-size: 34px;
+  }
+  .navbar .nav-flex .nav-flex-two .nav-contact p, .navbar .nav-flex .nav-flex-three .nav-contact p {
+    margin-bottom: 0;
+    font-size: 25px;
+  }
+  .navbar .nav-flex .nav-flex-three {
+    margin-top: 74px;
+  }
+  .navbar .nav-flex .navbar-flex .item-one {
+    margin-bottom: 59px;
+  }
+  .navbar .nav-flex .navbar-flex .glass .nav-input {
+    position: absolute;
+    right: 34px;
+    margin-bottom: 0px;
+  }
+  .navbar .nav-flex .navbar-flex .glass .nav-input button img {
+    width: 48px;
+  }
+  .navbar .nav-border {
+    top: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xxl {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .navbar {
+    padding-top: 27px;
+    padding-bottom: 29px;
+    height: 140px;
+    border-bottom: 1px solid #DADADA;
+  }
+  .navbar .nav-flex .nav-flex-one {
+    order: 2;
+  }
+  .navbar .nav-flex .nav-flex-one img {
+    width: 160px;
+  }
+  .navbar .nav-flex .nav-flex-three {
+    margin-top: 0;
+    order: 3;
+  }
+  .navbar .nav-flex .navbar-collapse {
+    flex-grow: 0;
+  }
+  .navbar .nav-flex .navbar-collapse .navbar-nav .nav-contact {
+    display: none;
+  }
+  .navbar .nav-flex .nav-flex-two .nav-link, .navbar .nav-flex .nav-flex-three .nav-link {
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-right: 32px;
+    font-size: 19px;
+  }
+  .navbar .nav-flex .navbar-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar .nav-flex .navbar-flex .item-one {
+    margin-bottom: 0px;
+    order: 1;
+  }
+  .navbar .nav-flex .navbar-flex .navbar-postion {
+    margin-right: 12px;
+    margin-bottom: 0px;
+  }
+  .navbar .nav-flex .navbar-flex .navbar-postion .nav-item {
+    margin-right: 20px;
+  }
+  .navbar .nav-flex .navbar-flex .navbar-postion .nav-item .nav-link {
+    margin-right: 0px;
+  }
+  .navbar .nav-flex .navbar-flex .glass {
+    order: 3;
+  }
+  .navbar .nav-flex .navbar-flex .glass .nav-input {
+    position: relative;
+    right: 0px;
+  }
+  .navbar .nav-flex .navbar-flex .glass .nav-input button img {
+    width: 32px;
+  }
+  .navbar .nav-flex .navbar-flex .glass .nav-input input {
+    display: none;
+  }
+  .navbar .nav-flex .navbar-flex .glass .nav-input.show-input input {
+    display: inline-block;
+  }
+  .navbar .nav-border {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl {
+    max-width: 1920px;
+    padding-left: 159px;
+    padding-right: 161px;
+  }
 }/*# sourceMappingURL=nav-footer.css.map */
