@@ -418,42 +418,38 @@ footer {
     position: relative;
     width: 100%;
     display: flex;
+    justify-content: space-between;
   }
   footer .container-xxl .footer-postion .footer-postion-text {
-    justify-content: space-between;
-    width: 65%;
+    justify-content: flex-start;
   }
   footer .container-xxl .footer-postion .footer-postion-text .footer-logo {
-    width: 45%;
+    width: 34%;
   }
   footer .container-xxl .footer-postion .footer-postion-text .footer-logo p {
     margin: 30px 0px 50px 0px;
-    width: 85%;
     font-size: 19px;
     color: #999999;
   }
   footer .container-xxl .footer-postion .footer-postion-text .footer-logo .foooter-postion-image {
     border: 0;
-    justify-content: left;
   }
   footer .container-xxl .footer-postion .footer-postion-text .footer-logo .foooter-postion-image img {
     margin-right: 19px;
     margin-bottom: 43px;
   }
   footer .container-xxl .footer-postion .footer-postion-text .footer-nav-postion {
-    justify-content: unset;
+    justify-content: space-around;
+    margin-left: 70px;
   }
   footer .container-xxl .footer-postion .footer-postion-text .footer-nav-postion .footer-nav-one {
-    margin-right: 30px;
+    margin-right: 0px;
   }
   footer .container-xxl .footer-postion .footer-postion-text .footer-nav-postion .footer-nav-one .footer-nav, footer .container-xxl .footer-postion .footer-postion-text .footer-nav-postion .footer-nav-two .footer-nav {
     margin-bottom: 20px;
   }
   footer .container-xxl .footer-postion .footer-postion-text .footer-nav-postion .footer-nav-one .contact, footer .container-xxl .footer-postion .footer-postion-text .footer-nav-postion .footer-nav-two .contact {
     font-size: 30px;
-  }
-  footer .container-xxl .footer-postion .footer-image {
-    width: 34%;
   }
   footer .container-xxl .footer-postion .footer-image .footer-image-insta {
     flex-direction: column;
@@ -466,20 +462,25 @@ footer {
   footer .container-xxl .footer-postion .footer-image .footer-image-insta a {
     font-size: 30px;
   }
+  footer .container-xxl .footer-postion .footer-image .footer-slider {
+    width: 520px;
+  }
   footer .container-xxl .footer-postion .footer-image .footer-slider .footer-slider-postion {
     margin-bottom: 84px;
-    margin-left: -10px;
     flex-wrap: wrap;
   }
   footer .container-xxl .footer-postion .footer-image .footer-slider .footer-slider-postion img {
     margin-right: 0px;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-top: 20px;
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 115px;
   }
   footer .container-xxl .footer-postion .footer-image .footer-slider .footer-slider-postion .hiden-m-t {
     display: inline;
+  }
+  footer .container-xxl .footer-postion .footer-image .footer-slider .footer-slider-postion .mar-0 {
+    margin-left: 0px;
   }
   footer .container-xxl .footer-border {
     position: absolute;
@@ -492,23 +493,5 @@ footer {
     max-width: 1920px;
     padding-left: 133px;
     padding-right: 134px;
-  }
-  footer .container-xxl .footer-postion {
-    justify-content: space-between;
-  }
-  footer .container-xxl .footer-postion .footer-postion-text .footer-logo {
-    width: 40%;
-  }
-  footer .container-xxl .footer-postion .footer-postion-text .footer-nav-postion .footer-nav-one {
-    margin-right: 80px;
-  }
-  footer .container-xxl .footer-postion .footer-image .footer-image-insta {
-    margin-left: 20px;
-  }
-  footer .container-xxl .footer-postion .footer-image .footer-slider .footer-slider-postion img {
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 115px;
-    height: 112px;
   }
 }/*# sourceMappingURL=nav-footer.css.map */
