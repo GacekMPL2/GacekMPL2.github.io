@@ -5,6 +5,9 @@
     font-family: "Red Hat Display", sans-serif;
 }
 
+p{
+    margin: 0;
+}
 button{
     background: none;
     border: none;
@@ -12,6 +15,7 @@ button{
 }
 
 footer{
+    z-index: 1;
     background-color: $footer-background;
 }
 
@@ -36,11 +40,33 @@ footer{
     }
 }
 .navbar{
+    z-index: 100;
     padding: 0;
     display: block;
 }
 
-@media (min-width: 380px) {
+.cookie-popup{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $cookie-bacground;
+    .container-xxl{
+        .cookie-postion{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+    }
+}
+
+.footer-padding-small {
+    padding-bottom: 39px !important;
+}
+
+.footer-padding-large {
+    padding-bottom: 32px !important;
+}
+@media (min-width: 375px) {
     .container-xxl{
         padding: 0px 20px 0px 20px; 
     }
@@ -52,7 +78,7 @@ footer{
         top: 62px;
         padding-top: 15px;
         padding-bottom: 12px; 
-        background-color: white;
+        background-color: $nav-background;
         .nav-flex{
             .navbar-toggler{
                 padding: 4px 6px;
@@ -132,7 +158,7 @@ footer{
     }
     footer{
         padding-top: 64px;
-        padding-bottom: 40px;
+        padding-bottom: 200px;
         .container-xxl{
             .footer-postion{
                 .footer-postion-text{
@@ -201,11 +227,11 @@ footer{
                     .footer-slider{
                         display: flex;
                         .footer-slider-postion{
-                            display: flex;
                             margin: 0 auto;
+                            display: flex;
                             img{
                                 display: block;
-                                margin-right: 24px;
+                                margin-right: 18px;
                                 width: 100px;
                                 height: 100px;
                                 object-fit: cover;
@@ -234,6 +260,22 @@ footer{
                 }
                 .footer-b-two{
                     margin-left: 10px;
+                }
+            }
+        }
+    }
+    .cookie-popup{
+        .container-xxl{
+            .cookie-postion{
+                padding: 32px 0px;
+                font-size: 16px;
+                color: #999999;
+                p{
+                    width: 80%;
+                }
+                .cookie-text{
+                    text-decoration: underline;
+                    font-weight: 1000;
                 }
             }
         }
@@ -311,6 +353,7 @@ footer{
     }
     footer{
         padding-top: 72px;
+        padding-bottom: 150px;
         .container-xxl{
             .footer-postion{
                 width: 100%;
@@ -389,12 +432,22 @@ footer{
                 }
                 .footer-border{
                     margin-top: 40px;
+                    margin-bottom: 32px;
                     .footer-b-one{
                         margin-right: 30px;
                     }
                     .footer-b-two{
                         margin-left: 30px;
                     }
+                }
+            }
+        }
+    }
+    .cookie-popup{
+        .container-xxl{
+            .cookie-postion{
+                p{
+                    width: 90%;
                 }
             }
         }
@@ -486,7 +539,7 @@ footer{
         }
     }
     footer{
-        padding-bottom: 125px;
+        padding-bottom: 160px;
         .container-xxl{
             .footer-postion{
                 position: relative;
@@ -575,5 +628,16 @@ footer{
         max-width: 1920px;
         padding-left: 133px;
         padding-right: 134px;
+    }
+    .cookie-popup{
+        .container-xxl{
+            .cookie-postion{
+                padding: 26px 0px;
+                font-size: 19px;
+                p{
+                    width: 100%;
+                }
+            }
+        }
     }
 }

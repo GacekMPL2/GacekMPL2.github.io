@@ -4,6 +4,21 @@ function closeNotification() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.close-popup').addEventListener('click', function() {
+        document.getElementById('cookiePopup').style.display = 'none';
+        const footer = document.querySelector('footer');
+        if (window.innerWidth <= 768) {
+            footer.classList.add('footer-padding-small');
+            footer.classList.remove('footer-padding-large');
+        } else {
+            footer.classList.add('footer-padding-large');
+            footer.classList.remove('footer-padding-small');
+        }
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
     initializeHoverInput();
 });
 
