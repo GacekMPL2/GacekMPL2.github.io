@@ -24,6 +24,7 @@ footer{
 }
 
 .notification {
+    z-index: 100;
     background-color: $notification-background; 
     color: $notification-text;
     .notification-postion{

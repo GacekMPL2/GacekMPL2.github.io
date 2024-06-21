@@ -1,1 +1,110 @@
-/*# sourceMappingURL=index.css.map */
+button {
+  text-transform: uppercase;
+  font-weight: 1000;
+}
+
+@keyframes text {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 30%;
+  }
+}
+@media (min-width: 375px) {
+  header .container-xxl .header-postion .header-left {
+    padding-top: 32px;
+    padding-bottom: 140px;
+    text-align: center;
+  }
+  header .container-xxl .header-postion .header-left h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 1000;
+  }
+  header .container-xxl .header-postion .header-left p {
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 43px;
+  }
+  header .container-xxl .header-postion .header-left .header-buy {
+    padding: 12px 35px;
+    margin-bottom: 43px;
+    background-color: #000;
+    color: white;
+  }
+  header .container-xxl .header-postion .header-left .header-buy img {
+    margin-left: 10px;
+  }
+  header .container-xxl .header-postion .header-left .elipse {
+    margin-bottom: 42px;
+  }
+  header .container-xxl .header-postion .header-right {
+    position: relative;
+    margin: 0px -20px;
+  }
+  header .container-xxl .header-postion .header-right .photo-header {
+    width: 100%;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .container-xxl .header-postion .header-right .product {
+    position: absolute;
+    margin: 0 auto;
+    top: -60%;
+    left: 0px;
+    right: 0px;
+    height: 292px;
+  }
+  header .header-banner {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  header .header-banner .rect-postion {
+    margin-top: 29px;
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    width: 100%;
+  }
+  header .header-banner .rect-postion .rect {
+    margin-left: 20px;
+    width: 100%;
+    background-color: rgb(227, 212, 197);
+  }
+  header .header-banner .marquee {
+    display: flex;
+    justify-content: right;
+    height: 58px;
+    font-size: 20px;
+    white-space: nowrap;
+    background-color: #000;
+    text-align: center;
+  }
+  header .header-banner .marquee a {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    animation: text 5s infinite linear;
+    position: relative;
+  }
+  header .header-banner .marquee a span .weight {
+    font-weight: 1000;
+  }
+  header .header-banner .marquee a .dot {
+    margin: 0px 15px;
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) {
+  header .container-xxl .header-postion {
+    display: flex;
+    margin-top: 28px;
+  }
+  header .container-xxl .header-postion .header-left, header .container-xxl .header-postion .header-right {
+    width: 50%;
+  }
+}/*# sourceMappingURL=index.css.map */

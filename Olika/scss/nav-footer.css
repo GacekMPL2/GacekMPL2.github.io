@@ -23,6 +23,7 @@ footer {
 }
 
 .notification {
+  z-index: 100;
   background-color: #E3D4C5;
   color: #000000;
 }
