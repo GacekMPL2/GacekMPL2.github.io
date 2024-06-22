@@ -2,9 +2,14 @@
 
 
 
+
 button{
     text-transform: uppercase;
     font-weight: 1000;
+}
+
+.hiden-mobile{
+    display: none;
 }
 
 @keyframes text{
@@ -74,7 +79,7 @@ button{
             .rect-postion{
                 margin-top: 29px;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: flex-start;
                 height: 30px;
                 width: 100%;
                 .rect{
@@ -119,20 +124,63 @@ button{
 
 
 @media (min-width: 768px) { 
+    .hiden-mobile{
+        display: inline;
+    }
     header{
         .container-xxl{
             .header-postion{
                 display: flex;
+                position: relative;
                 margin-top: 28px;
                 .header-left, .header-right{
+                    height: 683px;
                     width: 50%;
                 }
                 .header-left{
-
+                    margin-top: 3%;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    height: 641px;
+                    text-align: left;
+                    h1 ,p{
+                        width: 60%;
+                    }
+                    h1{
+                        font-size: 32px;
+                        margin-top: 13%;
+                        margin-bottom: 8%;
+                    }
+                    p{
+                        margin-bottom: 12%;
+                    }
+                    .header-buy{
+                        margin: 0;
+                    }
+                    .elipse{
+                        margin-top: 14%;
+                    }
                 }
                 .header-right{
-                    
+                    position: absolute;
+                    right: 0;
+                    .photo-header{
+                        height: 100%;
+                    }
+                    .product{
+                        top: 35%;
+                        left: -100%;
+                        
+                    }
                 }
+            }
+        }
+        .header-banner{
+            .rect-postion{
+                height: 42px;
+            }
+            .marquee{
+                height: 72px;
             }
         }
     }
@@ -144,10 +192,85 @@ button{
 
 
 @media (min-width: 1200px) { 
+    header{
+        .container-p-0{
+            padding-right: 0px;
+        }
+        .container-xxl{
+            .header-postion{
+                width: 100%;
+                .header-left{
+                    margin-top: 42px;
+                    h1{
+                        margin-top: 60px;
+                        margin-bottom: 40px;
+                        width: 80%;
+                        font-size: 48px;
+                    }
+                    p{
+                        margin-bottom: 60px;
+                        font-size: 19px;
+                    }
+                    .header-buy{
 
+                    }
+                    .elipse{
+                        margin-top: 60px;
+                    }
+                }
+               .header-right{
+                    position: relative;
+                    margin: 0;
+                    right: 0px;
+                    width: 52%;
+               } 
+            }
+        }
+        .header-banner{
+            .rect-postion{
+                height: 50px;
+                .rect{
+                    margin-left: 34px;
+                }
+            }
+            .marquee{
+                height: 90px;
+            }
+        }
+    }
 }
 
 
 @media (min-width: 1400px) {
-
+    header{
+        .container-xxl{
+            .header-postion{
+                .header-left,.header-right{
+                    height: 780px;
+                }
+                .header-left{
+                    h1{
+                        margin-bottom: 60px;
+                        width: 73%;
+                        font-size: 52px;
+                    }
+                    .elipse{
+                        margin-top: 110px;
+                    }
+                }
+                .header-right{
+                    width: 60%;
+                    .photo-header{
+                    }
+               } 
+            }
+        }
+        .header-banner{
+            .rect-postion{
+                .rect{
+                    margin-left: 133px;
+                }
+            }
+        }
+    }
 }
