@@ -22,6 +22,21 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeHoverInput();
 });
 
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const images = document.querySelectorAll('.no-favourite, .favourite');
+    images.forEach((image) => {
+        image.addEventListener('click', () => {
+            if (image.classList.contains('no-favourite')) {
+                image.classList.remove('no-favourite');
+                image.classList.add('favourite');
+            } else if (image.classList.contains('favourite')) {
+                image.classList.remove('favourite');
+                image.classList.add('no-favourite');
+            }
+        });
+    });
+});
 function initializeHoverInput() {
     const navInput = document.querySelector('.nav-input');
     const input = document.getElementById('search-input');

@@ -76,7 +76,7 @@ footer{
         padding-bottom: 15px;
     }
     .navbar{
-        top: 62px;
+        top: 60px;
         padding-top: 15px;
         padding-bottom: 12px; 
         background-color: $nav-background;
@@ -289,6 +289,9 @@ footer{
 
 
 @media (min-width: 768px) { 
+    .container-xxl{
+        padding: 0px 40px;
+    }
     .notification{
         .notification-postion{
             .close-btn{
@@ -299,7 +302,7 @@ footer{
         }
     }
     .navbar{
-        top:52px;
+        top:51px;
         padding-top: 27px;
         padding-bottom: 32px;
         .nav-flex{
@@ -627,8 +630,10 @@ footer{
 @media (min-width: 1400px) { 
     .container-xxl{
         max-width: 1920px;
-        padding-left: 133px;
-        padding-right: 134px;
+        // padding-left: 133px;
+        // padding-right: 134px;
+        padding-left: 151px;
+        padding-right: 161px;
     }
     .cookie-popup{
         .container-xxl{

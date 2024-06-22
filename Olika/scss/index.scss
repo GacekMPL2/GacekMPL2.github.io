@@ -4,12 +4,67 @@
 
 
 button{
+    padding: 0;
     text-transform: uppercase;
+    font-weight: 1000;
+}
+
+h1,h2,h3, .price{
     font-weight: 1000;
 }
 
 .hiden-mobile{
     display: none;
+}
+
+.bestseller{
+    .container-xxl{
+        .bestseller-slider{
+            display: flex;
+            overflow-x: scroll;
+        }
+    }
+}
+
+.no-favourite{
+    content: url(../img/heart.png);
+}
+
+.favourite{
+    content: url(../img/fav.png);
+}
+
+.no-favourite, .favourite{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 44px;
+    width: 44px;
+}
+
+
+.buy{
+    padding: 12px 0px;
+    margin-top: 28px;
+    width: 100%;
+    background-color: $bestseller-buy-button-background;
+    color: $bestseller-buy-buton-hover;
+    img{
+        margin-left: 10px;
+        filter: brightness(0);
+    }
+}
+
+.buy:hover{
+    padding: 12px 0px;
+    margin-top: 28px;
+    width: 100%;
+    background-color: $bestseller-buy-buton-hover;
+    color: $bestseller-text;
+    img{
+        margin-left: 10px;
+        filter: brightness(100);
+    }
 }
 
 @keyframes text{
@@ -33,7 +88,6 @@ button{
                     h1{
                         margin-bottom: 30px;
                         font-size: 32px;
-                        font-weight: 1000;
                     }
                     p{
                         font-size: 16px;
@@ -116,6 +170,113 @@ button{
             }
         }
     }
+    main{
+        h2{
+            font-size: 28px;
+        }
+        .bestseller{
+            margin-bottom: 71px;
+            .container-xxl{
+                .bestseller-text{
+                    margin-top: 64px;
+                    .bestseller-header{
+                        p{
+                            margin-top: 20px;
+                            margin-bottom: 40px;
+                        }
+                    }
+                    .bestseller-button{
+                        margin-bottom: 40px;
+                        height: 48px;
+                        width: 350px;
+                        background-color: $bestseller-button-background;
+                        color: $bestseller-text;
+                        img{
+                            margin-left: 10px;
+                        }
+                        .hiden-m-t{
+                            display: none;
+                        }
+                    }
+                }
+                .bestseller-slider{
+                    .best-slider{
+                        width: 258px;
+                        margin-right: 20px;
+                        .slider-postion{
+                            position: relative;
+                            width: 257px;
+                            height: 250px;
+                            .best-photo{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .best-text{
+                            margin-top: 28px;
+                            .slider-header{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 12px;
+                                .slider-star{
+                                    img{
+                                        margin-left: 5px;
+                                        width: 16px;
+                                        height: 16px;
+                                    }
+                                }
+                            }
+                            .slider-price{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-top: 12px;
+                                .price{
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .last-slider{
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+        .together{
+            position: relative;
+            .tog-background{
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+                filter: brightness(50%);
+            }
+            .tog-postion{
+                display: flex;
+                position: absolute;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                top: 25%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: white;
+                h2{
+                    margin-bottom: 20px;
+                }
+                p{
+                    padding: 0px 38px;
+                    margin-bottom: 40px;
+                }
+                .buy{
+                    width: 215px;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 576px) { 
@@ -184,6 +345,50 @@ button{
             }
         }
     }
+    main{
+        .bestseller{
+            .container-xxl{
+                .bestseller-text{
+                    display: flex;
+                    justify-content: space-between;
+                    .bestseller-header{
+
+                    }
+                    .bestseller-button{
+                        padding: 0;
+                        width: 300px;
+                    }
+                }
+                .bestseller-slider{
+                    .best-slider{
+                        width: 300px;
+                        .slider-postion{
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+        .together{
+            .tog-background{
+                height: 400px;
+            }
+            .tog-postion{
+                top: 23%;
+                h2{
+                    margin-bottom: 50px;
+                }
+                p{
+                    padding: 0px 38px;
+                    margin-bottom: 32px;
+                    width: 70%;
+                }
+                .buy{
+                    width: 215px;
+                }
+            }
+        }
+    }
  }
 
 @media (min-width: 992px) { 
@@ -198,6 +403,7 @@ button{
         }
         .container-xxl{
             .header-postion{
+                margin-top: 40px;
                 width: 100%;
                 .header-left{
                     margin-top: 42px;
@@ -238,6 +444,63 @@ button{
             }
         }
     }
+    main{
+        h2{
+            font-size: 52px;
+        }
+        p{
+            font-size: 19px;
+        }
+        .bestseller{
+            .container-xxl{
+                .bestseller-text{
+                    display: flex;
+                    justify-content: space-between;
+                    .bestseller-button{
+                        padding: 0;
+                        width: 450px;
+                        .hiden-m-t{
+                            display: inline;
+                        }
+                    }
+                }
+                .bestseller-slider{
+                    .best-slider{
+                        width: 385px;
+                        .slider-postion{
+                            width: 385px;
+                            height: 385px;
+                        }
+                        .best-text{
+                            margin-top: 40px;
+                            p{
+                                font-size: 19px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .together{
+            .tog-background{
+                height: 600px;
+            }
+            .tog-postion{
+                h2{
+                    margin-bottom: 50px;
+                    font-size: 45px;
+                }
+                p{
+                    padding: 0px 38px;
+                    margin-bottom: 64px;
+                    width: 50%;
+                }
+                .buy{
+                    width: 385px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -272,5 +535,16 @@ button{
                 }
             }
         }
+    }
+}
+@media (min-width: 1906px){
+    main{
+        .bestseller{ 
+            .container-xxl{ 
+                .bestseller-slider {
+                    overflow-x: unset;
+                }
+            }
+        }    
     }
 }
