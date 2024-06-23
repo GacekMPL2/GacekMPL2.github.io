@@ -17,13 +17,9 @@ h1,h2,h3, .price{
     display: none;
 }
 
-.bestseller{
-    .container-xxl{
-        .bestseller-slider{
-            display: flex;
-            overflow-x: scroll;
-        }
-    }
+.bestseller-slider, .news-slider{
+    display: flex;
+    overflow-x: scroll;
 }
 
 .no-favourite{
@@ -42,6 +38,20 @@ h1,h2,h3, .price{
     width: 44px;
 }
 
+
+.bestseller-button{
+    margin-bottom: 40px;
+    height: 48px;
+    width: 350px;
+    background-color: $bestseller-button-background;
+    color: $bestseller-text;
+    img{
+        margin-left: 10px;
+    }
+    .hiden-m-t{
+        display: none;
+    }
+}
 
 .buy{
     padding: 12px 0px;
@@ -67,6 +77,16 @@ h1,h2,h3, .price{
     }
 }
 
+.slider-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    .price{
+        font-size: 20px;
+    }
+}
+
 @keyframes text{
     0%{  
         left: 0%
@@ -80,7 +100,7 @@ h1,h2,h3, .price{
 @media (min-width:375px){
     header{
         .container-xxl{
-            .header-postion{
+            .header-position{
                 .header-left{
                     padding-top: 32px;
                     padding-bottom: 140px;
@@ -126,53 +146,93 @@ h1,h2,h3, .price{
                 }
             }
         }
-        .header-banner{
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            .rect-postion{
-                margin-top: 29px;
-                display: flex;
-                justify-content: flex-start;
-                height: 30px;
-                width: 100%;
-                .rect{
-                    margin-left: 20px;
-                    width: 100%;
-                    background-color: $rect-background;
-                }
-            }
-            .marquee{
-                display: flex;
-                justify-content: right;
-                height: 58px;
-                font-size: 20px;
-                white-space: nowrap;
-                background-color: $marquee-background;
-                text-align: center;
-                    a{
-                    display: flex;
-                    align-items: center;
-                    color: $marquee-text;
-                    text-decoration: none;
-                    animation: text 5s infinite linear;
-                    position:relative; 
-                    span{
-                        .weight{
-                            font-weight: 1000;
-                        }
-                    }
-                    .dot{
-                        margin: 0px 15px;
-                        font-size: 40px;
-                    }
-                }
-            }
-        }
     }
     main{
         h2{
             font-size: 28px;
+        }
+        .banner{
+            .header-banner{
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                .rect-position{
+                    display: flex;
+                    justify-content: flex-start;
+                    height: 30px;
+                    width: 100%;
+                    .rect{
+                        margin-left: 20px;
+                        width: 100%;
+                        background-color: $rect-background;
+                    }
+                }
+                .marquee{
+                    display: flex;
+                    justify-content: right;
+                    height: 58px;
+                    font-size: 20px;
+                    white-space: nowrap;
+                    background-color: $marquee-background;
+                    text-align: center;
+                        a{
+                        display: flex;
+                        align-items: center;
+                        color: $marquee-text;
+                        text-decoration: none;
+                        animation: text 5s infinite linear;
+                        position:relative; 
+                        span{
+                            .weight{
+                                font-weight: 1000;
+                            }
+                        }
+                        .dot{
+                            margin: 0px 15px;
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        .bestseller-slider, .news-slider{
+            .best-slider, .new-slider{
+                width: 258px;
+                margin-right: 20px;
+                .slider-position{
+                    position: relative;
+                    width: 257px;
+                    height: 250px;
+                    .best-photo{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .best-text, .new-text{
+                    margin-top: 28px;
+                    .slider-header{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 12px;
+                        .slider-star{
+                            img{
+                                margin-left: 5px;
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            .last-slider{
+                margin-right: 0px;
+            }
+        }
+        .news-slid-position{
+            .slider-position-flex{
+                display: flex;
+            }
         }
         .bestseller{
             margin-bottom: 71px;
@@ -185,62 +245,6 @@ h1,h2,h3, .price{
                             margin-bottom: 40px;
                         }
                     }
-                    .bestseller-button{
-                        margin-bottom: 40px;
-                        height: 48px;
-                        width: 350px;
-                        background-color: $bestseller-button-background;
-                        color: $bestseller-text;
-                        img{
-                            margin-left: 10px;
-                        }
-                        .hiden-m-t{
-                            display: none;
-                        }
-                    }
-                }
-                .bestseller-slider{
-                    .best-slider{
-                        width: 258px;
-                        margin-right: 20px;
-                        .slider-postion{
-                            position: relative;
-                            width: 257px;
-                            height: 250px;
-                            .best-photo{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        .best-text{
-                            margin-top: 28px;
-                            .slider-header{
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                margin-bottom: 12px;
-                                .slider-star{
-                                    img{
-                                        margin-left: 5px;
-                                        width: 16px;
-                                        height: 16px;
-                                    }
-                                }
-                            }
-                            .slider-price{
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                margin-top: 12px;
-                                .price{
-                                    font-size: 20px;
-                                }
-                            }
-                        }
-                    }
-                    .last-slider{
-                        margin-right: 0px;
-                    }
                 }
             }
         }
@@ -252,7 +256,7 @@ h1,h2,h3, .price{
                 object-fit: cover;
                 filter: brightness(50%);
             }
-            .tog-postion{
+            .tog-position{
                 display: flex;
                 position: absolute;
                 margin: 0 auto;
@@ -276,6 +280,52 @@ h1,h2,h3, .price{
                 }
             }
         }
+        .news{
+            padding-bottom: 71px;
+            .container-xxl{
+                .news-text{
+                    display: block;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 64px;
+                    .news-header-text{
+                        h2{
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            margin-bottom: 40px; 
+                         }
+                    }
+                }
+                .news-special{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 40px;
+                    .news-special-position{
+                        position: relative;
+                        .special-photo{
+                            margin-bottom: 20px;
+                            height: 500px;
+                        }
+                        .file{
+                            position: absolute;
+                            bottom:0;
+                            left: -30px;
+                            height: 300px;
+                        }
+                    }
+                    .news-special-text{
+                        .slider-header{
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -290,7 +340,7 @@ h1,h2,h3, .price{
     }
     header{
         .container-xxl{
-            .header-postion{
+            .header-position{
                 display: flex;
                 position: relative;
                 margin-top: 28px;
@@ -336,35 +386,46 @@ h1,h2,h3, .price{
                 }
             }
         }
-        .header-banner{
-            .rect-postion{
-                height: 42px;
-            }
-            .marquee{
-                height: 72px;
-            }
-        }
     }
     main{
+        .banner{
+            .header-banner{
+                .rect-position{
+                    height: 42px;
+                }
+                .marquee{
+                    height: 72px;
+                }
+            }
+        }
+        .bestseller-slider, .news-slider{
+            .best-slider, .new-slider{
+                width: 300px;
+                .slider-position{
+                    width: 300px;
+                }
+            }
+            .right-slider{
+                margin-right: 0px;
+            }
+            
+        }
+        .news-slid-position{
+            .slider-position-flex{
+                display: block;
+                .position-top{
+                    margin-bottom: 40px;
+                }
+            }
+        }
         .bestseller{
             .container-xxl{
                 .bestseller-text{
                     display: flex;
                     justify-content: space-between;
-                    .bestseller-header{
-
-                    }
                     .bestseller-button{
                         padding: 0;
                         width: 300px;
-                    }
-                }
-                .bestseller-slider{
-                    .best-slider{
-                        width: 300px;
-                        .slider-postion{
-                            width: 300px;
-                        }
                     }
                 }
             }
@@ -373,7 +434,7 @@ h1,h2,h3, .price{
             .tog-background{
                 height: 400px;
             }
-            .tog-postion{
+            .tog-position{
                 top: 23%;
                 h2{
                     margin-bottom: 50px;
@@ -385,6 +446,63 @@ h1,h2,h3, .price{
                 }
                 .buy{
                     width: 215px;
+                }
+            }
+        }
+        .news{
+            .container-xxl{
+                .news-text{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .bestseller-button{
+                        width: 300px;
+                    }
+                }
+                .news-slid-position{
+                    display: flex;
+                    .news-special{
+                        display: block;
+                        position: relative;
+                        margin-right: 20px;
+                        width: 140%;
+                        max-width: 623px;
+                        .news-special-position{
+                            width: 100%;
+                            .special-photo{
+                                height:1034px;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                            .file{
+                                height: 460px;
+                                bottom: 30px;
+                                left: -100px;
+                                z-index: 2;
+                            }
+                        }
+                        .news-special-text{
+                            position: absolute;
+                            bottom: 60px;
+                            right: 20px;
+                            padding-top: 20px;
+                            padding-right: 20px;
+                            padding-bottom: 20px;
+                            background-color: white;
+                            .slider-price{
+                                .buy{
+                                    width: 100%;
+                                    max-width: 215px;
+                                }
+                            }
+                            .slider-header, .slider-price, .special-text{
+                                margin-left: 100px;
+                            }
+                            .hiden-t-d{
+                                display: none;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -402,7 +520,7 @@ h1,h2,h3, .price{
             padding-right: 0px;
         }
         .container-xxl{
-            .header-postion{
+            .header-position{
                 margin-top: 40px;
                 width: 100%;
                 .header-left{
@@ -433,7 +551,7 @@ h1,h2,h3, .price{
             }
         }
         .header-banner{
-            .rect-postion{
+            .rect-position{
                 height: 50px;
                 .rect{
                     margin-left: 34px;
@@ -451,6 +569,23 @@ h1,h2,h3, .price{
         p{
             font-size: 19px;
         }
+
+        .bestseller-slider, .news-slider{
+            .best-slider, .new-slider{
+                width: 385px;
+                .slider-position{
+                    width: 385px;
+                    height: 385px;
+                }
+                .best-text, .new-text{
+                    margin-top: 40px;
+                    p{
+                        font-size: 19px;
+                    }
+                }
+            }
+        }        
+
         .bestseller{
             .container-xxl{
                 .bestseller-text{
@@ -464,28 +599,13 @@ h1,h2,h3, .price{
                         }
                     }
                 }
-                .bestseller-slider{
-                    .best-slider{
-                        width: 385px;
-                        .slider-postion{
-                            width: 385px;
-                            height: 385px;
-                        }
-                        .best-text{
-                            margin-top: 40px;
-                            p{
-                                font-size: 19px;
-                            }
-                        }
-                    }
-                }
             }
         }
         .together{
             .tog-background{
                 height: 600px;
             }
-            .tog-postion{
+            .tog-position{
                 h2{
                     margin-bottom: 50px;
                     font-size: 45px;
@@ -500,6 +620,24 @@ h1,h2,h3, .price{
                 }
             }
         }
+        .news{
+            .container-xxl{
+                .news-slid-position{
+                    .news-special{
+                        .news-special-position{
+                            .special-photo{
+                                height: 1348px;
+                            }
+                        }
+                        .news-special-text{
+                            width: 550px;
+                            .slider-header, .slider-price, .special-text{
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -507,7 +645,7 @@ h1,h2,h3, .price{
 @media (min-width: 1400px) {
     header{
         .container-xxl{
-            .header-postion{
+            .header-position{
                 .header-left,.header-right{
                     height: 780px;
                 }
@@ -529,9 +667,34 @@ h1,h2,h3, .price{
             }
         }
         .header-banner{
-            .rect-postion{
+            .rect-position{
                 .rect{
                     margin-left: 133px;
+                }
+            }
+        }
+    }
+    main{
+        .news{
+            .container-xxl{
+                .news-slid-position{
+                    .news-special{
+                        width: 790px;
+                        max-width: 790px;
+                        .news-special-position{
+                            width: 790px;
+                            .special-photo{
+                                width: 790px;
+                            }
+                            .file{
+                                height: 550px;
+                            }
+                        }
+                        .news-special-text{
+                            right: 44px;
+                            width: 658px;
+                        }
+                    }
                 }
             }
         }
@@ -539,12 +702,8 @@ h1,h2,h3, .price{
 }
 @media (min-width: 1906px){
     main{
-        .bestseller{ 
-            .container-xxl{ 
-                .bestseller-slider {
-                    overflow-x: unset;
-                }
-            }
-        }    
+        .bestseller-slider, .news-slider {
+            overflow-x: unset;
+        }
     }
 }

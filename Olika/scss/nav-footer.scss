@@ -27,7 +27,7 @@ footer{
     z-index: 100;
     background-color: $notification-background; 
     color: $notification-text;
-    .notification-postion{
+    .notification-position{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -52,7 +52,7 @@ footer{
     width: 100%;
     background-color: $cookie-bacground;
     .container-xxl{
-        .cookie-postion{
+        .cookie-position{
             display: flex;
             justify-content: space-between;
             align-items: start;
@@ -124,7 +124,7 @@ footer{
                 .item-one{
                     order: 3;
                 }
-                .navbar-postion{
+                .navbar-position{
                     display: flex;
                     margin-bottom: 32px;
                     order: 2;
@@ -161,8 +161,8 @@ footer{
         padding-top: 64px;
         padding-bottom: 200px;
         .container-xxl{
-            .footer-postion{
-                .footer-postion-text{
+            .footer-position{
+                .footer-position-text{
                     width: 100%;
                     .footer-logo{  
                         .logo{
@@ -173,7 +173,7 @@ footer{
                             margin:32px 0px;
                             color: #999999;
                         }
-                        .foooter-postion-image{
+                        .foooter-position-image{
                             display: flex;
                             justify-content: center; 
                             border-bottom: 1px solid white;
@@ -183,7 +183,7 @@ footer{
                             }
                         }
                     }
-                    .footer-nav-postion{
+                    .footer-nav-position{
                         display: flex;
                         justify-content: space-between;
                         margin-top: 32px;
@@ -227,7 +227,7 @@ footer{
                     }
                     .footer-slider{
                         display: flex;
-                        .footer-slider-postion{
+                        .footer-slider-position{
                             margin: 0 auto;
                             display: flex;
                             img{
@@ -267,7 +267,7 @@ footer{
     }
     .cookie-popup{
         .container-xxl{
-            .cookie-postion{
+            .cookie-position{
                 padding: 32px 0px;
                 font-size: 16px;
                 color: #999999;
@@ -293,7 +293,7 @@ footer{
         padding: 0px 40px;
     }
     .notification{
-        .notification-postion{
+        .notification-position{
             .close-btn{
                 img{
                     width: 22px;
@@ -359,9 +359,9 @@ footer{
         padding-top: 72px;
         padding-bottom: 150px;
         .container-xxl{
-            .footer-postion{
+            .footer-position{
                 width: 100%;
-                .footer-postion-text{
+                .footer-position-text{
                     display: flex;
                     justify-content: space-between;
                     .footer-logo{  
@@ -373,7 +373,7 @@ footer{
                             margin:32px 0px;
                             color: #999999;
                         }
-                        .foooter-postion-image{
+                        .foooter-position-image{
                             border: 0;
                             justify-content: left;
                             img{
@@ -382,7 +382,7 @@ footer{
                             }
                         }
                     }
-                    .footer-nav-postion{
+                    .footer-nav-position{
                         margin-top: 0px;
                         margin-bottom: 0px;
                         width: 50%;
@@ -421,7 +421,7 @@ footer{
                         }
                     }
                     .footer-slider{
-                        .footer-slider-postion{
+                        .footer-slider-position{
                             overflow: hidden;
                             img{
                                 margin-right: 20.4px;
@@ -449,7 +449,7 @@ footer{
     }
     .cookie-popup{
         .container-xxl{
-            .cookie-postion{
+            .cookie-position{
                 p{
                     width: 90%;
                 }
@@ -506,7 +506,7 @@ footer{
                     margin-bottom: 0px;
                     order: 1;
                 }
-                .navbar-postion{
+                .navbar-position{
                     margin-right: 12px;
                     margin-bottom: 0px;
                     .nav-item{
@@ -545,12 +545,12 @@ footer{
     footer{
         padding-bottom: 160px;
         .container-xxl{
-            .footer-postion{
+            .footer-position{
                 position: relative;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
-                .footer-postion-text{
+                .footer-position-text{
                     justify-content: flex-start;
                     .footer-logo{
                         width: 34%;
@@ -559,7 +559,7 @@ footer{
                             font-size: 19px;
                             color: #999999;
                         }
-                        .foooter-postion-image{
+                        .foooter-position-image{
                             border: 0;
                             img{
                                 margin-right: 19px;
@@ -567,7 +567,7 @@ footer{
                             }
                         }
                     }
-                    .footer-nav-postion{
+                    .footer-nav-position{
                         justify-content:space-around;
                         margin-left: 70px;
                         .footer-nav-one{
@@ -597,7 +597,7 @@ footer{
                     }
                     .footer-slider{
                         width: 520px;
-                        .footer-slider-postion{
+                        .footer-slider-position{
                             margin-bottom: 84px;
                             flex-wrap: wrap;
                             img{
@@ -637,7 +637,7 @@ footer{
     }
     .cookie-popup{
         .container-xxl{
-            .cookie-postion{
+            .cookie-position{
                 padding: 26px 0px;
                 font-size: 19px;
                 p{
