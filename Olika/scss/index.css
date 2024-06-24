@@ -12,7 +12,7 @@ h1, h2, h3, .price {
   display: none;
 }
 
-.bestseller-slider, .news-slider, .beauty-slider {
+.bestseller-slider, .news-slider, .beauty-slider, .blog-small-slider, .blog-s-position {
   display: flex;
   overflow-x: scroll;
 }
@@ -33,17 +33,17 @@ h1, h2, h3, .price {
   width: 44px;
 }
 
-.bestseller-button, .send {
+.bestseller-button, .send, .blog-buton {
   margin-bottom: 40px;
   height: 48px;
   width: 350px;
   background-color: #000;
   color: #fff;
 }
-.bestseller-button img, .send img {
+.bestseller-button img, .send img, .blog-buton img {
   margin-left: 10px;
 }
-.bestseller-button .hiden-m-t, .send .hiden-m-t {
+.bestseller-button .hiden-m-t, .send .hiden-m-t, .blog-buton .hiden-m-t {
   display: none;
 }
 
@@ -83,6 +83,20 @@ h1, h2, h3, .price {
 
 .newseletter {
   background-color: #E3D4C5;
+}
+
+.blog-time {
+  display: flex;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+.blog-time .time {
+  margin-left: 10px;
+}
+
+.blog-s-photo {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @keyframes text {
@@ -141,6 +155,9 @@ h1, h2, h3, .price {
   main h2 {
     font-size: 28px;
   }
+  main h3 {
+    font-size: 20px;
+  }
   main .banner .header-banner {
     display: flex;
     flex-direction: column;
@@ -181,34 +198,34 @@ h1, h2, h3, .price {
     margin: 0px 15px;
     font-size: 40px;
   }
-  main .bestseller-slider .best-slider, main .bestseller-slider .new-slider, main .news-slider .best-slider, main .news-slider .new-slider, main .beauty-slider .best-slider, main .beauty-slider .new-slider {
+  main .bestseller-slider .best-slider, main .bestseller-slider .new-slider, main .bestseller-slider .blog-slider-small, main .news-slider .best-slider, main .news-slider .new-slider, main .news-slider .blog-slider-small, main .beauty-slider .best-slider, main .beauty-slider .new-slider, main .beauty-slider .blog-slider-small, main .blog-small-slider .best-slider, main .blog-small-slider .new-slider, main .blog-small-slider .blog-slider-small {
     width: 258px;
     margin-right: 20px;
   }
-  main .bestseller-slider .best-slider .slider-position, main .bestseller-slider .new-slider .slider-position, main .news-slider .best-slider .slider-position, main .news-slider .new-slider .slider-position, main .beauty-slider .best-slider .slider-position, main .beauty-slider .new-slider .slider-position {
+  main .bestseller-slider .best-slider .slider-position, main .bestseller-slider .best-slider .blog-s-photo, main .bestseller-slider .new-slider .slider-position, main .bestseller-slider .new-slider .blog-s-photo, main .bestseller-slider .blog-slider-small .slider-position, main .bestseller-slider .blog-slider-small .blog-s-photo, main .news-slider .best-slider .slider-position, main .news-slider .best-slider .blog-s-photo, main .news-slider .new-slider .slider-position, main .news-slider .new-slider .blog-s-photo, main .news-slider .blog-slider-small .slider-position, main .news-slider .blog-slider-small .blog-s-photo, main .beauty-slider .best-slider .slider-position, main .beauty-slider .best-slider .blog-s-photo, main .beauty-slider .new-slider .slider-position, main .beauty-slider .new-slider .blog-s-photo, main .beauty-slider .blog-slider-small .slider-position, main .beauty-slider .blog-slider-small .blog-s-photo, main .blog-small-slider .best-slider .slider-position, main .blog-small-slider .best-slider .blog-s-photo, main .blog-small-slider .new-slider .slider-position, main .blog-small-slider .new-slider .blog-s-photo, main .blog-small-slider .blog-slider-small .slider-position, main .blog-small-slider .blog-slider-small .blog-s-photo {
     position: relative;
     width: 257px;
     height: 250px;
   }
-  main .bestseller-slider .best-slider .slider-position .best-photo, main .bestseller-slider .new-slider .slider-position .best-photo, main .news-slider .best-slider .slider-position .best-photo, main .news-slider .new-slider .slider-position .best-photo, main .beauty-slider .best-slider .slider-position .best-photo, main .beauty-slider .new-slider .slider-position .best-photo {
+  main .bestseller-slider .best-slider .slider-position .best-photo, main .bestseller-slider .best-slider .blog-s-photo .best-photo, main .bestseller-slider .new-slider .slider-position .best-photo, main .bestseller-slider .new-slider .blog-s-photo .best-photo, main .bestseller-slider .blog-slider-small .slider-position .best-photo, main .bestseller-slider .blog-slider-small .blog-s-photo .best-photo, main .news-slider .best-slider .slider-position .best-photo, main .news-slider .best-slider .blog-s-photo .best-photo, main .news-slider .new-slider .slider-position .best-photo, main .news-slider .new-slider .blog-s-photo .best-photo, main .news-slider .blog-slider-small .slider-position .best-photo, main .news-slider .blog-slider-small .blog-s-photo .best-photo, main .beauty-slider .best-slider .slider-position .best-photo, main .beauty-slider .best-slider .blog-s-photo .best-photo, main .beauty-slider .new-slider .slider-position .best-photo, main .beauty-slider .new-slider .blog-s-photo .best-photo, main .beauty-slider .blog-slider-small .slider-position .best-photo, main .beauty-slider .blog-slider-small .blog-s-photo .best-photo, main .blog-small-slider .best-slider .slider-position .best-photo, main .blog-small-slider .best-slider .blog-s-photo .best-photo, main .blog-small-slider .new-slider .slider-position .best-photo, main .blog-small-slider .new-slider .blog-s-photo .best-photo, main .blog-small-slider .blog-slider-small .slider-position .best-photo, main .blog-small-slider .blog-slider-small .blog-s-photo .best-photo {
     width: 100%;
     height: 100%;
   }
-  main .bestseller-slider .best-slider .best-text, main .bestseller-slider .best-slider .new-text, main .bestseller-slider .new-slider .best-text, main .bestseller-slider .new-slider .new-text, main .news-slider .best-slider .best-text, main .news-slider .best-slider .new-text, main .news-slider .new-slider .best-text, main .news-slider .new-slider .new-text, main .beauty-slider .best-slider .best-text, main .beauty-slider .best-slider .new-text, main .beauty-slider .new-slider .best-text, main .beauty-slider .new-slider .new-text {
+  main .bestseller-slider .best-slider .best-text, main .bestseller-slider .best-slider .new-text, main .bestseller-slider .new-slider .best-text, main .bestseller-slider .new-slider .new-text, main .bestseller-slider .blog-slider-small .best-text, main .bestseller-slider .blog-slider-small .new-text, main .news-slider .best-slider .best-text, main .news-slider .best-slider .new-text, main .news-slider .new-slider .best-text, main .news-slider .new-slider .new-text, main .news-slider .blog-slider-small .best-text, main .news-slider .blog-slider-small .new-text, main .beauty-slider .best-slider .best-text, main .beauty-slider .best-slider .new-text, main .beauty-slider .new-slider .best-text, main .beauty-slider .new-slider .new-text, main .beauty-slider .blog-slider-small .best-text, main .beauty-slider .blog-slider-small .new-text, main .blog-small-slider .best-slider .best-text, main .blog-small-slider .best-slider .new-text, main .blog-small-slider .new-slider .best-text, main .blog-small-slider .new-slider .new-text, main .blog-small-slider .blog-slider-small .best-text, main .blog-small-slider .blog-slider-small .new-text {
     margin-top: 28px;
   }
-  main .bestseller-slider .best-slider .best-text .slider-header, main .bestseller-slider .best-slider .new-text .slider-header, main .bestseller-slider .new-slider .best-text .slider-header, main .bestseller-slider .new-slider .new-text .slider-header, main .news-slider .best-slider .best-text .slider-header, main .news-slider .best-slider .new-text .slider-header, main .news-slider .new-slider .best-text .slider-header, main .news-slider .new-slider .new-text .slider-header, main .beauty-slider .best-slider .best-text .slider-header, main .beauty-slider .best-slider .new-text .slider-header, main .beauty-slider .new-slider .best-text .slider-header, main .beauty-slider .new-slider .new-text .slider-header {
+  main .bestseller-slider .best-slider .best-text .slider-header, main .bestseller-slider .best-slider .new-text .slider-header, main .bestseller-slider .new-slider .best-text .slider-header, main .bestseller-slider .new-slider .new-text .slider-header, main .bestseller-slider .blog-slider-small .best-text .slider-header, main .bestseller-slider .blog-slider-small .new-text .slider-header, main .news-slider .best-slider .best-text .slider-header, main .news-slider .best-slider .new-text .slider-header, main .news-slider .new-slider .best-text .slider-header, main .news-slider .new-slider .new-text .slider-header, main .news-slider .blog-slider-small .best-text .slider-header, main .news-slider .blog-slider-small .new-text .slider-header, main .beauty-slider .best-slider .best-text .slider-header, main .beauty-slider .best-slider .new-text .slider-header, main .beauty-slider .new-slider .best-text .slider-header, main .beauty-slider .new-slider .new-text .slider-header, main .beauty-slider .blog-slider-small .best-text .slider-header, main .beauty-slider .blog-slider-small .new-text .slider-header, main .blog-small-slider .best-slider .best-text .slider-header, main .blog-small-slider .best-slider .new-text .slider-header, main .blog-small-slider .new-slider .best-text .slider-header, main .blog-small-slider .new-slider .new-text .slider-header, main .blog-small-slider .blog-slider-small .best-text .slider-header, main .blog-small-slider .blog-slider-small .new-text .slider-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
   }
-  main .bestseller-slider .best-slider .best-text .slider-header .slider-star img, main .bestseller-slider .best-slider .new-text .slider-header .slider-star img, main .bestseller-slider .new-slider .best-text .slider-header .slider-star img, main .bestseller-slider .new-slider .new-text .slider-header .slider-star img, main .news-slider .best-slider .best-text .slider-header .slider-star img, main .news-slider .best-slider .new-text .slider-header .slider-star img, main .news-slider .new-slider .best-text .slider-header .slider-star img, main .news-slider .new-slider .new-text .slider-header .slider-star img, main .beauty-slider .best-slider .best-text .slider-header .slider-star img, main .beauty-slider .best-slider .new-text .slider-header .slider-star img, main .beauty-slider .new-slider .best-text .slider-header .slider-star img, main .beauty-slider .new-slider .new-text .slider-header .slider-star img {
+  main .bestseller-slider .best-slider .best-text .slider-header .slider-star img, main .bestseller-slider .best-slider .new-text .slider-header .slider-star img, main .bestseller-slider .new-slider .best-text .slider-header .slider-star img, main .bestseller-slider .new-slider .new-text .slider-header .slider-star img, main .bestseller-slider .blog-slider-small .best-text .slider-header .slider-star img, main .bestseller-slider .blog-slider-small .new-text .slider-header .slider-star img, main .news-slider .best-slider .best-text .slider-header .slider-star img, main .news-slider .best-slider .new-text .slider-header .slider-star img, main .news-slider .new-slider .best-text .slider-header .slider-star img, main .news-slider .new-slider .new-text .slider-header .slider-star img, main .news-slider .blog-slider-small .best-text .slider-header .slider-star img, main .news-slider .blog-slider-small .new-text .slider-header .slider-star img, main .beauty-slider .best-slider .best-text .slider-header .slider-star img, main .beauty-slider .best-slider .new-text .slider-header .slider-star img, main .beauty-slider .new-slider .best-text .slider-header .slider-star img, main .beauty-slider .new-slider .new-text .slider-header .slider-star img, main .beauty-slider .blog-slider-small .best-text .slider-header .slider-star img, main .beauty-slider .blog-slider-small .new-text .slider-header .slider-star img, main .blog-small-slider .best-slider .best-text .slider-header .slider-star img, main .blog-small-slider .best-slider .new-text .slider-header .slider-star img, main .blog-small-slider .new-slider .best-text .slider-header .slider-star img, main .blog-small-slider .new-slider .new-text .slider-header .slider-star img, main .blog-small-slider .blog-slider-small .best-text .slider-header .slider-star img, main .blog-small-slider .blog-slider-small .new-text .slider-header .slider-star img {
     margin-left: 5px;
     width: 16px;
     height: 16px;
   }
-  main .bestseller-slider .last-slider, main .news-slider .last-slider, main .beauty-slider .last-slider {
+  main .bestseller-slider .last-slider, main .news-slider .last-slider, main .beauty-slider .last-slider, main .blog-small-slider .last-slider {
     margin-right: 0px;
   }
   main .news-slid-position .slider-position-flex {
@@ -394,6 +411,45 @@ h1, h2, h3, .price {
     background-color: #000;
     color: #fff;
   }
+  main .blog .container-xxl .blog-position .blog-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  main .blog .container-xxl .blog-position .blog-text .blog-header h2 {
+    margin-top: 64px;
+    margin-bottom: 32px;
+  }
+  main .blog .container-xxl .blog-position .blog-text .blog-header p {
+    width: 350px;
+    margin-bottom: 40px;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-big-slider .blog-slider-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-big-slider .blog-slider-b .blog-b-photo {
+    width: 350px;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-big-slider .blog-slider-b h3 {
+    margin-bottom: 12px;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-big-slider .blog-slider-b h3, main .blog .container-xxl .blog-position .blog-slider .blog-big-slider .blog-slider-b p, main .blog .container-xxl .blog-position .blog-slider .blog-big-slider .blog-slider-b .blog-time {
+    width: 347px;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-small-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-small-slider .blog-s-position .blog-slider-small h3 {
+    margin-bottom: 12px;
+  }
 }
 @media (min-width: 768px) {
   .hiden-mobile {
@@ -453,10 +509,10 @@ h1, h2, h3, .price {
   main .banner .header-banner .marquee {
     height: 72px;
   }
-  main .bestseller-slider .best-slider, main .bestseller-slider .new-slider, main .news-slider .best-slider, main .news-slider .new-slider, main .beauty-slider .best-slider, main .beauty-slider .new-slider {
+  main .bestseller-slider .best-slider, main .bestseller-slider .new-slider, main .bestseller-slider .blog-slider, main .news-slider .best-slider, main .news-slider .new-slider, main .news-slider .blog-slider, main .beauty-slider .best-slider, main .beauty-slider .new-slider, main .beauty-slider .blog-slider {
     width: 300px;
   }
-  main .bestseller-slider .best-slider .slider-position, main .bestseller-slider .new-slider .slider-position, main .news-slider .best-slider .slider-position, main .news-slider .new-slider .slider-position, main .beauty-slider .best-slider .slider-position, main .beauty-slider .new-slider .slider-position {
+  main .bestseller-slider .best-slider .slider-position, main .bestseller-slider .new-slider .slider-position, main .bestseller-slider .blog-slider .slider-position, main .news-slider .best-slider .slider-position, main .news-slider .new-slider .slider-position, main .news-slider .blog-slider .slider-position, main .beauty-slider .best-slider .slider-position, main .beauty-slider .new-slider .slider-position, main .beauty-slider .blog-slider .slider-position {
     width: 300px;
   }
   main .bestseller-slider .right-slider, main .news-slider .right-slider, main .beauty-slider .right-slider {
@@ -621,6 +677,49 @@ h1, h2, h3, .price {
   }
   main .beauty .container-xxl .beauty-postion .beauty-text .beauty-elipse {
     margin-bottom: 0px;
+  }
+  main .blog .container-xxl .blog-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .blog .container-xxl .blog-position .blog-text {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  main .blog .container-xxl .blog-position .blog-slider {
+    display: flex;
+    overflow-x: scroll;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-big-slider {
+    margin-left: 20px;
+    order: 2;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-big-slider .blog-slider-b {
+    width: 462px;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-big-slider .blog-slider-b .blog-b-photo {
+    width: 100%;
+    height: 400px;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-big-slider .blog-slider-b h3, main .blog .container-xxl .blog-position .blog-slider .blog-big-slider .blog-slider-b p, main .blog .container-xxl .blog-position .blog-slider .blog-big-slider .blog-slider-b .blog-time {
+    width: 100%;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-small-slider {
+    align-items: start;
+    overflow-x: hidden;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-small-slider .blog-s-position {
+    overflow-x: hidden;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-small-slider .blog-s-position .blog-slider-small {
+    overflow-x: hidden;
+    width: 221px;
+  }
+  main .blog .container-xxl .blog-position .blog-slider .blog-small-slider .blog-s-position .blog-slider-small .blog-s-photo {
+    width: 221px;
   }
 }
 @media (min-width: 1200px) {
