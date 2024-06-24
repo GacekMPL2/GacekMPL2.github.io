@@ -9,6 +9,7 @@ button{
     font-weight: 1000;
 }
 
+
 h1,h2,h3, .price{
     font-weight: 1000;
 }
@@ -17,7 +18,7 @@ h1,h2,h3, .price{
     display: none;
 }
 
-.bestseller-slider, .news-slider{
+.bestseller-slider, .news-slider, .beauty-slider{
     display: flex;
     overflow-x: scroll;
 }
@@ -39,7 +40,7 @@ h1,h2,h3, .price{
 }
 
 
-.bestseller-button{
+.bestseller-button, .send{
     margin-bottom: 40px;
     height: 48px;
     width: 350px;
@@ -86,6 +87,11 @@ h1,h2,h3, .price{
         font-size: 20px;
     }
 }
+
+.newseletter{
+    background-color: $newseletter-background;
+}
+
 
 @keyframes text{
     0%{  
@@ -195,7 +201,7 @@ h1,h2,h3, .price{
                 }
             }
         }
-        .bestseller-slider, .news-slider{
+        .bestseller-slider, .news-slider, .beauty-slider{
             .best-slider, .new-slider{
                 width: 258px;
                 margin-right: 20px;
@@ -284,7 +290,7 @@ h1,h2,h3, .price{
             padding-bottom: 71px;
             .container-xxl{
                 .news-text{
-                    display: block;
+                    display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
@@ -326,6 +332,111 @@ h1,h2,h3, .price{
                 }
             }
         }
+        .newseletter{
+            .container-xxl{
+                .newseletter-position{
+                    padding-top: 64px;
+                    .newseletter-text{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        h2{
+                            margin-bottom: 24px;
+                        }
+                        p{
+                            margin-bottom: 34px;
+                            font-weight: 800;
+                            font-size: 20px;
+                        }
+                        form{
+                            display: flex;
+                            flex-direction: column;
+                            .form-position{
+                                display: flex;
+                                flex-direction: column;   
+                                input[type="email"]{
+                                    border: 0;
+                                    padding: 12px 111px;
+                                    width: 350px;
+                                }
+                            }
+                            .consent-container{
+                                display: flex;
+                                align-items: flex-start;
+                                width: 350px;
+                                margin-bottom: 76px;
+                                input[type="checkbox"] {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .newseletter-photo{
+                        position: relative;
+                        margin-left: -20px;
+                        margin-right: -20px;
+                        margin-bottom: 12px;
+                        .newseletter-image{
+                            height: 400px;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                        .logo-white{
+                            position: absolute;
+                            width: 172px;
+                            bottom: 20px;
+                            right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .beauty{
+            background-color: $beauty-backgorund;
+            .container-xxl{
+                .beauty-postion{
+                    padding-top: 64px;
+                    padding-bottom: 64px;
+                    .beauty-text{
+                        z-index: 0;
+                        position: relative;
+                        .beauty-vector{
+                            z-index: 2;
+                        }
+                        h2{
+                            z-index: 1;
+                            margin-top: 64px;
+                            margin-bottom: 30px;
+                        }
+                        p{
+                            margin-bottom: 30px;
+                        }
+                        .beauty-image{
+                            position: absolute;
+                            top: 80px;
+                            left: 45px;
+                            width: 145px;
+                            height: 109px;
+                            z-index: -1;
+                        }
+                        .beauty-elipse{
+                            margin-bottom: 64px;
+                        }
+                    }
+                    .beauty-slider{
+                        .buy{
+                            background-color: $beauty-button;
+                        }
+
+                        .buy:hover{
+                            background-color: $bestseller-buy-buton-hover;
+                            color: $bestseller-text;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -338,12 +449,16 @@ h1,h2,h3, .price{
     .hiden-mobile{
         display: inline;
     }
+    .container-p-0{
+        padding-right: 20px;
+    }
     header{
         .container-xxl{
             .header-position{
                 display: flex;
                 position: relative;
                 margin-top: 28px;
+                height: 683px;
                 .header-left, .header-right{
                     height: 683px;
                     width: 50%;
@@ -398,7 +513,7 @@ h1,h2,h3, .price{
                 }
             }
         }
-        .bestseller-slider, .news-slider{
+        .bestseller-slider, .news-slider, .beauty-slider{
             .best-slider, .new-slider{
                 width: 300px;
                 .slider-position{
@@ -506,6 +621,93 @@ h1,h2,h3, .price{
                 }
             }
         }
+        .newseletter{
+            margin-bottom: 12px;
+            .container-xxl{
+                .newseletter-position{
+                    display: flex;
+                    position: relative;
+                    padding-top: 0px;
+                    height: 538px;
+                    .newseletter-text,.newseletter-photo{
+                    }
+                    .newseletter-text{
+                        justify-content: start;
+                        align-items: start;
+                        width: 50%;
+                        h2{
+                            margin-top: 12%;
+                            width: 80%;
+                        }
+                        p{
+                            margin-bottom: 7.5%;
+                            width: 78%;
+                        }
+                        form{
+                            display: flex;
+                            flex-direction: column;
+                            .form-position{
+                                flex-direction: row;
+                                margin-bottom: 5.8%;
+                                input[type="email"], .send{
+                                    width: 45%;
+                                    height: 48px;
+                                }
+                                input[type="email"]{
+                                    padding: 12px;
+                                }
+                                .send{
+                                    margin-bottom: 0px;
+                                }
+                            }
+                            .consent-container{
+                                width: 85%;
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                    .newseletter-photo{
+                        width: 50%;
+                        position: absolute; 
+                        right: -20px;
+                        margin-right: 0px;
+                        .newseletter-image{
+                            height: 538px;
+                        }
+                    }
+                }
+            }
+        }
+        .beauty{
+            .container-xxl{
+                .beauty-postion{
+                    display: flex;
+                    padding-top: 72px;
+                    .beauty-text{
+                        width: 53%;
+                        .beauty-vector{
+                            margin-top: 23px;
+                        }
+                        h2{
+                            margin-top: 70px;
+                            margin-bottom: 50px;
+                        }
+                        p{
+                            margin-bottom: 70px;
+                            width: 85%;
+                        }
+                        .beauty-image{
+                            top: 110px;
+                        }
+                        .beauty-elipse{
+                            margin-bottom: 0px;
+                        }
+                    }
+                    .beauty-slider{
+                    }
+                }
+            }
+        }
     }
  }
 
@@ -515,10 +717,10 @@ h1,h2,h3, .price{
 
 
 @media (min-width: 1200px) { 
+    .container-p-0{
+        padding-right: 0px;
+    }
     header{
-        .container-p-0{
-            padding-right: 0px;
-        }
         .container-xxl{
             .header-position{
                 margin-top: 40px;
@@ -638,6 +840,51 @@ h1,h2,h3, .price{
                 }
             }
         }
+        .newseletter{
+            .container-xxl{
+                .newseletter-position{
+                    height: 600px;
+                    .newseletter-text{
+                        h2{
+                            margin-top: 64px;
+                        }
+                        p{
+                            margin-bottom: 40px;
+                        }
+                        form{
+                            .form-position{
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                    .newseletter-photo{
+                        position: relative;
+                        margin: 0;
+                        right: 0px;
+                        width: 55%;
+                        .newseletter-image{
+                            height: 600px;
+                        }
+                    }
+                }
+            }
+        }
+        .beauty{
+            .container-xxl{
+                .beauty-postion{
+                    .beauty-text{
+                        width: 39%;
+                        .beauty-image{
+                            width: 201px;
+                            height: 266px;
+                            top: 40px;
+                            left: 70px;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -698,11 +945,31 @@ h1,h2,h3, .price{
                 }
             }
         }
+        .newseletter{
+            .container-xxl{
+                .newseletter-position{
+                    .newseletter-text{
+                        h2{
+                            margin-top: 9%;
+                            margin-bottom: 30px;
+                        }
+                        p{
+                            margin-bottom: 9%;
+                            font-size: 25px;
+                            width: 75%;
+                        }
+                    }
+                    .newseletter-photo{
+                        width: 60%;
+                    }
+                }
+            }
+        }
     }
 }
 @media (min-width: 1906px){
     main{
-        .bestseller-slider, .news-slider {
+        .bestseller-slider, .news-slider, .beauty-slider{
             overflow-x: unset;
         }
     }

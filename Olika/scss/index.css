@@ -12,7 +12,7 @@ h1, h2, h3, .price {
   display: none;
 }
 
-.bestseller-slider, .news-slider {
+.bestseller-slider, .news-slider, .beauty-slider {
   display: flex;
   overflow-x: scroll;
 }
@@ -33,17 +33,17 @@ h1, h2, h3, .price {
   width: 44px;
 }
 
-.bestseller-button {
+.bestseller-button, .send {
   margin-bottom: 40px;
   height: 48px;
   width: 350px;
   background-color: #000;
   color: #fff;
 }
-.bestseller-button img {
+.bestseller-button img, .send img {
   margin-left: 10px;
 }
-.bestseller-button .hiden-m-t {
+.bestseller-button .hiden-m-t, .send .hiden-m-t {
   display: none;
 }
 
@@ -79,6 +79,10 @@ h1, h2, h3, .price {
 }
 .slider-price .price {
   font-size: 20px;
+}
+
+.newseletter {
+  background-color: #E3D4C5;
 }
 
 @keyframes text {
@@ -177,34 +181,34 @@ h1, h2, h3, .price {
     margin: 0px 15px;
     font-size: 40px;
   }
-  main .bestseller-slider .best-slider, main .bestseller-slider .new-slider, main .news-slider .best-slider, main .news-slider .new-slider {
+  main .bestseller-slider .best-slider, main .bestseller-slider .new-slider, main .news-slider .best-slider, main .news-slider .new-slider, main .beauty-slider .best-slider, main .beauty-slider .new-slider {
     width: 258px;
     margin-right: 20px;
   }
-  main .bestseller-slider .best-slider .slider-position, main .bestseller-slider .new-slider .slider-position, main .news-slider .best-slider .slider-position, main .news-slider .new-slider .slider-position {
+  main .bestseller-slider .best-slider .slider-position, main .bestseller-slider .new-slider .slider-position, main .news-slider .best-slider .slider-position, main .news-slider .new-slider .slider-position, main .beauty-slider .best-slider .slider-position, main .beauty-slider .new-slider .slider-position {
     position: relative;
     width: 257px;
     height: 250px;
   }
-  main .bestseller-slider .best-slider .slider-position .best-photo, main .bestseller-slider .new-slider .slider-position .best-photo, main .news-slider .best-slider .slider-position .best-photo, main .news-slider .new-slider .slider-position .best-photo {
+  main .bestseller-slider .best-slider .slider-position .best-photo, main .bestseller-slider .new-slider .slider-position .best-photo, main .news-slider .best-slider .slider-position .best-photo, main .news-slider .new-slider .slider-position .best-photo, main .beauty-slider .best-slider .slider-position .best-photo, main .beauty-slider .new-slider .slider-position .best-photo {
     width: 100%;
     height: 100%;
   }
-  main .bestseller-slider .best-slider .best-text, main .bestseller-slider .best-slider .new-text, main .bestseller-slider .new-slider .best-text, main .bestseller-slider .new-slider .new-text, main .news-slider .best-slider .best-text, main .news-slider .best-slider .new-text, main .news-slider .new-slider .best-text, main .news-slider .new-slider .new-text {
+  main .bestseller-slider .best-slider .best-text, main .bestseller-slider .best-slider .new-text, main .bestseller-slider .new-slider .best-text, main .bestseller-slider .new-slider .new-text, main .news-slider .best-slider .best-text, main .news-slider .best-slider .new-text, main .news-slider .new-slider .best-text, main .news-slider .new-slider .new-text, main .beauty-slider .best-slider .best-text, main .beauty-slider .best-slider .new-text, main .beauty-slider .new-slider .best-text, main .beauty-slider .new-slider .new-text {
     margin-top: 28px;
   }
-  main .bestseller-slider .best-slider .best-text .slider-header, main .bestseller-slider .best-slider .new-text .slider-header, main .bestseller-slider .new-slider .best-text .slider-header, main .bestseller-slider .new-slider .new-text .slider-header, main .news-slider .best-slider .best-text .slider-header, main .news-slider .best-slider .new-text .slider-header, main .news-slider .new-slider .best-text .slider-header, main .news-slider .new-slider .new-text .slider-header {
+  main .bestseller-slider .best-slider .best-text .slider-header, main .bestseller-slider .best-slider .new-text .slider-header, main .bestseller-slider .new-slider .best-text .slider-header, main .bestseller-slider .new-slider .new-text .slider-header, main .news-slider .best-slider .best-text .slider-header, main .news-slider .best-slider .new-text .slider-header, main .news-slider .new-slider .best-text .slider-header, main .news-slider .new-slider .new-text .slider-header, main .beauty-slider .best-slider .best-text .slider-header, main .beauty-slider .best-slider .new-text .slider-header, main .beauty-slider .new-slider .best-text .slider-header, main .beauty-slider .new-slider .new-text .slider-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
   }
-  main .bestseller-slider .best-slider .best-text .slider-header .slider-star img, main .bestseller-slider .best-slider .new-text .slider-header .slider-star img, main .bestseller-slider .new-slider .best-text .slider-header .slider-star img, main .bestseller-slider .new-slider .new-text .slider-header .slider-star img, main .news-slider .best-slider .best-text .slider-header .slider-star img, main .news-slider .best-slider .new-text .slider-header .slider-star img, main .news-slider .new-slider .best-text .slider-header .slider-star img, main .news-slider .new-slider .new-text .slider-header .slider-star img {
+  main .bestseller-slider .best-slider .best-text .slider-header .slider-star img, main .bestseller-slider .best-slider .new-text .slider-header .slider-star img, main .bestseller-slider .new-slider .best-text .slider-header .slider-star img, main .bestseller-slider .new-slider .new-text .slider-header .slider-star img, main .news-slider .best-slider .best-text .slider-header .slider-star img, main .news-slider .best-slider .new-text .slider-header .slider-star img, main .news-slider .new-slider .best-text .slider-header .slider-star img, main .news-slider .new-slider .new-text .slider-header .slider-star img, main .beauty-slider .best-slider .best-text .slider-header .slider-star img, main .beauty-slider .best-slider .new-text .slider-header .slider-star img, main .beauty-slider .new-slider .best-text .slider-header .slider-star img, main .beauty-slider .new-slider .new-text .slider-header .slider-star img {
     margin-left: 5px;
     width: 16px;
     height: 16px;
   }
-  main .bestseller-slider .last-slider, main .news-slider .last-slider {
+  main .bestseller-slider .last-slider, main .news-slider .last-slider, main .beauty-slider .last-slider {
     margin-right: 0px;
   }
   main .news-slid-position .slider-position-flex {
@@ -257,7 +261,7 @@ h1, h2, h3, .price {
     padding-bottom: 71px;
   }
   main .news .container-xxl .news-text {
-    display: block;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -293,15 +297,116 @@ h1, h2, h3, .price {
     display: flex;
     justify-content: space-between;
   }
+  main .newseletter .container-xxl .newseletter-position {
+    padding-top: 64px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text h2 {
+    margin-bottom: 24px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text p {
+    margin-bottom: 34px;
+    font-weight: 800;
+    font-size: 20px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form {
+    display: flex;
+    flex-direction: column;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position {
+    display: flex;
+    flex-direction: column;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position input[type=email] {
+    border: 0;
+    padding: 12px 111px;
+    width: 350px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form .consent-container {
+    display: flex;
+    align-items: flex-start;
+    width: 350px;
+    margin-bottom: 76px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form .consent-container input[type=checkbox] {
+    margin-right: 10px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-photo {
+    position: relative;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 12px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-photo .newseletter-image {
+    height: 400px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-photo .logo-white {
+    position: absolute;
+    width: 172px;
+    bottom: 20px;
+    right: 20px;
+  }
+  main .beauty {
+    background-color: #F4F1EC;
+  }
+  main .beauty .container-xxl .beauty-postion {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text {
+    z-index: 0;
+    position: relative;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text .beauty-vector {
+    z-index: 2;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text h2 {
+    z-index: 1;
+    margin-top: 64px;
+    margin-bottom: 30px;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text p {
+    margin-bottom: 30px;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text .beauty-image {
+    position: absolute;
+    top: 80px;
+    left: 45px;
+    width: 145px;
+    height: 109px;
+    z-index: -1;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text .beauty-elipse {
+    margin-bottom: 64px;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-slider .buy {
+    background-color: #E3D4C5;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-slider .buy:hover {
+    background-color: #000;
+    color: #fff;
+  }
 }
 @media (min-width: 768px) {
   .hiden-mobile {
     display: inline;
   }
+  .container-p-0 {
+    padding-right: 20px;
+  }
   header .container-xxl .header-position {
     display: flex;
     position: relative;
     margin-top: 28px;
+    height: 683px;
   }
   header .container-xxl .header-position .header-left, header .container-xxl .header-position .header-right {
     height: 683px;
@@ -348,13 +453,13 @@ h1, h2, h3, .price {
   main .banner .header-banner .marquee {
     height: 72px;
   }
-  main .bestseller-slider .best-slider, main .bestseller-slider .new-slider, main .news-slider .best-slider, main .news-slider .new-slider {
+  main .bestseller-slider .best-slider, main .bestseller-slider .new-slider, main .news-slider .best-slider, main .news-slider .new-slider, main .beauty-slider .best-slider, main .beauty-slider .new-slider {
     width: 300px;
   }
-  main .bestseller-slider .best-slider .slider-position, main .bestseller-slider .new-slider .slider-position, main .news-slider .best-slider .slider-position, main .news-slider .new-slider .slider-position {
+  main .bestseller-slider .best-slider .slider-position, main .bestseller-slider .new-slider .slider-position, main .news-slider .best-slider .slider-position, main .news-slider .new-slider .slider-position, main .beauty-slider .best-slider .slider-position, main .beauty-slider .new-slider .slider-position {
     width: 300px;
   }
-  main .bestseller-slider .right-slider, main .news-slider .right-slider {
+  main .bestseller-slider .right-slider, main .news-slider .right-slider, main .beauty-slider .right-slider {
     margin-right: 0px;
   }
   main .news-slid-position .slider-position-flex {
@@ -440,9 +545,86 @@ h1, h2, h3, .price {
   main .news .container-xxl .news-slid-position .news-special .news-special-text .hiden-t-d {
     display: none;
   }
+  main .newseletter {
+    margin-bottom: 12px;
+  }
+  main .newseletter .container-xxl .newseletter-position {
+    display: flex;
+    position: relative;
+    padding-top: 0px;
+    height: 538px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text {
+    justify-content: start;
+    align-items: start;
+    width: 50%;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text h2 {
+    margin-top: 12%;
+    width: 80%;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text p {
+    margin-bottom: 7.5%;
+    width: 78%;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form {
+    display: flex;
+    flex-direction: column;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position {
+    flex-direction: row;
+    margin-bottom: 5.8%;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position input[type=email], main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position .send {
+    width: 45%;
+    height: 48px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position input[type=email] {
+    padding: 12px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position .send {
+    margin-bottom: 0px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form .consent-container {
+    width: 85%;
+    margin-bottom: 0px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-photo {
+    width: 50%;
+    position: absolute;
+    right: -20px;
+    margin-right: 0px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-photo .newseletter-image {
+    height: 538px;
+  }
+  main .beauty .container-xxl .beauty-postion {
+    display: flex;
+    padding-top: 72px;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text {
+    width: 53%;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text .beauty-vector {
+    margin-top: 23px;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text h2 {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text p {
+    margin-bottom: 70px;
+    width: 85%;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text .beauty-image {
+    top: 110px;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text .beauty-elipse {
+    margin-bottom: 0px;
+  }
 }
 @media (min-width: 1200px) {
-  header .container-p-0 {
+  .container-p-0 {
     padding-right: 0px;
   }
   header .container-xxl .header-position {
@@ -531,6 +713,38 @@ h1, h2, h3, .price {
   main .news .container-xxl .news-slid-position .news-special .news-special-text {
     width: 550px;
   }
+  main .newseletter .container-xxl .newseletter-position {
+    height: 600px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text h2 {
+    margin-top: 64px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text p {
+    margin-bottom: 40px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position {
+    margin-bottom: 30px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-photo {
+    position: relative;
+    margin: 0;
+    right: 0px;
+    width: 55%;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-photo .newseletter-image {
+    height: 600px;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text {
+    width: 39%;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-text .beauty-image {
+    width: 201px;
+    height: 266px;
+    top: 40px;
+    left: 70px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 @media (min-width: 1400px) {
   header .container-xxl .header-position .header-left, header .container-xxl .header-position .header-right {
@@ -567,9 +781,21 @@ h1, h2, h3, .price {
     right: 44px;
     width: 658px;
   }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text h2 {
+    margin-top: 9%;
+    margin-bottom: 30px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text p {
+    margin-bottom: 9%;
+    font-size: 25px;
+    width: 75%;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-photo {
+    width: 60%;
+  }
 }
 @media (min-width: 1906px) {
-  main .bestseller-slider, main .news-slider {
+  main .bestseller-slider, main .news-slider, main .beauty-slider {
     overflow-x: unset;
   }
 }/*# sourceMappingURL=index.css.map */

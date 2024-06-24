@@ -51,6 +51,7 @@ footer{
     bottom: 0;
     width: 100%;
     background-color: $cookie-bacground;
+    z-index: 2;
     .container-xxl{
         .cookie-position{
             display: flex;
