@@ -8,8 +8,30 @@ h1, h2, h3, .price {
   font-weight: 1000;
 }
 
+.p-color {
+  color: #999999;
+}
+
 .hiden-mobile {
   display: none;
+}
+
+.elipse, .beauty-elipse {
+  display: flex;
+}
+.elipse .elip1, .beauty-elipse .elip1 {
+  margin-right: 13px;
+  width: 17px;
+  height: 17px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.elipse .elip2, .elipse .elip3, .elipse .elip4, .beauty-elipse .elip2, .beauty-elipse .elip3, .beauty-elipse .elip4 {
+  margin-right: 13px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
 .bestseller-slider, .news-slider, .beauty-slider {
@@ -119,7 +141,6 @@ h1, h2, h3, .price {
   }
   header .container-xxl .header-position .header-left p {
     font-size: 16px;
-    color: #999999;
     margin-bottom: 43px;
   }
   header .container-xxl .header-position .header-left .header-buy {
@@ -332,9 +353,11 @@ h1, h2, h3, .price {
   }
   main .newseletter .container-xxl .newseletter-position .newseletter-text h2 {
     margin-bottom: 24px;
+    width: 350px;
   }
   main .newseletter .container-xxl .newseletter-position .newseletter-text p {
     margin-bottom: 34px;
+    width: 350px;
     font-weight: 800;
     font-size: 20px;
   }
@@ -1054,8 +1077,8 @@ h1, h2, h3, .price {
   header .container-xxl .header-position .header-right {
     width: 60%;
   }
-  header .header-banner .rect-position .rect {
-    margin-left: 133px;
+  main .banner .header-banner .rect-position .rect {
+    margin-left: 150px;
   }
   main .news .container-xxl .news-slid-position .news-special {
     width: 790px;
