@@ -1037,6 +1037,9 @@ h1, h2, h3, .price {
   }
 }
 @media (min-width: 1400px) {
+  header .container-xxl .header-position {
+    height: 780px;
+  }
   header .container-xxl .header-position .header-left, header .container-xxl .header-position .header-right {
     height: 780px;
   }
