@@ -441,6 +441,9 @@ h1, h2, h3, .price {
     background-color: #000;
     color: #fff;
   }
+  main .beauty .container-xxl .beauty-postion .last-slider {
+    margin-right: 0px;
+  }
   main .blog .container-xxl .blog-position .blog-text {
     display: flex;
     flex-direction: column;
@@ -980,7 +983,7 @@ h1, h2, h3, .price {
     height: 600px;
   }
   main .beauty .container-xxl .beauty-postion .beauty-text {
-    width: 39%;
+    width: 41.3%;
   }
   main .beauty .container-xxl .beauty-postion .beauty-text .beauty-image {
     width: 201px;
