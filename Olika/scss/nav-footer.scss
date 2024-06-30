@@ -295,6 +295,7 @@ footer{
     }
     .notification{
         .notification-position{
+            font-size: 16px;
             .close-btn{
                 img{
                     width: 22px;
@@ -466,6 +467,11 @@ footer{
     .container-xxl{
         padding-left: 34px;
         padding-right: 33px;
+    }
+    .notification{
+        .notification-position{
+            font-size: 19px;
+        }
     }
     .navbar{
         padding-top: 27px;

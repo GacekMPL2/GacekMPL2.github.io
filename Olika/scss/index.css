@@ -131,6 +131,9 @@ h1, h2, h3, .price {
 }
 @media (min-width: 375px) {
   header .container-xxl .header-position .header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 140px;
     text-align: center;
@@ -161,17 +164,26 @@ h1, h2, h3, .price {
   }
   header .container-xxl .header-position .header-right .photo-header {
     width: 100%;
-    height: 250px;
+    height: 255px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   header .container-xxl .header-position .header-right .product {
     position: absolute;
     margin: 0 auto;
-    top: -60%;
+    top: -55%;
     left: 0px;
     right: 0px;
-    height: 292px;
+    height: 220px;
+  }
+  header .container-xxl .header-position .header-right .messenger {
+    position: absolute;
+    margin: 0 auto;
+    padding-left: 290px;
+    top: -25%;
+    right: 0;
+    left: 0;
+    height: 69px;
   }
   main h2 {
     font-size: 28px;
@@ -181,6 +193,7 @@ h1, h2, h3, .price {
     font-size: 20px;
   }
   main .banner .header-banner {
+    margin-top: 29px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -568,6 +581,7 @@ h1, h2, h3, .price {
     width: 50%;
   }
   header .container-xxl .header-position .header-left {
+    align-items: start;
     margin-top: 3%;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -601,6 +615,14 @@ h1, h2, h3, .price {
   header .container-xxl .header-position .header-right .product {
     top: 35%;
     left: -100%;
+    height: 290px;
+  }
+  header .container-xxl .header-position .header-right .messenger {
+    top: 1100px;
+    padding-left: 0px;
+    margin-right: 26px;
+    z-index: 2;
+    height: 97px;
   }
   main .banner .header-banner .rect-position {
     height: 42px;
@@ -906,14 +928,8 @@ h1, h2, h3, .price {
     height: 350px;
     top: 25%;
   }
-  header .header-banner .rect-position {
-    height: 50px;
-  }
-  header .header-banner .rect-position .rect {
-    margin-left: 34px;
-  }
-  header .header-banner .marquee {
-    height: 90px;
+  header .container-xxl .header-position .header-right .messenger {
+    top: 563px;
   }
   main h2 {
     font-size: 52px;
@@ -923,6 +939,15 @@ h1, h2, h3, .price {
   }
   main p {
     font-size: 19px;
+  }
+  main .banner .rect-position {
+    height: 50px;
+  }
+  main .banner .rect-position .rect {
+    margin-left: 34px;
+  }
+  main .banner .marquee {
+    height: 90px;
   }
   main .blog-time {
     margin-top: 24px;
@@ -1004,6 +1029,12 @@ h1, h2, h3, .price {
     left: 70px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-slider .best-slider .slider-position {
+    height: 273px;
+  }
+  main .beauty .container-xxl .beauty-postion .beauty-slider .best-slider .slider-position .best-photo {
+    height: 273px;
   }
   main .blog .container-xxl .blog-position {
     align-items: normal;
@@ -1109,6 +1140,9 @@ h1, h2, h3, .price {
   }
   header .container-xxl .header-position .header-right {
     width: 60%;
+  }
+  header .container-xxl .header-position .header-right .messenger {
+    top: 620px;
   }
   main .banner .header-banner .rect-position .rect {
     margin-left: 150px;

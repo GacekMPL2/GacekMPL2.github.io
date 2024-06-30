@@ -142,6 +142,9 @@ h1,h2,h3, .price{
         .container-xxl{
             .header-position{
                 .header-left{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     padding-top: 32px;
                     padding-bottom: 140px;
                     text-align: center;
@@ -171,16 +174,25 @@ h1,h2,h3, .price{
                     margin: 0px -20px;
                     .photo-header{
                         width: 100%;
-                        height: 250px;
+                        height: 255px;
                         object-fit: cover;
                     }
                     .product{
                         position: absolute;
                         margin: 0 auto;
-                        top: -60%;
+                        top: -55%;
                         left: 0px;
                         right: 0px;
-                        height: 292px;
+                        height: 220px;
+                    }
+                    .messenger{
+                        position: absolute;
+                        margin: 0 auto;
+                        padding-left: 290px;
+                        top: -25%;
+                        right: 0;
+                        left: 0;
+                        height: 69px;
                     }
                 }
             }
@@ -196,6 +208,7 @@ h1,h2,h3, .price{
         }
         .banner{
             .header-banner{
+                margin-top: 29px;
                 display: flex;
                 flex-direction: column;
                 overflow: hidden;
@@ -640,6 +653,7 @@ h1,h2,h3, .price{
                     width: 50%;
                 }
                 .header-left{
+                    align-items: start;
                     margin-top: 3%;
                     padding-top: 0px;
                     padding-bottom: 0px;
@@ -672,7 +686,14 @@ h1,h2,h3, .price{
                     .product{
                         top: 35%;
                         left: -100%;
-                        
+                        height: 290px;
+                    }
+                    .messenger{
+                        top: 1100px;
+                        padding-left: 0px;
+                        margin-right: 26px;
+                        z-index: 2;
+                        height: 97px;
                     }
                 }
             }
@@ -1026,9 +1047,6 @@ h1,h2,h3, .price{
                         margin-bottom: 60px;
                         font-size: 19px;
                     }
-                    .header-buy{
-
-                    }
                     .elipse{
                         margin-top: 60px;
                     }
@@ -1042,18 +1060,10 @@ h1,h2,h3, .price{
                         height: 350px;
                         top: 25%;
                     }
+                    .messenger{
+                        top: 563px;
+                    }
                } 
-            }
-        }
-        .header-banner{
-            .rect-position{
-                height: 50px;
-                .rect{
-                    margin-left: 34px;
-                }
-            }
-            .marquee{
-                height: 90px;
             }
         }
     }
@@ -1066,6 +1076,17 @@ h1,h2,h3, .price{
         }
         p{
             font-size: 19px;
+        }
+        .banner{
+            .rect-position{
+                height: 50px;
+                .rect{
+                    margin-left: 34px;
+                }
+            }
+            .marquee{
+                height: 90px;
+            }
         }
         .blog-time{
             margin-top: 24px;
@@ -1178,6 +1199,16 @@ h1,h2,h3, .price{
                             top: 40px;
                             left: 70px;
                             object-fit: contain;
+                        }
+                    }
+                    .beauty-slider{
+                        .best-slider{
+                            .slider-position{
+                                height: 273px;
+                                .best-photo{
+                                    height: 273px;
+                                }
+                            }
                         }
                     }
                 }
@@ -1303,7 +1334,8 @@ h1,h2,h3, .price{
                 }
                 .header-right{
                     width: 60%;
-                    .photo-header{
+                    .messenger{
+                        top: 620px;
                     }
                } 
             }
