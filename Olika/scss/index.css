@@ -111,6 +111,7 @@ h1, h2, h3, .price {
   display: flex;
   margin-top: 28px;
   margin-bottom: 12px;
+  font-size: 14px;
 }
 .blog-time .time {
   margin-left: 10px;
@@ -765,6 +766,7 @@ h1, h2, h3, .price {
   main .newseletter .container-xxl .newseletter-position .newseletter-text form .consent-container {
     width: 85%;
     margin-bottom: 0px;
+    font-size: 14px;
   }
   main .newseletter .container-xxl .newseletter-position .newseletter-photo {
     width: 50%;
@@ -774,6 +776,11 @@ h1, h2, h3, .price {
   }
   main .newseletter .container-xxl .newseletter-position .newseletter-photo .newseletter-image {
     height: 538px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-photo .logo-white {
+    width: 246px;
+    right: 41px;
+    bottom: 50px;
   }
   main .beauty .container-xxl .beauty-postion {
     display: flex;
@@ -940,6 +947,9 @@ h1, h2, h3, .price {
   main p {
     font-size: 19px;
   }
+  main .blog-time p {
+    font-size: 14px;
+  }
   main .banner .rect-position {
     height: 50px;
   }
@@ -952,6 +962,9 @@ h1, h2, h3, .price {
   main .blog-time {
     margin-top: 24px;
     margin-bottom: 20px;
+  }
+  main .read {
+    margin-top: 20px;
   }
   main .bestseller-slider .best-slider, main .bestseller-slider .new-slider, main .news-slider .best-slider, main .news-slider .new-slider {
     width: 385px;
@@ -1010,6 +1023,13 @@ h1, h2, h3, .price {
   main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position {
     margin-bottom: 30px;
   }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position input[type=email] {
+    width: 66%;
+    max-width: 404px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position .send {
+    width: 33%;
+  }
   main .newseletter .container-xxl .newseletter-position .newseletter-photo {
     position: relative;
     margin: 0;
@@ -1018,6 +1038,11 @@ h1, h2, h3, .price {
   }
   main .newseletter .container-xxl .newseletter-position .newseletter-photo .newseletter-image {
     height: 600px;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-photo .logo-white {
+    width: 334px;
+    right: 53px;
+    bottom: 50px;
   }
   main .beauty .container-xxl .beauty-postion .beauty-text {
     width: 41.3%;
@@ -1171,7 +1196,7 @@ h1, h2, h3, .price {
   main .newseletter .container-xxl .newseletter-position .newseletter-text p {
     margin-bottom: 9%;
     font-size: 25px;
-    width: 75%;
+    width: 84%;
   }
   main .newseletter .container-xxl .newseletter-position .newseletter-photo {
     width: 60%;
@@ -1183,5 +1208,8 @@ h1, h2, h3, .price {
   }
   main .blog .container-xxl .blog-position .blog-slider {
     overflow-x: hidden;
+  }
+  main .newseletter .container-xxl .newseletter-position .newseletter-text p {
+    width: 75%;
   }
 }/*# sourceMappingURL=index.css.map */
