@@ -1024,8 +1024,7 @@ h1, h2, h3, .price {
     margin-bottom: 30px;
   }
   main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position input[type=email] {
-    width: 66%;
-    max-width: 404px;
+    width: 52%;
   }
   main .newseletter .container-xxl .newseletter-position .newseletter-text form .form-position .send {
     width: 33%;
