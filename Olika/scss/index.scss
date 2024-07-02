@@ -226,10 +226,12 @@ h1,h2,h3, .price{
             width: 100%;
             z-index: 3;
             top: 70%;
+            pointer-events: none;
             &-position{
                 display: flex;
                 justify-content: end;
                 &-button{
+                    pointer-events: auto;
                     &__photo{
                         height: 69px;
                     }

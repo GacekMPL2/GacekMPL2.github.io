@@ -286,10 +286,14 @@ h1, h2, h3, .price {
     width: 100%;
     z-index: 3;
     top: 70%;
+    pointer-events: none;
   }
   main .messenger-position {
     display: flex;
     justify-content: end;
+  }
+  main .messenger-position-button {
+    pointer-events: auto;
   }
   main .messenger-position-button__photo {
     height: 69px;
