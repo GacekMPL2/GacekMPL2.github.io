@@ -1,0 +1,75 @@
+@mixin slider{
+    .slider{
+        @media (min-width:375px) {
+            width: 258px;
+            margin-right: 20px;
+            &-position{
+                position: relative;
+                width: 100%;
+                height: 250px;
+                &-photo{
+                    height: 100%;
+                }
+            }
+            &-text{
+                margin-top: 28px;
+                &-header{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: start;
+                    margin-bottom: 12px;
+                    &-star{
+                        img{
+                            margin-left: 5px;
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+                &-price{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 12px;
+                    .price{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        @media (min-width: 768px){
+            width: 300px;
+            &-position{
+                width: 300px;
+                &-photo{
+                    width: 100%;
+                }
+            }
+            &-text{
+                &-header{
+                    flex-direction: column;
+                }
+            }
+        }
+        @media (min-width:1200px){
+            width: 385px;
+            &-position{
+                width: 385px;
+                height: 385px;
+            }
+            &-text{
+                margin-top: 40px;
+                &-header{
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+@mixin button{
+
+}

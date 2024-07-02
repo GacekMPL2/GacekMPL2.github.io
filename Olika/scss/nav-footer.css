@@ -65,7 +65,7 @@ footer {
   padding-bottom: 32px !important;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 320px) {
   .container-xxl {
     padding: 0px 20px 0px 20px;
   }

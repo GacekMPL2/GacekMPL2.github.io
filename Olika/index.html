@@ -78,35 +78,53 @@
     <header>
         <div class="container-xxl container-p-0">
             <div class="header-position">
-                <div class="header-left">
-                    <img class="vector hiden-mobile" src="img/header-vector.png" alt="header-vector">
-                    <h1>Razem możemy dokonać zmiany!</h1>
-                    <p class="p-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida id viverra nec blandit ultricies. Pellentesque venenatis suspendisse magna tellus non pellentesque amet, dictum. Pharetra, 
+                <div class="header-position-left">
+                    <img class="header-position-left__vector hiden-mobile" src="img/header-vector.png" alt="header-vector">
+                    <h1 class="header-position-left__heading">Razem możemy dokonać zmiany!</h1>
+                    <p class="header-position-left__text p-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida id viverra nec blandit ultricies. Pellentesque venenatis suspendisse magna tellus non pellentesque amet, dictum. Pharetra, 
                     </p>
-                    <button class="header-buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
-                    <div class="elipse">
-                      <div class="elip1"></div>
-                      <div class="elip2"></div>
-                      <div class="elip3"></div>
-                    </div>
+                    <button class="header-position-left__buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
                 </div>
-                <div class="header-right">
-                    <img class="product" src="img/product.png" alt="product">
-                    <img class="photo-header" src="img/photo-header.png" alt="photo-header">
-                    <img class="messenger" src="img/messenger.png" alt="messenger">
+                <div class="header-position-right">
+                    <img class="header-position-right__photo" src="img/photo-header.png" alt="photo-header">
+                </div>
+                <div class="header-position-slider">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/product.png" class="d-block product" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/product.png" class="d-block product" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/product.png" class="d-block product" alt="...">
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
     </header>   
     <main>
-        <section class="banner">
-          <div class="header-banner">
-            <div class="rect-position">
-                <div class="rect">
-                    
-                </div>
+        <section class="messenger">
+          <div class="container-xxl">
+            <div class="messenger-position">
+              <button class="messenger-position-button">
+                <img class="messenger-position-button__photo" src="img/messenger.png" alt="messenger">
+              </button>
             </div>
-            <div class="marquee">
+          </div>
+        </section>
+        <section class="banner">
+          <div class="banner-position">
+                <div class="banner-position__rect"></div>
+            <div class="banner-position__marquee">
                 <a href="">
                     <span><span class="weight">BEST POLISH</span> PRODUCT</span>
                     <span class="dot">•</span>
@@ -155,20 +173,20 @@
         <section class="bestseller">
           <div class="container-xxl">
             <div class="bestseller-text">
-              <div class="bestseller-header">
-                <h2>Bestsellery</h2>
-                <p class="p-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="bestseller-text-header">
+                <h2 class="bestseller-text-header__heading">Bestsellery</h2>
+                <p class="bestseller-text-header__text p-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
-              <button class="bestseller-button">Zobacz Wszystkie<span class="hiden-m-t"> produkty</span> <img src="img/white-arrow.png" alt="white-arrow"></button>
+              <button class="bestseller-text-header__button">Zobacz Wszystkie<span class="hiden-m-t"> produkty</span> <img src="img/white-arrow.png" alt="white-arrow"></button>
             </div>
             <div class="bestseller-slider">
-              <div class="best-slider">
+              <div class="slider">
                 <div class="slider-position">
-                  <img class="best-photo" src="img/best-one.png" alt="best-one">
+                  <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
                   <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
                 </div>
-                <div class="best-text">
-                  <div class="slider-header">
+                <div class="slider-text">
+                  <div class="slider-text-header">
                     <h3>Repara</h3>
                     <div class="slider-star">
                       <img src="img/star.png" alt="star">
@@ -179,20 +197,20 @@
                     </div>
                 </div>
                 <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
-                <div class="slider-price">
+                <div class="slider-text-price">
                   <p class="p-color">50ml</p>
                   <p><span class="price">39,00PLN</span></p>
                 </div>
                 <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
               </div>
               </div>
-              <div class="best-slider">
+              <div class="slider">
                 <div class="slider-position">
-                  <img class="best-photo" src="img/best-two.png" alt="best-one">
+                  <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
                   <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
                 </div>
-                <div class="best-text">
-                  <div class="slider-header">
+                <div class="slider-text">
+                  <div class="slider-text-header">
                     <h3>Repara</h3>
                     <div class="slider-star">
                       <img src="img/star.png" alt="star">
@@ -203,20 +221,20 @@
                     </div>
                 </div>
                 <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
-                <div class="slider-price">
+                <div class="slider-text-price">
                   <p class="p-color">50ml</p>
                   <p><span class="price">39,00PLN</span></p>
                 </div>
                 <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
               </div>
               </div>
-              <div class="best-slider">
+              <div class="slider">
                 <div class="slider-position">
-                  <img class="best-photo" src="img/best-three.png" alt="best-one">
+                  <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
                   <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
                 </div>
-                <div class="best-text">
-                  <div class="slider-header">
+                <div class="slider-text">
+                  <div class="slider-text-header">
                     <h3>Repara</h3>
                     <div class="slider-star">
                       <img src="img/star.png" alt="star">
@@ -227,20 +245,20 @@
                     </div>
                 </div>
                 <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
-                <div class="slider-price">
+                <div class="slider-text-price">
                   <p class="p-color">50ml</p>
                   <p><span class="price">39,00PLN</span></p>
                 </div>
                 <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
               </div>
               </div>
-              <div class="best-slider last-slider">
+              <div class="slider">
                 <div class="slider-position">
-                  <img class="best-photo" src="img/best-four.png" alt="best-one">
+                  <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
                   <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
                 </div>
-                <div class="best-text">
-                  <div class="slider-header">
+                <div class="slider-text">
+                  <div class="slider-text-header">
                     <h3>Repara</h3>
                     <div class="slider-star">
                       <img src="img/star.png" alt="star">
@@ -251,7 +269,103 @@
                     </div>
                 </div>
                 <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
-                <div class="slider-price">
+                <div class="slider-text-price">
+                  <p class="p-color">50ml</p>
+                  <p><span class="price">39,00PLN</span></p>
+                </div>
+                <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+              </div>
+              </div>
+              <div class="slider">
+                <div class="slider-position">
+                  <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
+                  <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
+                </div>
+                <div class="slider-text">
+                  <div class="slider-text-header">
+                    <h3>Repara</h3>
+                    <div class="slider-star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                    </div>
+                </div>
+                <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
+                <div class="slider-text-price">
+                  <p class="p-color">50ml</p>
+                  <p><span class="price">39,00PLN</span></p>
+                </div>
+                <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+              </div>
+              </div>
+              <div class="slider">
+                <div class="slider-position">
+                  <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
+                  <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
+                </div>
+                <div class="slider-text">
+                  <div class="slider-text-header">
+                    <h3>Repara</h3>
+                    <div class="slider-star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                    </div>
+                </div>
+                <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
+                <div class="slider-text-price">
+                  <p class="p-color">50ml</p>
+                  <p><span class="price">39,00PLN</span></p>
+                </div>
+                <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+              </div>
+              </div>
+              <div class="slider">
+                <div class="slider-position">
+                  <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
+                  <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
+                </div>
+                <div class="slider-text">
+                  <div class="slider-text-header">
+                    <h3>Repara</h3>
+                    <div class="slider-star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                    </div>
+                </div>
+                <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
+                <div class="slider-text-price">
+                  <p class="p-color">50ml</p>
+                  <p><span class="price">39,00PLN</span></p>
+                </div>
+                <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+              </div>
+              </div>
+              <div class="slider">
+                <div class="slider-position">
+                  <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
+                  <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
+                </div>
+                <div class="slider-text">
+                  <div class="slider-text-header">
+                    <h3>Repara</h3>
+                    <div class="slider-star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                      <img src="img/star.png" alt="star">
+                    </div>
+                </div>
+                <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
+                <div class="slider-text-price">
                   <p class="p-color">50ml</p>
                   <p><span class="price">39,00PLN</span></p>
                 </div>
@@ -261,31 +375,31 @@
           </div>
         </section>
         <section class="together">
-          <img class="tog-background" src="img/12.jpg" alt="12">
-          <div class="tog-position">
-            <h2>Razem możemy dokonać zmiany!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida id viverra nec blandit ultricies. Pellentesque venenatis suspendisse magna tellus non pellentesqu</p>
+          <img class="together__background" src="img/12.jpg" alt="12">
+          <div class="together-text">
+            <h2 class="together-text__heading">Razem możemy dokonać zmiany!</h2>
+            <p class="together-text__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida id viverra nec blandit ultricies. Pellentesque venenatis suspendisse magna tellus non pellentesqu</p>
             <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
           </div>
         </section>
         <section class="news">
           <div class="container-xxl">
             <div class="news-text">
-              <div class="news-header-text">
-                <h2>Nowości</h2>
-                <p class="p-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="news-text-header">
+                <h2 class="news-text-header__heading">Nowości</h2>
+                <p class="news-text-header__text p-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
-              <button class="bestseller-button">Zobacz Wszystkie<span class="hiden-m-t"> produkty</span> <img src="img/white-arrow.png" alt="white-arrow"></button>
+              <button class="news-text__button">Zobacz Wszystkie<span class="hiden-m-t"> produkty</span> <img src="img/white-arrow.png" alt="white-arrow"></button>
             </div>
-              <div class="news-slid-position">
-                <div class="news-special">
-                  <div class="news-special-position">
-                    <img class="special-photo" src="img/news-special.png" alt="news-special">
-                    <img class="file" src="img/file.png" alt="file">
+              <div class="news-slider-position">
+                <div class="news-slider-position__special">
+                  <div class="news-slider-position__special-position">
+                    <img class="news-slider-position__special-position__photo" src="img/news-special.png" alt="news-special">
+                    <img class="news-slider-position__special-position__file hiden-mobile" src="img/file.png" alt="file">
                     <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
                   </div>
-                  <div class="news-special-text">
-                    <div class="slider-header">
+                  <div class="news-slider-position__special-text">
+                    <div class="news-slider-position__special-text-header">
                       <h3>Repara</h3>
                       <div class="slider-star">
                         <img src="img/star.png" alt="star">
@@ -296,23 +410,23 @@
                       </div>
                     </div>
                   <p class="special-text p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
-                  <div class="slider-price">
+                  <div class="news-slider-position__special-text-price">
                     <p class="hiden-t-d p-color">50ml</p>
                     <button class="buy hiden-mobile">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
                     <p><span class="price">39,00PLN</span></p>
                   </div>
                     <button class="buy hiden-t-d">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+                    <img class="news-slider-position__special-text__file hiden-t-d" src="img/file.png" alt="file">
                   </div>
                 </div>
-                <div class="news-slider">
-                <div class="slider-position-flex">
-                  <div class="new-slider position-top">
+                <div class="news-slider-position__slider">
+                  <div class="slider">
                     <div class="slider-position">
-                      <img class="best-photo" src="img/best-one.png" alt="best-one">
+                      <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
                       <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
                     </div>
-                    <div class="new-text">
-                      <div class="slider-header">
+                    <div class="slider-text">
+                      <div class="slider-text-header">
                         <h3>Repara</h3>
                         <div class="slider-star">
                           <img src="img/star.png" alt="star">
@@ -323,20 +437,20 @@
                         </div>
                       </div>
                     <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
-                    <div class="slider-price">
+                    <div class="slider-text-price">
                       <p class="p-color">50ml</p>
                       <p><span class="price">39,00PLN</span></p>
                     </div>
                       <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
                     </div>
                   </div>
-                  <div class="new-slider">
+                  <div class="slider">
                     <div class="slider-position">
-                      <img class="best-photo" src="img/best-two.png" alt="best-one">
+                      <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
                       <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
                     </div>
-                    <div class="new-text">
-                      <div class="slider-header">
+                    <div class="slider-text">
+                      <div class="slider-text-header">
                         <h3>Repara</h3>
                         <div class="slider-star">
                           <img src="img/star.png" alt="star">
@@ -345,24 +459,22 @@
                           <img src="img/star.png" alt="star">
                           <img src="img/star.png" alt="star">
                         </div>
-                    </div>
+                      </div>
                     <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
-                    <div class="slider-price">
+                    <div class="slider-text-price">
                       <p class="p-color">50ml</p>
                       <p><span class="price">39,00PLN</span></p>
                     </div>
-                    <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+                      <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+                    </div>
                   </div>
-                  </div>
-                </div>
-                <div class="slider-position-flex right-slider">
-                  <div class="new-slider position-top right-slider">
+                  <div class="slider">
                     <div class="slider-position">
-                      <img class="best-photo" src="img/best-three.png" alt="best-one">
+                      <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
                       <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
                     </div>
-                    <div class="new-text">
-                      <div class="slider-header">
+                    <div class="slider-text">
+                      <div class="slider-text-header">
                         <h3>Repara</h3>
                         <div class="slider-star">
                           <img src="img/star.png" alt="star">
@@ -371,22 +483,22 @@
                           <img src="img/star.png" alt="star">
                           <img src="img/star.png" alt="star">
                         </div>
-                    </div>
+                      </div>
                     <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
-                    <div class="slider-price">
+                    <div class="slider-text-price">
                       <p class="p-color">50ml</p>
                       <p><span class="price">39,00PLN</span></p>
                     </div>
-                    <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+                      <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+                    </div>
                   </div>
-                  </div>
-                  <div class="new-slider last-slider">
+                  <div class="slider">
                     <div class="slider-position">
-                      <img class="best-photo" src="img/best-four.png" alt="best-one">
+                      <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
                       <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
                     </div>
-                    <div class="new-text">
-                      <div class="slider-header">
+                    <div class="slider-text">
+                      <div class="slider-text-header">
                         <h3>Repara</h3>
                         <div class="slider-star">
                           <img src="img/star.png" alt="star">
@@ -395,28 +507,117 @@
                           <img src="img/star.png" alt="star">
                           <img src="img/star.png" alt="star">
                         </div>
-                    </div>
+                      </div>
                     <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
-                    <div class="slider-price">
+                    <div class="slider-text-price">
                       <p class="p-color">50ml</p>
                       <p><span class="price">39,00PLN</span></p>
                     </div>
-                    <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+                      <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+                    </div>
                   </div>
+                  <div class="slider">
+                    <div class="slider-position">
+                      <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
+                      <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
+                    </div>
+                    <div class="slider-text">
+                      <div class="slider-text-header">
+                        <h3>Repara</h3>
+                        <div class="slider-star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                        </div>
+                      </div>
+                    <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
+                    <div class="slider-text-price">
+                      <p class="p-color">50ml</p>
+                      <p><span class="price">39,00PLN</span></p>
+                    </div>
+                      <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+                    </div>
                   </div>
-                </div>
-                </div>
+                  <div class="slider">
+                    <div class="slider-position">
+                      <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
+                      <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
+                    </div>
+                    <div class="slider-text">
+                      <div class="slider-text-header">
+                        <h3>Repara</h3>
+                        <div class="slider-star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                        </div>
+                      </div>
+                    <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
+                    <div class="slider-text-price">
+                      <p class="p-color">50ml</p>
+                      <p><span class="price">39,00PLN</span></p>
+                    </div>
+                      <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+                    </div>
+                  </div>
+                  <div class="slider">
+                    <div class="slider-position">
+                      <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
+                      <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
+                    </div>
+                    <div class="slider-text">
+                      <div class="slider-text-header">
+                        <h3>Repara</h3>
+                        <div class="slider-star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                        </div>
+                      </div>
+                    <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
+                    <div class="slider-text-price">
+                      <p class="p-color">50ml</p>
+                      <p><span class="price">39,00PLN</span></p>
+                    </div>
+                      <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+                    </div>
+                  </div>
+                  <div class="slider">
+                    <div class="slider-position">
+                      <img class="slider-position-photo" src="img/best-one.png" alt="best-one">
+                      <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
+                    </div>
+                    <div class="slider-text">
+                      <div class="slider-text-header">
+                        <h3>Repara</h3>
+                        <div class="slider-star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                          <img src="img/star.png" alt="star">
+                        </div>
+                      </div>
+                    <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
+                    <div class="slider-text-price">
+                      <p class="p-color">50ml</p>
+                      <p><span class="price">39,00PLN</span></p>
+                    </div>
+                      <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
+                    </div>
+                  </div>
             </div>
           </div>
         </section>
         <section class="banner">
-          <div class="header-banner">
-            <div class="rect-position">
-                <div class="rect">
-                    
-                </div>
-            </div>
-            <div class="marquee">
+          <div class="banner-position">
+            <div class="banner-position__marquee">
                 <a href="">
                     <span><span class="weight">BEST POLISH</span> PRODUCT</span>
                     <span class="dot">•</span>
@@ -465,15 +666,15 @@
         <section class="newseletter">
           <div class="container-xxl container-p-0">
             <div class="newseletter-position">
-              <div class="newseletter-text">
-                <h2>Bądź na bieżąco z nowościami w OLIKA </h2>
-                <p>Wejdź do świata naturalnej pielęgnacji i otrzymaj 40 zł rabatu na pierwsze zakupy.</p>
-                <form action="">
-                  <div class="form-position">
+              <div class="newseletter-position-text">
+                <h2 class="newseletter-position-text__heading" >Bądź na bieżąco z nowościami w OLIKA </h2>
+                <p class="newseletter-position-text__text">Wejdź do świata naturalnej pielęgnacji i otrzymaj 40 zł rabatu na pierwsze zakupy.</p>
+                <form class="newseletter-position-text__form" action="">
+                  <div class="newseletter-position-text__form-form-position">
                     <input type="email" id="email" name="email" placeholder="Podaj adres e-mail" required>
                     <button class="send">Wyślij <img src="img/white-arrow.png" alt="white-arrow"></button>
                   </div>
-                  <div class="consent-container">
+                  <div class="newseletter-position-text__form-text">
                     <input type="checkbox" id="consent" name="consent" required>
                     <label class="p-color"  for="consent">
                         Wyrażam zgodę na przetwarzanie moich danych osobowych w postaci podanego przeze mnie adresu e-mail w celu przesyłania mi informacji marketingowych dotyczących produktów i usług oferowanych przez OLIKA sp. z o.o. Mam świadomość, że przysługuje mi prawo do cofnięcia wyrażonej zgody w każdej chwili.
@@ -481,9 +682,9 @@
                 </div>
                 </form>
               </div>
-              <div class="newseletter-photo">
-                <img class="newseletter-image" src="img/newsletter.png" alt="newsletter">
-                <img class="logo-white" src="img/logo-white.png" alt="logo-white">
+              <div class="newseletter-position-photo">
+                <img class="newseletter-position-photo__image" src="img/newsletter.png" alt="newsletter">
+                <img class="newseletter-position-photo__logo-white" src="img/logo-white.png" alt="logo-white">
               </div>
             </div>
           </div>
@@ -504,78 +705,6 @@
                 <img class="beauty-image" src="img/beauty.png" alt="beauty">
               </div>
               <div class="beauty-slider">
-                <div class="best-slider">
-                  <div class="slider-position">
-                    <img class="best-photo" src="img/best-one.png" alt="best-one">
-                    <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
-                  </div>
-                  <div class="best-text">
-                    <div class="slider-header">
-                      <h3>Repara</h3>
-                      <div class="slider-star">
-                        <img src="img/star.png" alt="star">
-                        <img src="img/star.png" alt="star">
-                        <img src="img/star.png" alt="star">
-                        <img src="img/star.png" alt="star">
-                        <img src="img/star.png" alt="star">
-                      </div>
-                  </div>
-                  <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
-                  <div class="slider-price">
-                    <p class="p-color">50ml</p>
-                    <p><span class="price">39,00PLN</span></p>
-                  </div>
-                  <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
-                </div>
-                </div>
-                <div class="best-slider">
-                  <div class="slider-position">
-                    <img class="best-photo" src="img/best-two.png" alt="best-one">
-                    <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
-                  </div>
-                  <div class="best-text">
-                    <div class="slider-header">
-                      <h3>Repara</h3>
-                      <div class="slider-star">
-                        <img src="img/star.png" alt="star">
-                        <img src="img/star.png" alt="star">
-                        <img src="img/star.png" alt="star">
-                        <img src="img/star.png" alt="star">
-                        <img src="img/star.png" alt="star">
-                      </div>
-                  </div>
-                  <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
-                  <div class="slider-price">
-                    <p class="p-color">50ml</p>
-                    <p><span class="price">39,00PLN</span></p>
-                  </div>
-                  <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
-                </div>
-                </div>
-                <div class="best-slider last-slider">
-                  <div class="slider-position">
-                    <img class="best-photo" src="img/best-three.png" alt="best-one">
-                    <img class="no-favourite" id="favourite" src="img/heart.png" alt="heart">
-                  </div>
-                  <div class="best-text">
-                    <div class="slider-header">
-                      <h3>Repara</h3>
-                      <div class="slider-star">
-                        <img src="img/star.png" alt="star">
-                        <img src="img/star.png" alt="star">
-                        <img src="img/star.png" alt="star">
-                        <img src="img/star.png" alt="star">
-                        <img src="img/star.png" alt="star">
-                      </div>
-                  </div>
-                  <p class="p-color">Regenerujący krem ​​do rąk z ekstraktem z liści morwy białej</p>
-                  <div class="slider-price">
-                    <p class="p-color">50ml</p>
-                    <p><span class="price">39,00PLN</span></p>
-                  </div>
-                  <button class="buy">Kup teraz <img src="img/white-arrow.png" alt="white-arrow"></button>
-                </div>
-                </div>
               </div>
             </div>
           </div>
