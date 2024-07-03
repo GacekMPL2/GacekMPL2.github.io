@@ -704,7 +704,7 @@ h1, h2, h3, .price {
 }
 @media (min-width: 768px) {
   .hiden-mobile {
-    display: inline;
+    display: block;
   }
   .container-p-0 {
     padding-right: 20px;
@@ -1187,9 +1187,6 @@ h1, h2, h3, .price {
   }
   main .news-slider-position__special-position__photo {
     height: 1122px;
-  }
-  main .news-slider-position__special-text {
-    width: 550px;
   }
   main .news-slider-position__slider {
     flex-direction: row;
