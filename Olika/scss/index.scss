@@ -3,6 +3,9 @@
 
 html{
     font-size: 62.5%;
+    @include slider;
+    @include button;
+    @include buyButton;
 }
 
 button{
@@ -25,6 +28,21 @@ h1,h2,h3, .price{
     display: none;
 }
 
+.hiden-m-t{
+    display: none;
+}
+
+.read{
+    margin-top: 12px;
+    img{
+        margin-left: 12px;
+    }
+}
+.read:hover{
+    color: #000;
+    border-bottom: 1px solid black;
+}
+
 .carousel-indicators [data-bs-target] {
     width: 17px;
     height: 17px;
@@ -45,7 +63,6 @@ h1,h2,h3, .price{
 .bestseller-slider, .news-slider-position__slider, .beauty-position-slider{
     display: flex;
     overflow-x: scroll;
-    @include slider
 }
 
 .no-favourite{
@@ -54,54 +71,6 @@ h1,h2,h3, .price{
 
 .favourite{
     content: url(../img/fav.png);
-}
-
-.no-favourite, .favourite{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 44px;
-    width: 44px;
-}
-
-.hiden-m-t{
-    display: none;
-}
-
-.bestseller-text-header__button, .send, .blog-buton, .news-text__button{
-    margin-bottom: 40px;
-    height: 48px;
-    width: 100%;
-    max-width: 350px;
-    background-color: $bestseller-button-background;
-    color: $bestseller-text;
-    img{
-        margin-left: 10px;
-    }
-}
-
-.buy{
-    padding: 12px 0px;
-    margin-top: 28px;
-    width: 100%;
-    background-color: $bestseller-buy-button-background;
-    color: $bestseller-buy-buton-hover;
-    img{
-        margin-left: 10px;
-        filter: brightness(0);
-    }
-}
-
-.buy:hover{
-    padding: 12px 0px;
-    margin-top: 28px;
-    width: 100%;
-    background-color: $bestseller-buy-buton-hover;
-    color: $bestseller-text;
-    img{
-        margin-left: 10px;
-        filter: brightness(100);
-    }
 }
 
 .newseletter{
@@ -151,7 +120,7 @@ h1,h2,h3, .price{
                     font-size: 1.6rem;
                     margin-bottom: 43px;
                 }
-                &__buy{
+                &__buyButton{
                     padding: 12px 35px;
                     margin-bottom: 43px;
                     font-size: 1.6rem;
@@ -280,16 +249,6 @@ h1,h2,h3, .price{
                 }
             }
         }
-        .read{
-            margin-top: 12px;
-            img{
-                margin-left: 12px;
-            }
-        }
-        .read:hover{
-            color: #000;
-            border-bottom: 1px solid black;
-        }
         .bestseller{
             margin-bottom: 71px;
             &-text{
@@ -332,7 +291,7 @@ h1,h2,h3, .price{
                     padding: 0px 38px;
                     margin-bottom: 40px;
                 }
-                .buy{
+                .buyButton{
                     width: 215px;
                 }
             }
@@ -418,12 +377,19 @@ h1,h2,h3, .price{
                                 width: 350px;
                                 font-size: 1.6rem;
                             }
+                            .send{
+                                padding: 12px 0px;
+                                margin-top: 0px;
+                                background-color: #000;
+                                color: white;
+                            }
                         }
                         &-text{
                             display: flex;
                             align-items: flex-start;
-                            width: 350px;
+                            margin-top: 30px;
                             margin-bottom: 76px;
+                            width: 350px;
                             input[type="checkbox"] {
                                 margin-right: 10px;
                             }
@@ -508,10 +474,10 @@ h1,h2,h3, .price{
                                             }
                                         }
                                         &-text{
-                                            .buy{
+                                            .buyButton{
                                                 background-color: #E3D4C5;
                                             }
-                                            .buy:hover{
+                                            .buyButton:hover{
                                                 background-color: black;
                                             }
                                         }
@@ -702,7 +668,7 @@ h1,h2,h3, .price{
                 &__text{
                     margin-bottom: 12%;
                 }
-                &__buy{
+                &__buyButton{
                     margin: 0;
                 }
                 .carousel-indicators{
@@ -794,7 +760,7 @@ h1,h2,h3, .price{
                     margin-bottom: 32px;
                     width: 70%;
                 }
-                .buy{
+                .buyButton{
                     width: 215px;
                 }
             }
@@ -839,11 +805,11 @@ h1,h2,h3, .price{
                         padding-bottom: 20px;
                         width: 90%;
                         background-color: white;
-                        .buy{
+                        .buyButton{
                             width: 100%;
                             max-width: 215px;
                         }
-                        &-header, .slider-price, .special-text, .buy{
+                        &-header, .slider-price, .special-text, .buyButton{
                             margin-left: 100px;
                         }
                         .hiden-t-d{
@@ -1092,7 +1058,7 @@ h1,h2,h3, .price{
         padding-right: 0px;
     }
     .hiden-m-t{
-        display: block;
+        display: inline-block;
     }
     header{
         .header-position{
@@ -1203,12 +1169,17 @@ h1,h2,h3, .price{
                     margin-bottom: 64px;
                     width: 50%;
                 }
-                .buy{
+                .buyButton{
                     width: 385px;
                 }
             }
         }
         .news{
+            &-text{
+                &__button{
+                    width: 450px;
+                }
+            }
             &-slider-position{
                 &__special{
                     &-position{
@@ -1217,7 +1188,7 @@ h1,h2,h3, .price{
                             height: 1122px;
                         }
                     }
-                    .news-special-text{
+                    &-text{
                         width: 550px;
                     }
                 }
@@ -1323,6 +1294,12 @@ h1,h2,h3, .price{
         .blog{
             &-position{
                 align-items: normal;
+                &-text{
+                    &__button{
+                        width: 450px;
+                        max-width: 450px;
+                    }
+                }
                 &-slider{
                     &-big{
                         margin-left: 20px;

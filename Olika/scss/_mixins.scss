@@ -1,3 +1,5 @@
+@use './colors' as *;
+
 @mixin slider{
     .no-favourite{
         content: url(../img/heart.png);
@@ -5,6 +7,13 @@
     
     .favourite{
         content: url(../img/fav.png);
+    }
+    .no-favourite, .favourite{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 44px;
+        width: 44px;
     }
     .slider{
         @media (min-width:375px) {
@@ -78,5 +87,40 @@
 }
 
 @mixin button{
+    .button{
+        margin-bottom: 40px;
+        height: 48px;
+        width: 100%;
+        max-width: 350px;
+        background-color: $bestseller-button-background;
+        color: $bestseller-text;
+        img{
+            margin-left: 10px;
+        }
+    }
+}
 
+@mixin buyButton{
+    .buyButton{
+        padding: 12px 0px;
+        margin-top: 28px;
+        width: 100%;
+        background-color: $bestseller-buy-button-background;
+        color: $bestseller-buy-buton-hover;
+        img{
+            margin-left: 10px;
+            filter: brightness(0);
+        }
+    }
+    .buyButton:hover{
+        padding: 12px 0px;
+        margin-top: 28px;
+        width: 100%;
+        background-color: $bestseller-buy-buton-hover;
+        color: $bestseller-text;
+        img{
+            margin-left: 10px;
+            filter: brightness(100);
+        }
+    }
 }
