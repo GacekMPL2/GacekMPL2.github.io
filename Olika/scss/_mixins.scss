@@ -1,5 +1,6 @@
 @use './colors' as *;
 
+
 @mixin slider{
     .no-favourite{
         content: url(../img/heart.png);
