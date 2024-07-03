@@ -1,4 +1,11 @@
 @mixin slider{
+    .no-favourite{
+        content: url(../img/heart.png);
+    }
+    
+    .favourite{
+        content: url(../img/fav.png);
+    }
     .slider{
         @media (min-width:375px) {
             width: 258px;

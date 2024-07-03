@@ -63,19 +63,21 @@ function initializeHoverInput() {
     });
 }
 
-const carousel = document.getElementById('carouselExampleIndicators');
-const indicators = document.querySelectorAll('.carousel-indicators button');
+document.querySelectorAll('.carousel').forEach(carousel => {
+    const carouselId = carousel.getAttribute('id');
+    const indicators = document.querySelectorAll(`[data-bs-target="#${carouselId}"]`);
 
-carousel.addEventListener('slid.bs.carousel', function (event) {
-    const activeIndex = event.to;
+    carousel.addEventListener('slid.bs.carousel', function (event) {
+        const activeIndex = event.to;
 
-    indicators.forEach((indicator, index) => {
-        if (index === activeIndex) {
-            indicator.classList.add('active');
-            indicator.setAttribute('aria-current', 'true');
-        } else {
-            indicator.classList.remove('active');
-            indicator.removeAttribute('aria-current');
-        }
+        indicators.forEach((indicator, index) => {
+            if (index === activeIndex) {
+                indicator.classList.add('active');
+                indicator.setAttribute('aria-current', 'true');
+            } else {
+                indicator.classList.remove('active');
+                indicator.removeAttribute('aria-current');
+            }
+        });
     });
 });

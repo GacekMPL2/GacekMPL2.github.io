@@ -42,6 +42,12 @@ h1, h2, h3, .price {
   display: flex;
   overflow-x: scroll;
 }
+.bestseller-slider .no-favourite, .news-slider-position__slider .no-favourite, .beauty-slider .no-favourite {
+  content: url(../img/heart.png);
+}
+.bestseller-slider .favourite, .news-slider-position__slider .favourite, .beauty-slider .favourite {
+  content: url(../img/fav.png);
+}
 @media (min-width: 375px) {
   .bestseller-slider .slider, .news-slider-position__slider .slider, .beauty-slider .slider {
     width: 258px;
@@ -502,26 +508,26 @@ h1, h2, h3, .price {
   main .beauty {
     background-color: #F4F1EC;
   }
-  main .beauty .container-xxl .beauty-postion {
+  main .beauty-position {
     padding-top: 64px;
     padding-bottom: 64px;
   }
-  main .beauty .container-xxl .beauty-postion .beauty-text {
+  main .beauty-position-text {
     z-index: 0;
     position: relative;
   }
-  main .beauty .container-xxl .beauty-postion .beauty-text .beauty-vector {
+  main .beauty-position-text__vector {
     z-index: 2;
   }
-  main .beauty .container-xxl .beauty-postion .beauty-text h2 {
+  main .beauty-position-text__heading {
     z-index: 1;
     margin-top: 64px;
     margin-bottom: 30px;
   }
-  main .beauty .container-xxl .beauty-postion .beauty-text p {
+  main .beauty-position-text__text {
     margin-bottom: 30px;
   }
-  main .beauty .container-xxl .beauty-postion .beauty-text .beauty-image {
+  main .beauty-position-text__image {
     position: absolute;
     top: 80px;
     left: 45px;
@@ -529,18 +535,30 @@ h1, h2, h3, .price {
     height: 109px;
     z-index: -1;
   }
-  main .beauty .container-xxl .beauty-postion .beauty-text .beauty-elipse {
-    margin-bottom: 64px;
+  main .beauty-position-slider #carouselExampleIndicatorstwo {
+    width: 100%;
+    max-width: 534px;
+    overflow: hidden;
   }
-  main .beauty .container-xxl .beauty-postion .beauty-slider .buy {
-    background-color: #E3D4C5;
+  main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner {
+    display: flex;
+    flex-direction: row;
   }
-  main .beauty .container-xxl .beauty-postion .beauty-slider .buy:hover {
-    background-color: #000;
-    color: #fff;
+  main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position {
+    width: 534px;
+    display: flex;
   }
-  main .beauty .container-xxl .beauty-postion .last-slider {
-    margin-right: 0px;
+  main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .slider {
+    position: relative;
+    width: 257px;
+    margin-right: 20px;
+  }
+  main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .slider-position-photo {
+    height: 250px;
+    width: 100%;
+  }
+  main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .hiden-mobile {
+    display: none;
   }
   main .blog .container-xxl .blog-position .blog-text {
     display: flex;

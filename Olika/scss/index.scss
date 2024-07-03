@@ -451,48 +451,61 @@ h1,h2,h3, .price{
         }
         .beauty{
             background-color: $beauty-background;
-            .container-xxl{
-                .beauty-postion{
-                    padding-top: 64px;
-                    padding-bottom: 64px;
-                    .beauty-text{
-                        z-index: 0;
-                        position: relative;
-                        .beauty-vector{
-                            z-index: 2;
-                        }
-                        h2{
-                            z-index: 1;
-                            margin-top: 64px;
-                            margin-bottom: 30px;
-                        }
-                        p{
-                            margin-bottom: 30px;
-                        }
-                        .beauty-image{
-                            position: absolute;
-                            top: 80px;
-                            left: 45px;
-                            width: 145px;
-                            height: 109px;
-                            z-index: -1;
-                        }
-                        .beauty-elipse{
-                            margin-bottom: 64px;
-                        }
+            &-position{
+                padding-top: 64px;
+                padding-bottom: 64px;
+                &-text{
+                    z-index: 0;
+                    position: relative;
+                    &__vector{
+                        z-index: 2;
                     }
-                    .beauty-slider{
-                        .buy{
-                            background-color: $beauty-button;
-                        }
-
-                        .buy:hover{
-                            background-color: $bestseller-buy-buton-hover;
-                            color: $bestseller-text;
-                        }
+                    &__heading{
+                        z-index: 1;
+                        margin-top: 64px;
+                        margin-bottom: 30px;
                     }
-                    .last-slider{
-                        margin-right: 0px;
+                    &__text{
+                        margin-bottom: 30px;
+                    }
+                    &__image{
+                        position: absolute;
+                        top: 80px;
+                        left: 45px;
+                        width: 145px;
+                        height: 109px;
+                        z-index: -1;
+                    }
+                }
+                &-slider{
+                    #carouselExampleIndicatorstwo{
+                        width: 100%;
+                        max-width: 534px;
+                        overflow: hidden;
+                        .carousel-inner{
+                            display: flex;
+                            flex-direction: row;
+                            .carousel-item{
+                                .carousel-item-position{
+                                    width: 534px;
+                                    display: flex;
+                                    .slider{
+                                        position: relative;
+                                        width: 257px;
+                                        margin-right: 20px;
+                                        &-position{
+                                            &-photo{
+                                                height: 250px;
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .hiden-mobile{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
