@@ -6,13 +6,7 @@ html{
     @include slider;
     @include button;
     @include buyButton;
-}
-
-button{
-    padding: 0;
-    text-transform: uppercase;
-    font-weight: 1000;
-    font-size: 1.6rem;
+    @include marquee;
 }
 
 
@@ -71,10 +65,6 @@ h1,h2,h3, .price{
 
 .favourite{
     content: url(../img/fav.png);
-}
-
-.newseletter{
-    background-color: $newseletter-background;
 }
 
 .blog-time{
@@ -213,39 +203,13 @@ h1,h2,h3, .price{
                 flex-direction: column;
                 overflow: hidden;
                 width: 100%;
-                    &__rect{
-                        display: flex;
-                        justify-content: flex-start;
-                        height: 30px;
-                        margin-left: 20px;
-                        width: 100%;
-                        background-color: $rect-background;
-                        }
-                &__marquee{
+                &__rect{
                     display: flex;
-                    justify-content: right;
-                    height: 58px;
-                    font-size: 20px;
-                    white-space: nowrap;
-                    background-color: $marquee-background;
-                    text-align: center;
-                        a{
-                        display: flex;
-                        align-items: center;
-                        color: $marquee-text;
-                        text-decoration: none;
-                        animation: text 5s infinite linear;
-                        position:relative; 
-                        span{
-                            .weight{
-                                font-weight: 1000;
-                            }
-                        }
-                        .dot{
-                            margin: 0px 15px;
-                            font-size: 4.0rem;
-                        }
-                    }
+                    justify-content: flex-start;
+                    height: 30px;
+                    margin-left: 20px;
+                    width: 100%;
+                    background-color: $rect-background;
                 }
             }
         }
@@ -348,6 +312,7 @@ h1,h2,h3, .price{
             }
         }
         .newseletter{
+            background-color: $newseletter-background;
             &-position{
                 padding-top: 64px;
                 &-text{
@@ -698,6 +663,7 @@ h1,h2,h3, .price{
             }
             &-slider{
                 top: 35%;
+                pointer-events: none;
                 .carousel-inner{
                     width: 350px;
                     margin: 0 auto;
@@ -728,9 +694,6 @@ h1,h2,h3, .price{
             &-position{
                 &__rect{
                     height: 42px;
-                }
-                &__marquee{
-                    height: 72px;
                 }
             }
         }
@@ -1129,9 +1092,6 @@ h1,h2,h3, .price{
                     margin-left: 34px;
                 }
             }
-            &__marquee{
-                height: 90px;
-            }
         }
         .blog-time{
             margin-top: 24px;
@@ -1291,12 +1251,6 @@ h1,h2,h3, .price{
         .blog{
             &-position{
                 align-items: normal;
-                &-text{
-                    &__button{
-                        width: 450px;
-                        max-width: 450px;
-                    }
-                }
                 &-slider{
                     &-big{
                         margin-left: 20px;

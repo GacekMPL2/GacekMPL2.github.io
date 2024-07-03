@@ -8,9 +8,13 @@ p {
 }
 
 button {
+  padding: 0;
   background: none;
   border: none;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 1.6rem;
 }
 
 footer {

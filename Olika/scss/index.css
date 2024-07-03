@@ -116,12 +116,41 @@ html .buyButton:hover img {
   margin-left: 10px;
   filter: brightness(100);
 }
-
-button {
-  padding: 0;
-  text-transform: uppercase;
-  font-weight: 1000;
-  font-size: 1.6rem;
+@media (min-width: 375px) {
+  html .marquee {
+    display: flex;
+    justify-content: right;
+    height: 58px;
+    font-size: 20px;
+    white-space: nowrap;
+    background-color: #000;
+    text-align: center;
+  }
+  html .marquee a {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    animation: text 5s infinite linear;
+    position: relative;
+  }
+  html .marquee a span .weight {
+    font-weight: 1000;
+  }
+  html .marquee a .dot {
+    margin: 0px 15px;
+    font-size: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  html .marquee {
+    height: 72px;
+  }
+}
+@media (min-width: 1200px) {
+  html .marquee {
+    height: 90px;
+  }
 }
 
 h1, h2, h3, .price {
@@ -180,10 +209,6 @@ h1, h2, h3, .price {
 
 .favourite {
   content: url(../img/fav.png);
-}
-
-.newseletter {
-  background-color: #E3D4C5;
 }
 
 .blog-time {
@@ -327,30 +352,6 @@ h1, h2, h3, .price {
     width: 100%;
     background-color: rgb(227, 212, 197);
   }
-  main .banner-position__marquee {
-    display: flex;
-    justify-content: right;
-    height: 58px;
-    font-size: 20px;
-    white-space: nowrap;
-    background-color: #000;
-    text-align: center;
-  }
-  main .banner-position__marquee a {
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    text-decoration: none;
-    animation: text 5s infinite linear;
-    position: relative;
-  }
-  main .banner-position__marquee a span .weight {
-    font-weight: 1000;
-  }
-  main .banner-position__marquee a .dot {
-    margin: 0px 15px;
-    font-size: 4rem;
-  }
   main .bestseller {
     margin-bottom: 71px;
   }
@@ -443,6 +444,9 @@ h1, h2, h3, .price {
     top: -300px;
     left: -40px;
     height: 300px;
+  }
+  main .newseletter {
+    background-color: #E3D4C5;
   }
   main .newseletter-position {
     padding-top: 64px;
@@ -767,6 +771,7 @@ h1, h2, h3, .price {
   }
   header .header-position-slider {
     top: 35%;
+    pointer-events: none;
   }
   header .header-position-slider .carousel-inner {
     width: 350px;
@@ -786,9 +791,6 @@ h1, h2, h3, .price {
   }
   main .banner-position__rect {
     height: 42px;
-  }
-  main .banner-position__marquee {
-    height: 72px;
   }
   main .bestseller-text {
     display: flex;
@@ -1143,9 +1145,6 @@ h1, h2, h3, .price {
     height: 50px;
     margin-left: 34px;
   }
-  main .banner__marquee {
-    height: 90px;
-  }
   main .blog-time {
     margin-top: 24px;
     margin-bottom: 20px;
@@ -1274,10 +1273,6 @@ h1, h2, h3, .price {
   }
   main .blog-position {
     align-items: normal;
-  }
-  main .blog-position-text__button {
-    width: 450px;
-    max-width: 450px;
   }
   main .blog-position-slider-big {
     margin-left: 20px;
