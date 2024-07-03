@@ -779,6 +779,9 @@ h1, h2, h3, .price {
     left: 0;
     right: 0;
   }
+  header .header-position-slider .carousel-inner .carousel-item {
+    pointer-events: fill;
+  }
   header .header-position-slider .carousel-inner .carousel-item .product {
     margin: 0 auto;
     height: 290px;

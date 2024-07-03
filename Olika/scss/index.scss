@@ -670,6 +670,7 @@ h1,h2,h3, .price{
                     left: 0;
                     right: 0;
                     .carousel-item{
+                        pointer-events: fill;
                         .product{
                             margin: 0 auto;
                             height: 290px;
