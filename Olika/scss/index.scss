@@ -327,7 +327,7 @@ h1,h2,h3, .price{
                     &__text{
                         margin-bottom: 34px;
                         width: 350px;
-                        font-weight: 800;
+                        font-weight: 600;
                         font-size: 20px;
                     }
                     &__form{
@@ -1181,7 +1181,7 @@ h1,h2,h3, .price{
                     }
                     &__form{
                         &-form-position{
-                            margin-bottom: 30px;
+                            margin-bottom: 0px;
                             input[type="email"]{
                                 width: 52%;
                                 font-size: 1.9rem;

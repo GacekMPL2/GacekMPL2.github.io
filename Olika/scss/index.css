@@ -464,7 +464,7 @@ h1, h2, h3, .price {
   main .newseletter-position-text__text {
     margin-bottom: 34px;
     width: 350px;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 20px;
   }
   main .newseletter-position-text__form {
@@ -1217,7 +1217,7 @@ h1, h2, h3, .price {
     margin-bottom: 40px;
   }
   main .newseletter-position-text__form-form-position {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   main .newseletter-position-text__form-form-position input[type=email] {
     width: 52%;
