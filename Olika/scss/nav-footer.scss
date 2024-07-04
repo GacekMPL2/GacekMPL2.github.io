@@ -157,7 +157,7 @@ footer{
         }
         .nav-border{
             position: absolute;
-            top: 83px;
+            top: 81px;
             width: 100%;
             border-bottom: 1px solid $nav-border-color;
         }
@@ -238,8 +238,10 @@ footer{
                             img{
                                 display: block;
                                 margin-right: 18px;
-                                width: 100px;
-                                height: 100px;
+                                width: 30%;
+                                height: 100%;
+                                max-width: 100px;
+                                max-height: 100px;
                                 object-fit: cover;
                             }
                             .hiden-mobile{

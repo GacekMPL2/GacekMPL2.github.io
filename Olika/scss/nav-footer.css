@@ -141,7 +141,7 @@ footer {
   }
   .navbar .nav-border {
     position: absolute;
-    top: 83px;
+    top: 81px;
     width: 100%;
     border-bottom: 1px solid #DADADA;
   }
@@ -217,8 +217,10 @@ footer {
   footer .container-xxl .footer-position .footer-image .footer-slider .footer-slider-position img {
     display: block;
     margin-right: 18px;
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 100px;
     -o-object-fit: cover;
        object-fit: cover;
   }

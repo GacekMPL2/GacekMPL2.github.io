@@ -2,7 +2,7 @@
 
 @mixin marquee{
     .marquee{
-        @media (min-width:375px) {
+        @media (min-width:320px) {
             display: flex;
             justify-content: right;
             height: 58px;
@@ -54,7 +54,7 @@
         width: 44px;
     }
     .slider{
-        @media (min-width:375px) {
+        @media (min-width:320px) {
             width: 258px;
             margin-right: 20px;
             &-position{
@@ -159,6 +159,42 @@
         img{
             margin-left: 10px;
             filter: brightness(100);
+        }
+    }
+}
+
+@mixin messenger{
+    .messenger{
+        @media (min-width:320px){
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+            top: 65%;
+            pointer-events: none;
+            &-position{
+                display: flex;
+                justify-content: end;
+                &-button{
+                    pointer-events: auto;
+                    &__photo{
+                        height: 69px;
+                    }
+                }
+            }
+        }
+        @media (min-width:768px){
+            top: 80%;
+            &-position{
+                &-button{
+                    &__photo{
+                        height: 97px;
+                    }
+                }
+            }
+        }
+        @media (min-width:1400px){
+            top: 65%;
+            right: -100px;
         }
     }
 }
