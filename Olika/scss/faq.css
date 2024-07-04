@@ -1,0 +1,278 @@
+html {
+  font-size: 62.5%;
+}
+@keyframes text {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 30%;
+  }
+}
+@media (min-width: 320px) {
+  html .marquee {
+    display: flex;
+    justify-content: right;
+    height: 58px;
+    font-size: 20px;
+    white-space: nowrap;
+    background-color: #000;
+    text-align: center;
+  }
+  html .marquee a {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    animation: text 5s infinite linear;
+    position: relative;
+  }
+  html .marquee a span .weight {
+    font-weight: 1000;
+  }
+  html .marquee a .dot {
+    margin: 0px 15px;
+    font-size: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  html .marquee {
+    height: 72px;
+  }
+}
+@media (min-width: 1200px) {
+  html .marquee {
+    height: 90px;
+  }
+}
+@media (min-width: 320px) {
+  html .messenger {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 65%;
+    pointer-events: none;
+  }
+  html .messenger-position {
+    display: flex;
+    justify-content: end;
+  }
+  html .messenger-position-button {
+    pointer-events: auto;
+  }
+  html .messenger-position-button__photo {
+    height: 69px;
+  }
+}
+@media (min-width: 768px) {
+  html .messenger {
+    top: 80%;
+  }
+  html .messenger-position-button__photo {
+    height: 97px;
+  }
+}
+@media (min-width: 1400px) {
+  html .messenger {
+    top: 65%;
+    right: -100px;
+  }
+}
+html .buyButton {
+  padding: 12px 0px;
+  margin-top: 28px;
+  width: 100%;
+  background-color: #F4F1EC;
+  color: #000;
+}
+html .buyButton img {
+  margin-left: 10px;
+  filter: brightness(0);
+}
+html .buyButton:hover {
+  padding: 12px 0px;
+  margin-top: 28px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+html .buyButton:hover img {
+  margin-left: 10px;
+  filter: brightness(100);
+}
+
+h1, h2 {
+  font-weight: 1000;
+}
+
+.banner {
+  overflow: hidden;
+}
+
+.weight {
+  font-weight: 800;
+}
+
+@media (min-width: 320px) {
+  .error {
+    text-align: center;
+    color: red;
+  }
+  .error h1 {
+    font-size: 50px;
+  }
+  header, main {
+    display: none;
+  }
+  main .together {
+    position: relative;
+  }
+  main .together__background {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: brightness(50%);
+  }
+  main .together-text {
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  main .together-text__heading {
+    margin-bottom: 20px;
+  }
+  main .together-text__text {
+    padding: 0px 38px;
+    margin-bottom: 40px;
+  }
+  main .together-text .buyButton {
+    width: 215px;
+  }
+}
+@media (min-width: 768px) {
+  .together__background {
+    height: 400px;
+  }
+  .together-text {
+    top: 23%;
+  }
+  .together-text__heading {
+    margin-bottom: 50px;
+  }
+  .together-text__text {
+    padding: 0px 38px;
+    margin-bottom: 32px;
+    width: 70%;
+  }
+  .together-text .buyButton {
+    width: 215px;
+  }
+}
+@media (min-width: 1200px) {
+  .error {
+    display: none;
+  }
+  h2 {
+    font-size: 5.2rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.9rem;
+  }
+  header, main {
+    display: block;
+  }
+  header p {
+    font-size: 1.9rem;
+  }
+  header .header-position {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1920px;
+  }
+  header .header-position-left, header .header-position-right {
+    margin-bottom: 12px;
+    width: 50%;
+    height: 337px;
+  }
+  header .header-position-left {
+    margin-right: 12px;
+  }
+  header .header-position-left__photo {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 100%;
+       object-position: 0 100%;
+  }
+  header .header-position-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E3D4C5;
+  }
+  header .header-position-right__heading, header .header-position-right__text {
+    margin-left: 70px;
+  }
+  header .header-position-right__text {
+    margin-top: 39px;
+    width: 80%;
+  }
+  main .faq {
+    margin-top: 131px;
+    margin-bottom: 141px;
+  }
+  main .faq-position {
+    display: flex;
+  }
+  main .faq-position-left, main .faq-position-right {
+    width: 50%;
+  }
+  main .faq-position-left .accordion, main .faq-position-right .accordion {
+    --bs-accordion-btn-icon-width: 3.2rem;
+  }
+  main .faq-position-left .accordion .accordion-item, main .faq-position-right .accordion .accordion-item {
+    padding: 30px 20px;
+  }
+  main .faq-position-left .accordion .accordion-item .accordion-header .accordion-button, main .faq-position-right .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 2.5rem;
+    padding: 0px;
+    background-color: transparent;
+  }
+  main .faq-position-left .accordion .accordion-item .accordion-body, main .faq-position-right .accordion .accordion-item .accordion-body {
+    font-size: 1.9rem;
+  }
+  main .faq-position-left .accordion-item:hover, main .faq-position-left .accordion-button:hover, main .faq-position-right .accordion-item:hover, main .faq-position-right .accordion-button:hover {
+    background-color: #F4F1EC;
+  }
+  main .faq-position-left {
+    margin-right: 20px;
+  }
+  main .together__background {
+    height: 600px;
+  }
+  main .together-text__heading {
+    margin-bottom: 50px;
+    font-size: 45px;
+  }
+  main .together-text__text {
+    padding: 0px 38px;
+    margin-bottom: 64px;
+    width: 50%;
+  }
+  main .together-text .buyButton {
+    width: 385px;
+  }
+}/*# sourceMappingURL=faq.css.map */
