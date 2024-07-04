@@ -1,6 +1,14 @@
 @use './colors' as *;
 
 @mixin marquee{
+    @keyframes text{
+        0%{  
+            left: 0%
+        }
+        100%{
+            left:30%;
+        }
+    }
     .marquee{
         @media (min-width:320px) {
             display: flex;
@@ -36,7 +44,6 @@
         }
     }
 }
-
 
 @mixin slider{
     .no-favourite{

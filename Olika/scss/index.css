@@ -116,6 +116,14 @@ html .buyButton:hover img {
   margin-left: 10px;
   filter: brightness(100);
 }
+@keyframes text {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 30%;
+  }
+}
 @media (min-width: 320px) {
   html .marquee {
     display: flex;
@@ -259,14 +267,6 @@ h1, h2, h3, .price {
      object-fit: cover;
 }
 
-@keyframes text {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 30%;
-  }
-}
 @media (min-width: 320px) {
   header .header-position {
     position: relative;

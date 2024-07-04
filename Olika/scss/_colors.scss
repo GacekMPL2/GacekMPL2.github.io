@@ -1,43 +1,54 @@
-// Notification
+//Nav-Foter
 
-$notification-background:#E3D4C5;
-$notification-text: #000000;
+    // Notification
 
-//Nav
+    $notification-background:#E3D4C5;
+    $notification-text: #000000;
 
-$nav-border-color: #DADADA;
-$nav-background: #FFFFFF;
+    //Nav
 
-//Footer
+    $nav-border-color: #DADADA;
+    $nav-background: #FFFFFF;
 
-$footer-background: #171717;
+    //Footer
 
-//Cookie
-$cookie-bacground: #202020;
+    $footer-background: #171717;
+
+    //Cookie
+    $cookie-bacground: #202020;
 
 //Index
-//Header
+    //Header
 
+    //Marquee/Rect
+    $marquee-background: #000;
+    $marquee-text: #FFFFFF;
+    $rect-background: rgb(227, 212, 197);
 
-//Marquee/Rect
-$marquee-background: #000;
-$marquee-text: #FFFFFF;
-$rect-background: rgb(227, 212, 197);
+    //Main
+    //Bestseller
+    $bestseller-button-background: #000;
+    $bestseller-buy-button-background: #F4F1EC;
+    $bestseller-text: #fff;
+    $bestseller-buy-buton-hover: #000;
+    $bestseller-buy-text: #615b5b;
 
-//Main
-//Bestseller
-$bestseller-button-background: #000;
-$bestseller-buy-button-background: #F4F1EC;
-$bestseller-text: #fff;
-$bestseller-buy-buton-hover: #000;
-$bestseller-buy-text: #615b5b;
+    //Newseletter
+    $newseletter-background: #E3D4C5;
 
-//Newseletter
-$newseletter-background: #E3D4C5;
+    //Beauty
+    $beauty-background:#F4F1EC;
+    $beauty-button: #E3D4C5;
 
-//Beauty
-$beauty-background:#F4F1EC;
-$beauty-button: #E3D4C5;
+    //Certificate
+    $certificate-background: #F4F1EC;
 
-//Certificate
-$certificate-background: #F4F1EC;
+//Wspołpraca
+    //Header
+    $header-background: #E3D4C5;
+
+    //Info
+    $info-border-background:#6A6A6A;
+
+    //Contact
+    $contact-button-background:#F4F1EC;
