@@ -1,0 +1,203 @@
+@use './colors' as *;
+@use './mixins' as *;
+
+html{
+    font-size: 62.5%;
+    @include marquee;
+    @include messenger;
+    @include buyButton;
+}
+
+h1,h2{
+    font-weight: 1000;
+}
+
+
+.banner{
+    overflow: hidden;
+}
+
+.weight{
+    font-weight: 800;
+}
+
+.read{
+    margin-top: 12px;
+    img{
+        margin-left: 12px;
+    }
+}
+
+.p-color{
+    color: #999999;
+}
+
+.blog-time{
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    .time{
+        margin-left: 10px;
+    }
+}
+
+.read:hover{
+    color: #000;
+    border-bottom: 1px solid black;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 17px;
+    height: 17px;
+    opacity: 1;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.carousel-indicators{
+    .active{
+        background-color: white;
+    }
+}
+
+
+@media (min-width: 320px) { 
+    .error{
+        text-align: center;
+        color: red;
+        h1{
+            font-size: 50px;
+        }
+    }
+    header,main{
+        display: none;
+    }
+}
+
+@media (min-width: 576px) { 
+
+}
+
+@media (min-width: 768px) { 
+
+}
+
+@media (min-width: 992px) { 
+
+}
+
+@media (min-width: 1200px) { 
+    .error{
+        display: none;
+    }
+    h2{
+        font-size: 5.2rem;
+    }
+    h3{
+        font-size: 3.0rem;
+    }
+    p{
+        font-size: 1.9rem;
+    }
+    header,main{
+        display: block;
+    }
+    header{
+        margin-bottom: 12px;
+        .header-position{
+            margin: 0 auto;
+            max-width: 1920px;
+            display: flex;
+            &-left{
+                position: relative;
+                overflow: hidden;
+                width: 40%;
+                padding-top: 81px;
+                padding-left: 81px;
+                padding-bottom: 132px;
+                margin-right: 12px;
+                background-color: $header-background;
+                &__text{
+                    width: 65%;
+                }
+                &__text:first-child{
+                    font-size:2.5rem;
+                }
+                &__heading{
+                    margin-top: 47px;
+                    margin-bottom: 39px;
+                }
+                .read{
+                    margin-top: 33px;
+                }
+                &__photo{
+                    position: absolute;
+                    bottom: 0%;
+                }
+            }
+            &-right{
+                width: 60%;
+                .carousel{
+                    height: 100%;
+                    .carousel-indicators{
+                        left: 63px;
+                        bottom: 56px;
+                        right: auto;
+                        margin-left: 0%;
+                    }
+                    .carousel-inner{
+                        height: 100%;
+                        .carousel-item{
+                            height: 100%;
+                            img{
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .blog{
+            margin-top: 69px;
+            border-top:  1px solid $blog-border-background;
+            &-position{
+                &-left{
+                    margin-bottom: 20px;
+                    width: 79.4%;
+                    border-right:  1px solid $blog-border-background;
+                    &-header{
+                       padding-top: 49px;
+                       width: 45%;
+                    }
+                    &-mid{
+                        margin-top: 72px;
+                        display: flex;
+                        .small-slider{
+                            width: 385px;
+                            margin-right: 20px;
+                            &__heading{
+                                width: 100%;
+                            }
+                            &__text{
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        .small-slider:last-child{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+                &-right{
+
+                }
+            }
+        }
+    }
+}

@@ -23,6 +23,13 @@ footer{
     background-color: $footer-background;
 }
 
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+
 .container-xxl{
     padding: 0px 20px;
 }
