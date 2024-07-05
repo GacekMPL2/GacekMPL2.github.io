@@ -79,7 +79,7 @@ html {
   }
 }
 
-h1, h2 {
+h1, h2, .weight, li::marker {
   font-weight: 1000;
 }
 
@@ -383,7 +383,35 @@ h1, h2 {
   main .concept {
     background-color: #E3D4C5;
   }
+  main .concept-position {
+    padding-top: 98px;
+    padding-bottom: 82px;
+    margin-bottom: 12px;
+    display: flex;
+  }
   main .concept-position-left, main .concept-position-right {
     width: 50%;
+  }
+  main .concept-position-left__heading {
+    width: 80%;
+  }
+  main .concept-position-right ol {
+    font-size: 19px;
+  }
+  main .concept-position-right-text {
+    margin-top: 77px;
+  }
+  main .concept-position-right-text__text:last-child {
+    margin-top: 40px;
+    font-size: 2.5rem;
+  }
+  main .product {
+    margin: 0 auto;
+    max-width: 1920px;
+  }
+  main .product-photo {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=o-nas.css.map */

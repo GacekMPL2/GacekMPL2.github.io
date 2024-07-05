@@ -7,7 +7,7 @@ html{
     @include messenger;
 }
 
-h1,h2{
+h1,h2, .weight, li::marker{
     font-weight: 1000;
 }
 
@@ -336,9 +336,38 @@ h1,h2{
         .concept{
             background-color: $header-background;
             &-position{
+                padding-top: 98px;
+                padding-bottom: 82px;
+                margin-bottom: 12px;
+                display: flex;
                 &-left, &-right{
                     width: 50%;
                 }
+                &-left{
+                    &__heading{
+                        width: 80%;
+                    }
+                }
+                &-right{
+                    ol{
+                        font-size: 19px;
+                    }
+                    &-text{
+                        margin-top: 77px;
+                        &__text:last-child{
+                            margin-top: 40px;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        .product{
+            margin: 0 auto;
+            max-width: 1920px;
+            &-photo{
+                width: 100%;
+                object-fit: cover;
             }
         }
     }
