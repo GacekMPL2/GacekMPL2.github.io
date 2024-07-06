@@ -6,9 +6,11 @@ html{
     @include marquee;
     @include messenger;
     @include buyButton;
+    @include paganation;
+    @include blogSearch;
 }
 
-h1,h2{
+h1,h2,h3{
     font-weight: 1000;
 }
 
@@ -22,10 +24,15 @@ h1,h2{
 }
 
 .read{
-    margin-top: 12px;
+    margin-top: 20px;
     img{
         margin-left: 12px;
     }
+}
+
+.read:hover{
+    color: #000;
+    border-bottom: 1px solid black;
 }
 
 .p-color{
@@ -40,11 +47,6 @@ h1,h2{
     .time{
         margin-left: 10px;
     }
-}
-
-.read:hover{
-    color: #000;
-    border-bottom: 1px solid black;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -163,39 +165,72 @@ h1,h2{
         }
     }
     main{
+        .small-slider{
+            width: 100%;
+            max-width: 385px;
+            margin-right: 20px;
+            &__photo{
+                width: 100%;
+            }
+            &__heading{
+                width: 100%;
+            }
+            &__text{
+                margin-top: 20px;
+            }
+        }
+        .small-slider:last-child{
+            margin-right: 0px;
+        }
+        .big-slider{
+            width: 100%;
+            max-width: 790px;
+            &__photo{
+                width: 100%;
+                min-height: 275px;
+                object-fit: cover;
+            }
+            &__text{
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;  
+                overflow: hidden;
+            }
+        }
+
         .blog{
             margin-top: 69px;
             border-top:  1px solid $blog-border-background;
             &-position{
+                display: flex;
                 &-left{
-                    margin-bottom: 20px;
-                    width: 79.4%;
-                    border-right:  1px solid $blog-border-background;
+                    padding-bottom: 111px;
+                    padding-right: 71px;
+                    width: 100%;
+                    border-right: 1px solid $blog-border-background;
                     &-header{
                        padding-top: 49px;
                        width: 45%;
                     }
-                    &-mid{
+                    &-top, &-bottom, &-mid{
                         margin-top: 72px;
                         display: flex;
-                        .small-slider{
-                            width: 385px;
+                    }
+                    &-mid{
+                        .big-slider{
                             margin-right: 20px;
-                            &__heading{
-                                width: 100%;
-                            }
-                            &__text{
-                                margin-top: 20px;
-                                margin-bottom: 20px;
-                            }
                         }
-                        .small-slider:last-child{
-                            margin-right: 0px;
-                        }
+                    }
+                    &-bottom{
+                        margin-bottom: 113px;
                     }
                 }
                 &-right{
-
+                    padding-top: 49px;
+                    width: 25%;
+                    &-position{
+                        margin-left: 71px;
+                    }
                 }
             }
         }

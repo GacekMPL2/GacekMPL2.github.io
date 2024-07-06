@@ -205,3 +205,98 @@
         }
     }
 }
+
+@mixin paganation{
+    .paganation-nav{
+        .pagination{
+            margin: 0;
+            .page-item{
+                margin-right: 12px;
+                width: 53px;
+                height: 51px;
+                .page-link, .page-input{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 1.8rem;
+                    color: black;
+                    font-weight: 800;
+                    background-color: #F4F1EC;
+                    border: 1px solid #DADADA;
+                }
+                .page-link-black{
+                    background-color: #202020;
+                    color: white;
+                }
+                .page-link:hover{
+                    z-index: 0;
+                }
+                .page-input::placeholder{
+                    color: white;
+                    font-size: 1.8rem;
+                }
+                .page-input::-webkit-inner-spin-button{
+                    -webkit-appearance: none; 
+                    -moz-appearance: textfield;
+                    margin: 0;
+                }
+            }
+            .page-item-next{
+                width: 225px;
+                img{
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+}
+
+@mixin blogSearch{
+    .blog-search-input{
+        position: relative;
+        width: 100%;
+        max-width: 259px;
+        background-color: $contact-button-background;
+        font-size: 1.4rem;
+        #search-input{
+            display: block;
+            padding-left: 12px;
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            height: 51px;
+        }
+        &-button{
+            display: inline-block;
+            position: absolute;
+            top: 13px;
+            right: 12px;
+            cursor: pointer;
+            img{
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+    .blog-search-article{
+        &__heading{
+            margin-top: 32px;
+        }
+        ol{
+            padding-left: 0;
+            list-style: none;
+            li{
+                padding-top: 12px;
+                padding-bottom: 12px;
+                font-size: 1.4rem;
+                border-bottom: 1px solid #DADADA; 
+            }
+            li:hover{
+                font-weight: 800;
+            }
+        }
+    }
+}
