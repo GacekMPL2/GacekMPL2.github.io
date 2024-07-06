@@ -193,6 +193,17 @@ html .buyButton:hover img {
     right: -100px;
   }
 }
+html .blog-time {
+  display: flex;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+html .blog-time .time {
+  margin-left: 10px;
+  margin-right: 30px;
+  font-size: 1.4rem;
+}
 
 h1, h2, h3, .price {
   font-weight: 1000;
@@ -250,16 +261,6 @@ h1, h2, h3, .price {
 
 .favourite {
   content: url(../img/fav.png);
-}
-
-.blog-time {
-  display: flex;
-  margin-top: 28px;
-  margin-bottom: 12px;
-  font-size: 14px;
-}
-.blog-time .time {
-  margin-left: 10px;
 }
 
 .blog-s-photo {

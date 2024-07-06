@@ -170,6 +170,19 @@
     }
 }
 
+@mixin blogTime{
+    .blog-time{
+        display: flex;
+        margin-top: 28px;
+        margin-bottom: 12px;
+        font-size: 14px;
+        .time{
+            margin-left: 10px;
+            margin-right: 30px;
+            font-size: 1.4rem;
+        }
+    }
+}
 @mixin messenger{
     .messenger{
         @media (min-width:320px){
@@ -284,6 +297,17 @@
     .blog-search-article{
         &__heading{
             margin-top: 32px;
+        }
+        &-button-position{
+            margin-top: 32px;
+            &__button{
+                padding: 6px 12px;
+                margin-right: 8px;
+                margin-bottom: 12px;
+                text-transform: lowercase;
+                background-color: $contact-button-background;
+                border: 1px solid $blog-border-background;
+            }
         }
         ol{
             padding-left: 0;

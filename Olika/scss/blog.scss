@@ -8,6 +8,7 @@ html{
     @include buyButton;
     @include paganation;
     @include blogSearch;
+    @include blogTime;
 }
 
 h1,h2,h3{
@@ -37,16 +38,6 @@ h1,h2,h3{
 
 .p-color{
     color: #999999;
-}
-
-.blog-time{
-    display: flex;
-    margin-top: 28px;
-    margin-bottom: 12px;
-    font-size: 14px;
-    .time{
-        margin-left: 10px;
-    }
 }
 
 .carousel-indicators [data-bs-target] {

@@ -8,6 +8,7 @@ html{
     @include buyButton;
     @include marquee;
     @include messenger;
+    @include blogTime;
 }
 
 
@@ -66,16 +67,6 @@ h1,h2,h3, .price{
 
 .favourite{
     content: url(../img/fav.png);
-}
-
-.blog-time{
-    display: flex;
-    margin-top: 28px;
-    margin-bottom: 12px;
-    font-size: 14px;
-    .time{
-        margin-left: 10px;
-    }
 }
 
 .blog-s-photo{
