@@ -175,6 +175,7 @@ html .blog-search-input-button img {
 }
 html .blog-search-article__heading {
   margin-top: 32px;
+  font-weight: 1000;
 }
 html .blog-search-article-button-position {
   margin-top: 32px;
@@ -186,6 +187,9 @@ html .blog-search-article-button-position__button {
   text-transform: lowercase;
   background-color: #F4F1EC;
   border: 1px solid #DADADA;
+}
+html .blog-search-article-button-position__button:hover {
+  background-color: #E3D4C5;
 }
 html .blog-search-article ol {
   padding-left: 0;
@@ -199,17 +203,6 @@ html .blog-search-article ol li {
 }
 html .blog-search-article ol li:hover {
   font-weight: 800;
-}
-html .blog-time {
-  display: flex;
-  margin-top: 28px;
-  margin-bottom: 12px;
-  font-size: 14px;
-}
-html .blog-time .time {
-  margin-left: 10px;
-  margin-right: 30px;
-  font-size: 1.4rem;
 }
 
 h1, h2, h3 {

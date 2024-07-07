@@ -282,7 +282,7 @@
             border: 0;
             height: 51px;
         }
-        &-button{
+        &-button {
             display: inline-block;
             position: absolute;
             top: 13px;
@@ -297,6 +297,7 @@
     .blog-search-article{
         &__heading{
             margin-top: 32px;
+            font-weight: 1000;
         }
         &-button-position{
             margin-top: 32px;
@@ -307,6 +308,9 @@
                 text-transform: lowercase;
                 background-color: $contact-button-background;
                 border: 1px solid $blog-border-background;
+            }
+            &__button:hover{
+                background-color: $header-background;
             }
         }
         ol{

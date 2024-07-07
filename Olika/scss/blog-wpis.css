@@ -153,6 +153,7 @@ html .blog-search-input-button img {
 }
 html .blog-search-article__heading {
   margin-top: 32px;
+  font-weight: 1000;
 }
 html .blog-search-article-button-position {
   margin-top: 32px;
@@ -164,6 +165,9 @@ html .blog-search-article-button-position__button {
   text-transform: lowercase;
   background-color: #F4F1EC;
   border: 1px solid #DADADA;
+}
+html .blog-search-article-button-position__button:hover {
+  background-color: #E3D4C5;
 }
 html .blog-search-article ol {
   padding-left: 0;
@@ -190,7 +194,7 @@ html .blog-time .time {
   font-size: 1.4rem;
 }
 
-h1, h2, .weight, li::marker {
+h1, h2, h3, .weight, li::marker {
   font-weight: 1000;
 }
 
@@ -200,6 +204,17 @@ h1, h2, .weight, li::marker {
 
 .weight {
   font-weight: 800;
+}
+
+.p-color {
+  color: #999999;
+}
+
+.read {
+  margin-top: 20px;
+}
+.read img {
+  margin-left: 12px;
 }
 
 @media (min-width: 320px) {
@@ -232,13 +247,17 @@ h1, h2, .weight, li::marker {
   }
   main .blog-position {
     display: flex;
+    justify-content: space-between;
   }
   main .blog-position-left {
-    width: 100%;
-    padding-right: 71px;
+    width: 80%;
+    max-width: 1274px;
+    padding-right: 76px;
     border-right: 1px solid #DADADA;
   }
   main .blog-position-left__photo {
+    margin-top: 72px;
+    margin-bottom: 40px;
     width: 100%;
     height: 628px;
     -o-object-fit: cover;
@@ -246,11 +265,11 @@ h1, h2, .weight, li::marker {
   }
   main .blog-position-left-image {
     display: flex;
-    width: 1195px;
+    margin-top: 72px;
+    width: 100%;
   }
   main .blog-position-left-image__photo:first-child {
-    width: 55%;
-    max-width: 655px;
+    width: calc(54% - 20px);
     height: 490px;
     margin-right: 20px;
     -o-object-fit: cover;
@@ -258,16 +277,103 @@ h1, h2, .weight, li::marker {
   }
   main .blog-position-left-image__photo:last-child {
     width: 46%;
-    max-width: 520px;
     height: 490px;
     -o-object-fit: cover;
        object-fit: cover;
   }
+  main .blog-position-left__text {
+    margin-top: 32px;
+  }
+  main .blog-position-left-tag {
+    margin-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #DADADA;
+  }
+  main .blog-position-left-tag .button-tag {
+    padding: 6px 12px;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    text-transform: lowercase;
+    background-color: #F4F1EC;
+    border: 1px solid #DADADA;
+  }
+  main .blog-position-left-tag .button-tag:hover {
+    background-color: #E3D4C5;
+  }
+  main .blog-position-left-slider {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 72px;
+    padding-bottom: 72px;
+    border-bottom: 1px solid #DADADA;
+  }
+  main .blog-position-left-slider .small-slider {
+    width: 100%;
+    max-width: 385px;
+    margin-right: 20px;
+  }
+  main .blog-position-left-slider .small-slider__photo {
+    height: 150px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .blog-position-left-slider .small-slider__text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  main .blog-position-left-comment__text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  main .blog-position-left-comment-form textarea {
+    padding: 16px;
+    width: 100%;
+    height: 146px;
+    background-color: #F4F1EC;
+    border: none;
+  }
+  main .blog-position-left-comment-form-position {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  main .blog-position-left-comment-form-position input {
+    padding: 16px;
+    margin-right: 20px;
+    width: 100%;
+    background-color: #F4F1EC;
+    border: none;
+  }
+  main .blog-position-left-comment-form-position input:last-child {
+    margin-right: 0px;
+  }
+  main .blog-position-left-comment-form-consent {
+    display: flex;
+  }
+  main .blog-position-left-comment-form-consent #consent {
+    margin-right: 10px;
+  }
+  main .blog-position-left-comment-form .send {
+    margin-top: 44px;
+    margin-bottom: 105px;
+    padding: 12px 0px;
+    width: 382px;
+    height: 51px;
+    background-color: #E3D4C5;
+  }
+  main .blog-position-left-comment-form .send img {
+    margin-left: 10px;
+  }
   main .blog-position-right {
     padding-top: 49px;
-    width: 25%;
+    width: 22%;
+    max-width: 332px;
+    flex-shrink: 0;
   }
   main .blog-position-right-position {
-    margin-left: 71px;
+    margin-left: 77px;
   }
 }/*# sourceMappingURL=blog-wpis.css.map */
