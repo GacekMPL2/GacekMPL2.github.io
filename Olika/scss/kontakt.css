@@ -116,6 +116,9 @@ h1, h2 {
   header, main {
     display: block;
   }
+  header {
+    padding-top: 49px;
+  }
   header p {
     font-size: 1.9rem;
   }

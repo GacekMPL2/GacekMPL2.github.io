@@ -5,13 +5,14 @@ html{
     font-size: 62.5%;
     @include marquee;
     @include messenger;
-    @include buyButton;
     @include paganation;
     @include blogSearch;
     @include blogTime;
+    @include buyButton;
+    @include shopCategory;
 }
 
-h1,h2,h3{
+h1,h2,h3, .weight, li::marker{
     font-weight: 1000;
 }
 
@@ -24,20 +25,15 @@ h1,h2,h3{
     font-weight: 800;
 }
 
+.p-color{
+    color: #999999;
+}
+
 .read{
     margin-top: 20px;
     img{
         margin-left: 12px;
     }
-}
-
-.read:hover{
-    color: #000;
-    border-bottom: 1px solid black;
-}
-
-.p-color{
-    color: #999999;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -55,7 +51,6 @@ h1,h2,h3{
         background-color: white;
     }
 }
-
 
 
 @media (min-width: 320px) { 
@@ -101,6 +96,7 @@ h1,h2,h3{
     }
     header{
         margin-bottom: 12px;
+        padding-top: 49px;
         .header-position{
             margin: 0 auto;
             max-width: 1920px;
@@ -112,27 +108,35 @@ h1,h2,h3{
                 padding-top: 81px;
                 padding-left: 81px;
                 padding-bottom: 132px;
-                margin-right: 12px;
+                padding-right: 161px;
+                margin-left: 12px;
+                order: 2;
+                z-index: 0;
                 background-color: $header-background;
-                &__text{
-                    width: 65%;
-                }
-                &__text:first-child{
-                    font-size:2.5rem;
-                }
                 &__heading{
                     margin-top: 47px;
-                    margin-bottom: 39px;
+                    margin-bottom: 24px;
                 }
-                .read{
-                    margin-top: 33px;
+                &-star{
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+                &__text{
+                    margin-top: 24px;
+                    margin-bottom: 33px;
+                    z-index: 3;
                 }
                 &__photo{
                     position: absolute;
                     bottom: 0%;
+                    right: 0;
+                    z-index: -1;
+                    pointer-events: none;
                 }
             }
             &-right{
+                order: 1;
                 width: 60%;
                 .carousel{
                     height: 100%;
@@ -157,74 +161,21 @@ h1,h2,h3{
         }
     }
     main{
-        .small-slider{
-            width: 100%;
-            max-width: 385px;
-            margin-right: 20px;
-            &__photo{
-                width: 100%;
-            }
-            &__heading{
-                width: 100%;
-            }
-            &__text{
-                margin-top: 20px;
-            }
-        }
-        .small-slider:last-child{
-            margin-right: 0px;
-        }
-        .big-slider{
-            width: 100%;
-            max-width: 790px;
-            &__photo{
-                width: 100%;
-                min-height: 275px;
-                object-fit: cover;
-            }
-            &__text{
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 2;  
-                overflow: hidden;
-            }
-        }
-
-        .blog{
-            margin-top: 69px;
-            border-top:  1px solid $blog-border-background;
+        .shop{
+            border-top: 1px solid $blog-border-background;
+            margin-top: 72px;
             &-position{
-                display: flex;
                 &-left{
-                    padding-bottom: 111px;
-                    padding-right: 71px;
-                    width: 100%;
+                    padding-top: 40px;
+                    width: 21%;
+                    padding-right: 79px;
                     border-right: 1px solid $blog-border-background;
-                    &-header{
-                       padding-top: 49px;
-                       width: 45%;
-                    }
-                    &-top, &-bottom, &-mid{
-                        margin-top: 72px;
-                        display: flex;
-                    }
-                    &-mid{
-                        .big-slider{
-                            margin-right: 20px;
-                        }
-                    }
-                    &-bottom{
-                        margin-bottom: 113px;
-                    }
                 }
                 &-right{
-                    padding-top: 49px;
-                    width: 25%;
-                    &-position{
-                        margin-left: 71px;
-                    }
+                    
                 }
             }
+            
         }
     }
 }

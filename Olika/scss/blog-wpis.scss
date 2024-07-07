@@ -79,6 +79,7 @@ h1,h2,h3, .weight, li::marker{
                 display: flex;
                 justify-content: space-between;
                 &-left{
+                    padding-top: 49px;
                     width: 80%;
                     max-width: 1274px;
                     padding-right: 76px;
