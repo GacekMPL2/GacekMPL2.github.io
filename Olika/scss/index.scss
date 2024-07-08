@@ -93,13 +93,15 @@ h1,h2,h3, .price{
                     margin-bottom: 43px;
                 }
                 &__buyButton{
-                    padding: 12px 35px;
-                    margin-bottom: 43px;
-                    font-size: 1.6rem;
-                    background-color: #000;
-                    color: white;
-                    img{
-                        margin-left: 10px;
+                    a{
+                        padding: 12px 35px;
+                        margin-bottom: 43px;
+                        font-size: 1.6rem;
+                        background-color: #000;
+                        color: white;
+                        img{
+                            margin-left: 10px;
+                        }
                     }
                 }
             }
@@ -412,10 +414,14 @@ h1,h2,h3, .price{
                                         }
                                         &-text{
                                             .buyButton{
-                                                background-color: #E3D4C5;
+                                                a{
+                                                    background-color: #E3D4C5;
+                                                }
                                             }
                                             .buyButton:hover{
-                                                background-color: black;
+                                                a{
+                                                    background-color: black;
+                                                }
                                             }
                                         }
                                     }
@@ -728,6 +734,7 @@ h1,h2,h3, .price{
                             left: -100px;
                             z-index: 2;
                         }
+                        
                     }
                     &-text{
                         position: absolute;
@@ -747,6 +754,14 @@ h1,h2,h3, .price{
                         }
                         .hiden-t-d{
                             display: none;
+                        }
+                        &-button{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                        p{
+                            margin-top: 28px;
                         }
                     }
                 }
@@ -785,6 +800,7 @@ h1,h2,h3, .price{
                     &__text{
                         margin-bottom: 7.5%;
                         width: 78%;
+                        max-width: 400px;
                     }
                     &__form{
                         display: flex;
@@ -878,7 +894,8 @@ h1,h2,h3, .price{
                     text-align: left;
                     &-header{
                         &__text{
-                            width: 75%;
+                            width: 100%;
+                            max-width: 500px;
                         }
                     }
                 }
@@ -1151,6 +1168,7 @@ h1,h2,h3, .price{
                     }
                     &__text{
                         margin-bottom: 40px;
+                        max-width: 550px;
                     }
                     &__form{
                         &-form-position{
@@ -1225,6 +1243,13 @@ h1,h2,h3, .price{
         .blog{
             &-position{
                 align-items: normal;
+                &-text{
+                    &-header{
+                        &__text{
+                            max-width: 580px;
+                        }
+                    }
+                }
                 &-slider{
                     &-big{
                         margin-left: 20px;

@@ -79,24 +79,27 @@ html {
   }
 }
 html .buyButton {
+  width: 100%;
+}
+html .buyButton a {
+  display: block;
   padding: 12px 0px;
   margin-top: 28px;
-  width: 100%;
   background-color: #F4F1EC;
   color: #000;
 }
-html .buyButton img {
+html .buyButton a img {
   margin-left: 10px;
   filter: brightness(0);
 }
-html .buyButton:hover {
+html .buyButton:hover a {
   padding: 12px 0px;
   margin-top: 28px;
   width: 100%;
   background-color: #000;
   color: #fff;
 }
-html .buyButton:hover img {
+html .buyButton:hover a img {
   margin-left: 10px;
   filter: brightness(100);
 }

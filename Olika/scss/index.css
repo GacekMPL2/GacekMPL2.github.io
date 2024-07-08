@@ -84,35 +84,42 @@ html .slider:last-child {
   }
 }
 html .button {
-  margin-bottom: 40px;
   height: 48px;
+  background-color: #000;
   width: 100%;
   max-width: 350px;
-  background-color: #000;
+  margin-bottom: 40px;
+}
+html .button a {
+  display: block;
+  align-items: center;
   color: #fff;
 }
-html .button img {
+html .button a img {
   margin-left: 10px;
 }
 html .buyButton {
+  width: 100%;
+}
+html .buyButton a {
+  display: block;
   padding: 12px 0px;
   margin-top: 28px;
-  width: 100%;
   background-color: #F4F1EC;
   color: #000;
 }
-html .buyButton img {
+html .buyButton a img {
   margin-left: 10px;
   filter: brightness(0);
 }
-html .buyButton:hover {
+html .buyButton:hover a {
   padding: 12px 0px;
   margin-top: 28px;
   width: 100%;
   background-color: #000;
   color: #fff;
 }
-html .buyButton:hover img {
+html .buyButton:hover a img {
   margin-left: 10px;
   filter: brightness(100);
 }
@@ -288,14 +295,14 @@ h1, h2, h3, .price {
     font-size: 1.6rem;
     margin-bottom: 43px;
   }
-  header .header-position-left__buyButton {
+  header .header-position-left__buyButton a {
     padding: 12px 35px;
     margin-bottom: 43px;
     font-size: 1.6rem;
     background-color: #000;
     color: white;
   }
-  header .header-position-left__buyButton img {
+  header .header-position-left__buyButton a img {
     margin-left: 10px;
   }
   header .header-position-right {
@@ -601,10 +608,10 @@ h1, h2, h3, .price {
     height: 250px;
     width: 100%;
   }
-  main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .slider-text .buyButton {
+  main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .slider-text .buyButton a {
     background-color: #E3D4C5;
   }
-  main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .slider-text .buyButton:hover {
+  main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .slider-text .buyButton:hover a {
     background-color: black;
   }
   main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .hiden-mobile {
@@ -898,6 +905,14 @@ h1, h2, h3, .price {
   main .news-slider-position__special-text .hiden-t-d {
     display: none;
   }
+  main .news-slider-position__special-text-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .news-slider-position__special-text p {
+    margin-top: 28px;
+  }
   main .news-slider-position__slider {
     width: 300px;
     flex-direction: column;
@@ -934,6 +949,7 @@ h1, h2, h3, .price {
   main .newseletter-position-text__text {
     margin-bottom: 7.5%;
     width: 78%;
+    max-width: 400px;
   }
   main .newseletter-position-text__form {
     display: flex;
@@ -1018,7 +1034,8 @@ h1, h2, h3, .price {
     text-align: left;
   }
   main .blog-position-text-header__text {
-    width: 75%;
+    width: 100%;
+    max-width: 500px;
   }
   main .blog-position-slider {
     display: flex;
@@ -1244,6 +1261,7 @@ h1, h2, h3, .price {
   }
   main .newseletter-position-text__text {
     margin-bottom: 40px;
+    max-width: 550px;
   }
   main .newseletter-position-text__form-form-position {
     margin-bottom: 0px;
@@ -1305,6 +1323,9 @@ h1, h2, h3, .price {
   }
   main .blog-position {
     align-items: normal;
+  }
+  main .blog-position-text-header__text {
+    max-width: 580px;
   }
   main .blog-position-slider-big {
     margin-left: 20px;
