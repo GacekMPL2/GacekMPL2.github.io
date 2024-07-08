@@ -1,0 +1,119 @@
+@use './colors' as *;
+@use './mixins' as *;
+
+html{
+    font-size: 62.5%;
+    @include marquee;
+    @include messenger;
+    @include paganation;
+    @include blogSearch;
+    @include blogTime;
+    @include buyButton;
+    @include shopCategory;
+    @include responsiveSlider;
+    @include specialOffer;
+    @include button;
+}
+
+h1,h2,h3, .weight, li::marker, .price{
+    font-weight: 1000;
+}
+
+
+
+.weight{
+    font-weight: 800;
+}
+
+.p-color, a, li{
+    color: #999999;
+}
+
+.read{
+    margin-top: 20px;
+    img{
+        margin-left: 12px;
+    }
+}
+
+@media (min-width: 320px) { 
+    .error{
+        text-align: center;
+        color: red;
+        h1{
+            font-size: 50px;
+        }
+    }
+    header,main{
+        display: none;
+    }
+}
+
+@media (min-width: 576px) { 
+
+}
+
+@media (min-width: 768px) { 
+
+}
+
+@media (min-width: 992px) { 
+
+}
+
+@media (min-width: 1200px) { 
+    .error{
+        display: none;
+    }
+    h2{
+        font-size: 5.2rem;
+    }
+    h3{
+        font-size: 3.0rem;
+    }
+    p{
+        font-size: 1.9rem;
+    }
+    header,main{
+        display: block;
+    }
+    main{
+        .shop{
+            &-position{
+                display: flex;
+                &-left{
+                    padding-top: 40px;
+                    padding-right: 79px;
+                    width: 21%;
+                    border-right: 1px solid $blog-border-background;
+                }
+                &-right{
+                    padding-top: 72px;
+                    margin-left: 76px;
+                    width: 79%;
+                    &-header{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        &-list{
+                            display: flex;
+                            padding: 0;
+                            list-style: none;
+                            font-size: 1.4rem;
+                            &-after::after{
+                                margin-left: 8px;
+                                margin-right: 8px;
+                                content: ">";
+                            }
+                        }
+                        &-button{
+                            button:first-child{
+                                margin-right: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
