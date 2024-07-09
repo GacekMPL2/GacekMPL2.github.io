@@ -544,6 +544,7 @@ h1, h2, h3, .weight, li::marker, .price {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 39px;
   }
   main .shop-position-right-header-list {
     display: flex;
@@ -558,5 +559,132 @@ h1, h2, h3, .weight, li::marker, .price {
   }
   main .shop-position-right-header-button button:first-child {
     margin-right: 12px;
+  }
+  main .shop-position-right-product {
+    display: flex;
+  }
+  main .shop-position-right-product-position {
+    display: flex;
+  }
+  main .shop-position-right-product-position-product {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  main .shop-position-right-product-position-product__photo {
+    width: 161px;
+    height: 155px;
+    margin-bottom: 20px;
+  }
+  main .shop-position-right-product-position-big {
+    position: relative;
+    width: 100%;
+    max-width: 473px;
+    height: 504px;
+  }
+  main .shop-position-right-product-position-big #mainImage {
+    width: 100%;
+    height: 100%;
+  }
+  main .shop-position-right-product-text {
+    margin-left: 20px;
+    width: 50%;
+    max-width: 520px;
+  }
+  main .shop-position-right-product-text-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  main .shop-position-right-product-text-header-star img {
+    margin-left: 10px;
+  }
+  main .shop-position-right-product-text p {
+    margin-bottom: 20px;
+  }
+  main .shop-position-right-product-text-description {
+    font-size: 1.4rem;
+  }
+  main .shop-position-right-product-text .price {
+    font-size: 2.5rem;
+  }
+  main .shop-position-right-product-text-price {
+    display: flex;
+    margin-top: 16px;
+  }
+  main .shop-position-right-product-text-price-ammount {
+    width: 53px;
+    padding-left: 10px;
+    margin-right: 17px;
+    font-weight: 1000;
+    font-size: 1.9rem;
+  }
+  main .shop-position-right-product-text-price .buyButton {
+    padding: 12px 23px;
+    margin-left: 90px;
+    width: 100%;
+    max-width: 339px;
+    background-color: #E3D4C5;
+    color: #000;
+  }
+  main .shop-position-right-product-text-price .buyButton img {
+    margin-left: 10px;
+    filter: brightness(0);
+  }
+  main .shop-position-right-product-text-price .buyButton:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  main .shop-position-right-product-text-price .buyButton:hover img {
+    margin-left: 10px;
+    filter: brightness(100);
+  }
+  main .shop-position-right-product-text-availability {
+    padding-top: 22px;
+    padding-left: 36px;
+    padding-bottom: 26px;
+    margin-top: 27px;
+    height: 146px;
+    background-color: #F4F1EC;
+  }
+  main .shop-position-right-product-text-availability p {
+    display: flex;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  main .shop-position-right-product-text-availability-amount {
+    margin-left: 12px;
+    color: green;
+    font-weight: 1000;
+  }
+  main .shop-position-right-product-text-availability-price {
+    display: block;
+    margin-left: 12px;
+    width: 100%;
+    max-width: 170px;
+    font-weight: 1000;
+  }
+  main .shop-position-right-product-text-availability-price-delivery {
+    font-weight: 400;
+  }
+  main .shop-position-right-product-text-availability-code {
+    margin-left: 12px;
+    font-weight: 1000;
+  }
+  main .shop-position-right-text .accordion {
+    width: 100%;
+  }
+  main .shop-position-right-text .accordion .accordion-item {
+    display: flex;
+  }
+  main .shop-position-right-text .accordion .accordion-item .accordion-header {
+    width: 330px;
+  }
+  main .shop-position-right-text .accordion .accordion-item .accordion-header .ccordion-button {
+    width: 100%;
+  }
+  main .shop-position-right-text .accordion .accordion-item .collapse .accordion-body {
+    width: 790px;
   }
 }/*# sourceMappingURL=produkt.css.map */

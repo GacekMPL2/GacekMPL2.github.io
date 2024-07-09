@@ -95,3 +95,7 @@ minRange.addEventListener('input', updateSlider);
 maxRange.addEventListener('input', updateSlider);
 
 updateSlider();
+
+function changeImage(src) {
+    document.getElementById('mainImage').src = src;
+}
