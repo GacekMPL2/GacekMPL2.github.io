@@ -304,6 +304,7 @@ html .shop-category-price {
 }
 html .shop-category-price .price-range {
   display: flex;
+  margin-bottom: 14px;
 }
 html .shop-category-price .buyButton {
   padding: 12px 0px;

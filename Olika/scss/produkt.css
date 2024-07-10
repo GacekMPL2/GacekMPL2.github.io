@@ -304,6 +304,7 @@ html .shop-category-price {
 }
 html .shop-category-price .price-range {
   display: flex;
+  margin-bottom: 14px;
 }
 html .shop-category-price .buyButton {
   padding: 12px 0px;
@@ -485,6 +486,7 @@ h1, h2, h3, .weight, li::marker, .price {
 
 .weight {
   font-weight: 800;
+  color: #000;
 }
 
 .p-color, a, li {
@@ -562,6 +564,9 @@ h1, h2, h3, .weight, li::marker, .price {
   }
   main .shop-position-right-product {
     display: flex;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #DADADA;
   }
   main .shop-position-right-product-position {
     display: flex;
@@ -611,6 +616,7 @@ h1, h2, h3, .weight, li::marker, .price {
   }
   main .shop-position-right-product-text-price {
     display: flex;
+    justify-content: space-between;
     margin-top: 16px;
   }
   main .shop-position-right-product-text-price-ammount {
@@ -622,7 +628,6 @@ h1, h2, h3, .weight, li::marker, .price {
   }
   main .shop-position-right-product-text-price .buyButton {
     padding: 12px 23px;
-    margin-left: 90px;
     width: 100%;
     max-width: 339px;
     background-color: #E3D4C5;
@@ -672,19 +677,59 @@ h1, h2, h3, .weight, li::marker, .price {
     margin-left: 12px;
     font-weight: 1000;
   }
-  main .shop-position-right-text .accordion {
-    width: 100%;
+  main .shop-position-right-text {
+    padding-bottom: 66px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #DADADA;
+    min-height: 790px;
   }
-  main .shop-position-right-text .accordion .accordion-item {
+  main .shop-position-right-text .accordion {
     display: flex;
   }
-  main .shop-position-right-text .accordion .accordion-item .accordion-header {
+  main .shop-position-right-text .accordion .accordion-headers {
+    display: flex;
+    flex-direction: column;
     width: 330px;
   }
-  main .shop-position-right-text .accordion .accordion-item .accordion-header .ccordion-button {
+  main .shop-position-right-text .accordion .accordion-headers .accordion-item {
+    border: none;
+    --bs-accordion-btn-icon-width: 3.2rem;
+  }
+  main .shop-position-right-text .accordion .accordion-headers .accordion-item .accordion-header {
+    margin-bottom: 20px;
+  }
+  main .shop-position-right-text .accordion .accordion-headers .accordion-item .accordion-header .accordion-button {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: none;
+  }
+  main .shop-position-right-text .accordion .accordion-headers .accordion-item .accordion-header .collapsed {
+    color: #999999;
+  }
+  main .shop-position-right-text .accordion .accordion-content {
+    margin-left: 75px;
+    flex: 1;
     width: 100%;
   }
-  main .shop-position-right-text .accordion .accordion-item .collapse .accordion-body {
-    width: 790px;
+  main .shop-position-right-text .accordion .accordion-content .accordion-body .accordion-text {
+    margin-bottom: 30px;
+  }
+  main .shop-position-right-text .accordion .accordion-content .accordion-body .accordion-info {
+    font-size: 1.4rem;
+  }
+  main .shop-position-right-text .accordion .accordion-content ul {
+    margin-top: -30px;
+  }
+  main .shop-position-right-text .accordion .accordion-content ul li {
+    margin-left: 20px;
+    font-size: 1.9rem;
+  }
+  main .shop-position-right-similar-position-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  main .shop-position-right-similar-position-slider {
+    display: flex;
+    margin-bottom: 90px;
   }
 }/*# sourceMappingURL=produkt.css.map */

@@ -23,6 +23,7 @@ h1,h2,h3, .weight, li::marker, .price{
 
 .weight{
     font-weight: 800;
+    color: #000;
 }
 
 .p-color, a, li{
@@ -115,6 +116,9 @@ h1,h2,h3, .weight, li::marker, .price{
                     }
                     &-product{
                         display: flex;
+                        margin-bottom: 50px;
+                        padding-bottom: 30px;
+                        border-bottom: 1px solid $blog-border-background;
                         &-position{
                             display: flex;
                             &-product{
@@ -164,6 +168,7 @@ h1,h2,h3, .weight, li::marker, .price{
                             }
                             &-price{
                                 display: flex;
+                                justify-content: space-between;
                                 margin-top: 16px; 
                                 &-ammount{
                                     width: 53px;
@@ -174,7 +179,6 @@ h1,h2,h3, .weight, li::marker, .price{
                                 }    
                                 .buyButton{
                                     padding: 12px 23px;
-                                    margin-left: 90px; 
                                     width: 100%;
                                     max-width: 339px;
                                     background-color: $header-background;
@@ -228,21 +232,63 @@ h1,h2,h3, .weight, li::marker, .price{
                         }
                     }
                     &-text{
+                        padding-bottom: 66px;
+                        margin-bottom: 100px;
+                        border-bottom: 1px solid $blog-border-background;
+                        min-height: 790px;
                         .accordion{
-                            width: 100%;
-                            .accordion-item{
+                            display: flex;
+                            .accordion-headers{
                                 display: flex;
-                                .accordion-header{
-                                    width: 330px;
-                                    .ccordion-button{
-                                        width: 100%;
+                                flex-direction: column;
+                                width: 330px;
+                                .accordion-item{
+                                    border: none;
+                                    --bs-accordion-btn-icon-width: 3.2rem;
+                                    .accordion-header{
+                                        margin-bottom: 20px;
+                                        .accordion-button{
+                                            font-size: 2.5rem;
+                                            font-weight: 700;
+                                            text-transform: none;
+                                        }
+                                        .collapsed{
+                                            color: #999999;
+                                        }
                                     }
                                 }
-                                .collapse{
-                                    .accordion-body{
-                                        width: 790px;
+                            }
+                            .accordion-content {
+                                margin-left: 75px;
+                                flex: 1;
+                                width: 100%;
+                                .accordion-body{
+                                    .accordion-text{
+                                        margin-bottom: 30px;
+                                    }
+                                    .accordion-info{
+                                        font-size: 1.4rem;
                                     }
                                 }
+                                ul{
+                                    margin-top: -30px;
+                                    li{
+                                        margin-left: 20px;
+                                        font-size: 1.9rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-similar{
+                        &-position{
+                            &-header{
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            &-slider{
+                                display: flex;
+                                margin-bottom: 90px;
                             }
                         }
                     }

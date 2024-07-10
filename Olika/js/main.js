@@ -81,3 +81,18 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        const target = document.getElementById(targetId);
+        
+        document.querySelectorAll('.accordion-body').forEach(body => {
+          body.classList.remove('show');
+        });
+        
+        target.classList.add('show');
+      });
+    });
+  });
