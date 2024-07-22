@@ -20,6 +20,10 @@ h1,h2{
     font-weight: 800;
 }
 
+.p-color{
+    color: #6A6A6A;
+}
+
 @media (min-width: 320px) { 
     .error{
         text-align: center;
@@ -184,6 +188,7 @@ h1,h2{
                                     }
                                     label{
                                         font-size: 1.4rem;
+                                        width: 90%;
                                     }
                                 }
                                 .send{

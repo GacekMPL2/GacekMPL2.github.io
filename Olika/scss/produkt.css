@@ -162,6 +162,7 @@ html .blog-search-article-button-position__button {
   padding: 6px 12px;
   margin-right: 8px;
   margin-bottom: 12px;
+  font-size: 1.4rem;
   text-transform: lowercase;
   background-color: #F4F1EC;
   border: 1px solid #DADADA;
@@ -187,6 +188,7 @@ html .blog-time {
   margin-top: 28px;
   margin-bottom: 12px;
   font-size: 14px;
+  color: #999999;
 }
 html .blog-time .time {
   margin-left: 10px;
@@ -454,6 +456,7 @@ html .specialOffer_photo-big {
   position: absolute;
   right: -30%;
   bottom: -38%;
+  pointer-events: none;
 }
 html .specialOffer-price {
   margin-right: 12px;
@@ -620,11 +623,19 @@ h1, h2, h3, .weight, li::marker, .price {
     margin-top: 16px;
   }
   main .shop-position-right-product-text-price-ammount {
+    display: flex;
+    align-items: center;
+  }
+  main .shop-position-right-product-text-price-ammount-ammount {
     width: 53px;
+    height: 51px;
     padding-left: 10px;
     margin-right: 17px;
     font-weight: 1000;
     font-size: 1.9rem;
+  }
+  main .shop-position-right-product-text-price-ammount p {
+    margin-bottom: 0;
   }
   main .shop-position-right-product-text-price .buyButton {
     padding: 12px 23px;

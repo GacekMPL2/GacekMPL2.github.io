@@ -205,6 +205,7 @@ html .blog-time {
   margin-top: 28px;
   margin-bottom: 12px;
   font-size: 14px;
+  color: #999999;
 }
 html .blog-time .time {
   margin-left: 10px;
@@ -230,14 +231,19 @@ h1, h2, h3, .price {
 
 .read {
   margin-top: 12px;
+  padding-bottom: 5px;
 }
 .read img {
   margin-left: 12px;
+  filter: contrast(0%);
 }
 
 .read:hover {
   color: #000;
   border-bottom: 1px solid black;
+}
+.read:hover img {
+  filter: contrast(100%);
 }
 
 .carousel-indicators [data-bs-target] {
@@ -1340,6 +1346,7 @@ h1, h2, h3, .price {
   }
   main .blog-position-slider-big-b__heading, main .blog-position-slider-big-b__text, main .blog-position-slider-big-b .blog-time {
     width: 100%;
+    max-width: 100%;
   }
   main .blog-position-slider-big-b__text {
     display: -webkit-box;
@@ -1358,6 +1365,7 @@ h1, h2, h3, .price {
   }
   main .blog-position-slider-small-position-s__photo {
     width: 385px;
+    height: 275px;
   }
   main .blog-position-slider-small-position-s__heding {
     margin-bottom: 20px;

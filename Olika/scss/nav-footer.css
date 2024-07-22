@@ -246,7 +246,7 @@ a:hover {
   footer .container-xxl .footer-border .footer-b-one, footer .container-xxl .footer-border .footer-b-two {
     width: 100%;
     height: 1px;
-    border: 1px solid white;
+    border: 1px solid #E3D4C5;
   }
   footer .container-xxl .footer-border .footer-b-one {
     margin-right: 10px;
@@ -366,6 +366,7 @@ a:hover {
   }
   footer .container-xxl .footer-position .footer-position-text .footer-nav-position .footer-nav-one .footer-nav .footer-link .contact, footer .container-xxl .footer-position .footer-position-text .footer-nav-position .footer-nav-two .footer-nav .footer-link .contact {
     font-size: 25px;
+    color: #E3D4C5;
   }
   footer .container-xxl .footer-position .footer-position-text .footer-nav-position .footer-nav-one .footer-contact, footer .container-xxl .footer-position .footer-position-text .footer-nav-position .footer-nav-two .footer-contact {
     margin-bottom: 0px;

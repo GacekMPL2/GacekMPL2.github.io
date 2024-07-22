@@ -162,6 +162,7 @@ html .blog-search-article-button-position__button {
   padding: 6px 12px;
   margin-right: 8px;
   margin-bottom: 12px;
+  font-size: 1.4rem;
   text-transform: lowercase;
   background-color: #F4F1EC;
   border: 1px solid #DADADA;
@@ -187,6 +188,7 @@ html .blog-time {
   margin-top: 28px;
   margin-bottom: 12px;
   font-size: 14px;
+  color: #999999;
 }
 html .blog-time .time {
   margin-left: 10px;
@@ -454,6 +456,7 @@ html .specialOffer_photo-big {
   position: absolute;
   right: -30%;
   bottom: -38%;
+  pointer-events: none;
 }
 html .specialOffer-price {
   margin-right: 12px;
@@ -480,7 +483,7 @@ html .button a img {
   margin-left: 10px;
 }
 
-h1, h2, h3, .weight, li::marker, .price {
+h1, h2, h3, li::marker, .price {
   font-weight: 1000;
 }
 
@@ -494,6 +497,10 @@ h1, h2, h3, .weight, li::marker, .price {
 
 .p-color {
   color: #999999;
+}
+
+.p-color-two {
+  color: #6A6A6A;
 }
 
 .read {
@@ -672,7 +679,6 @@ h1, h2, h3, .weight, li::marker, .price {
   }
   main .beauty-position-slider #carouselExampleIndicatorstwo {
     display: flex;
-    max-width: 640px;
   }
   main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item {
     width: 100%;
@@ -733,7 +739,7 @@ h1, h2, h3, .weight, li::marker, .price {
     padding-top: 81px;
     padding-left: 81px;
     padding-bottom: 132px;
-    padding-right: 161px;
+    padding-right: 200px;
     margin-left: 12px;
     order: 2;
     z-index: 0;
@@ -753,8 +759,8 @@ h1, h2, h3, .weight, li::marker, .price {
   }
   header .header-position-left__photo {
     position: absolute;
-    bottom: 0%;
-    right: 0;
+    bottom: 10%;
+    right: 5%;
     z-index: -1;
     pointer-events: none;
   }
@@ -766,10 +772,11 @@ h1, h2, h3, .weight, li::marker, .price {
     height: 100%;
   }
   header .header-position-right .carousel .carousel-indicators {
-    left: 63px;
+    left: auto;
     bottom: 56px;
-    right: auto;
+    right: 63px;
     margin-left: 0%;
+    margin-right: 0%;
   }
   header .header-position-right .carousel .carousel-inner {
     height: 100%;
@@ -779,6 +786,7 @@ h1, h2, h3, .weight, li::marker, .price {
   }
   header .header-position-right .carousel .carousel-inner .carousel-item img {
     height: 100%;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -830,8 +838,8 @@ h1, h2, h3, .weight, li::marker, .price {
     display: flex;
     margin-bottom: 72px;
   }
-  main .beauty-position-text {
-    width: 41.3%;
+  main .beauty-position {
+    justify-content: space-between;
   }
   main .beauty-position-text__heading {
     margin-left: 43px;
@@ -845,24 +853,46 @@ h1, h2, h3, .weight, li::marker, .price {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  main .beauty-position-slider {
+    height: 565px;
+  }
   main .beauty-position-slider #carouselExampleIndicatorstwo {
-    max-width: 980px;
+    margin-top: 20px;
+    max-width: 1000px;
+    overflow: visible;
+    width: 1000px;
+  }
+  main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner {
+    position: absolute;
+    right: 0;
+    overflow: visible;
+    width: 960px;
+    height: 541px;
   }
   main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item {
     width: 100%;
   }
   main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position {
     width: 100%;
+    height: 541px;
   }
   main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .slider {
     width: 300px;
   }
   main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .slider-position {
-    height: 250px;
+    height: 273px;
     width: 300px;
+    z-index: 1;
   }
   main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .slider-position-photo {
     width: 300px;
+    height: 273px;
+  }
+  main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .slider-position .specialOffer_photo-big {
+    width: 250px;
+  }
+  main .beauty-position-slider #carouselExampleIndicatorstwo .carousel-inner .carousel-item .carousel-item-position .specialOffer .slider-text .buyButton a {
+    margin-top: 20px;
   }
   main .product {
     margin: 0 auto;

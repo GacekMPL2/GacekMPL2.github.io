@@ -91,6 +91,10 @@ h1, h2, .weight, li::marker {
   font-weight: 800;
 }
 
+.p-color {
+  color: #6A6A6A;
+}
+
 @media (min-width: 320px) {
   .error {
     text-align: center;
@@ -253,7 +257,6 @@ h1, h2, .weight, li::marker {
   }
   main .info-position {
     padding-bottom: 126px;
-    border-bottom: 2px solid #6A6A6A;
     display: flex;
   }
   main .info-position-left, main .info-position-right {
@@ -268,7 +271,7 @@ h1, h2, .weight, li::marker {
     width: 85%;
   }
   main .info-position-left__text-weight {
-    width: 85%;
+    width: 80%;
     font-size: 2.5rem;
     font-weight: 800;
   }

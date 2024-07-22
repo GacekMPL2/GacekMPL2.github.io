@@ -91,6 +91,10 @@ h1, h2 {
   font-weight: 800;
 }
 
+.p-color {
+  color: #999999;
+}
+
 @media (min-width: 320px) {
   .error {
     text-align: center;
@@ -160,7 +164,7 @@ h1, h2 {
     font-size: 1.9rem;
   }
   main .contact {
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 142px;
   }
   main .contact-position {
@@ -221,6 +225,7 @@ h1, h2 {
   }
   main .contact-position-right-form-position-text-label label {
     font-size: 1.4rem;
+    width: 90%;
   }
   main .contact-position-right-form-position-text .send {
     padding: 12px 0px;

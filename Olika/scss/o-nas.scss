@@ -20,6 +20,10 @@ h1,h2, .weight, li::marker{
     font-weight: 800;
 }
 
+.p-color{
+    color: #6A6A6A;
+}
+
 @media (min-width: 320px) { 
     .error{
         text-align: center;
@@ -204,7 +208,6 @@ h1,h2, .weight, li::marker{
             overflow: hidden;
             &-position{
                 padding-bottom: 126px;
-                border-bottom: 2px solid $info-border-background;
                 display: flex;
                 &-left, &-right{
                     width: 50%;
@@ -218,7 +221,7 @@ h1,h2, .weight, li::marker{
                         margin-top: 21px;
                         width: 85%;
                         &-weight{
-                            width: 85%;
+                            width: 80%;
                             font-size: 2.5rem;
                             font-weight: 800;
                         }

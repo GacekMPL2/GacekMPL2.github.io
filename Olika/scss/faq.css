@@ -220,8 +220,8 @@ h1, h2 {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 0 100%;
-       object-position: 0 100%;
+    -o-object-position: 0 90%;
+       object-position: 0 90%;
   }
   header .header-position-right {
     display: flex;

@@ -26,14 +26,18 @@ h1,h2,h3{
 
 .read{
     margin-top: 20px;
+    padding-bottom: 5px;
     img{
         margin-left: 12px;
+        filter: contrast(0%)
     }
 }
-
 .read:hover{
     color: #000;
     border-bottom: 1px solid black;
+    img{
+        filter: contrast(100%)
+    }
 }
 
 .p-color{

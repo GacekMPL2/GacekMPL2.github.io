@@ -187,6 +187,7 @@ html .blog-search-article-button-position__button {
   padding: 6px 12px;
   margin-right: 8px;
   margin-bottom: 12px;
+  font-size: 1.4rem;
   text-transform: lowercase;
   background-color: #F4F1EC;
   border: 1px solid #DADADA;
@@ -212,6 +213,7 @@ html .blog-time {
   margin-top: 28px;
   margin-bottom: 12px;
   font-size: 14px;
+  color: #999999;
 }
 html .blog-time .time {
   margin-left: 10px;
@@ -233,14 +235,19 @@ h1, h2, h3 {
 
 .read {
   margin-top: 20px;
+  padding-bottom: 5px;
 }
 .read img {
   margin-left: 12px;
+  filter: contrast(0%);
 }
 
 .read:hover {
   color: #000;
   border-bottom: 1px solid black;
+}
+.read:hover img {
+  filter: contrast(100%);
 }
 
 .p-color {
