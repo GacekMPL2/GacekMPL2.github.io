@@ -125,64 +125,6 @@ html .paganation-nav .pagination .page-item-next {
 html .paganation-nav .pagination .page-item-next img {
   margin-left: 12px;
 }
-html .blog-search-input {
-  position: relative;
-  width: 100%;
-  max-width: 259px;
-  background-color: #F4F1EC;
-  font-size: 1.4rem;
-}
-html .blog-search-input #search-input {
-  display: block;
-  padding-left: 12px;
-  width: 100%;
-  background-color: transparent;
-  border: 0;
-  height: 51px;
-}
-html .blog-search-input-button {
-  display: inline-block;
-  position: absolute;
-  top: 13px;
-  right: 12px;
-  cursor: pointer;
-}
-html .blog-search-input-button img {
-  height: 24px;
-  width: 24px;
-}
-html .blog-search-article__heading {
-  margin-top: 32px;
-  font-weight: 1000;
-}
-html .blog-search-article-button-position {
-  margin-top: 32px;
-}
-html .blog-search-article-button-position__button {
-  padding: 6px 12px;
-  margin-right: 8px;
-  margin-bottom: 12px;
-  font-size: 1.4rem;
-  text-transform: lowercase;
-  background-color: #F4F1EC;
-  border: 1px solid #DADADA;
-}
-html .blog-search-article-button-position__button:hover {
-  background-color: #E3D4C5;
-}
-html .blog-search-article ol {
-  padding-left: 0;
-  list-style: none;
-}
-html .blog-search-article ol li {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-size: 1.4rem;
-  border-bottom: 1px solid #DADADA;
-}
-html .blog-search-article ol li:hover {
-  font-weight: 800;
-}
 html .blog-time {
   display: flex;
   margin-top: 28px;
