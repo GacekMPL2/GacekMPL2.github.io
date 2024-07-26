@@ -3,7 +3,6 @@
 
 html{
     font-size: 62.5%;
-    @include marquee;
     @include messenger;
     @include paganation;
     @include buyButton;

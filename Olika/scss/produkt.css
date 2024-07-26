@@ -1,50 +1,6 @@
 html {
   font-size: 62.5%;
 }
-@keyframes text {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 30%;
-  }
-}
-@media (min-width: 320px) {
-  html .marquee {
-    display: flex;
-    justify-content: right;
-    height: 58px;
-    font-size: 20px;
-    white-space: nowrap;
-    background-color: #000;
-    text-align: center;
-  }
-  html .marquee a {
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    text-decoration: none;
-    animation: text 5s infinite linear;
-    position: relative;
-  }
-  html .marquee a span .weight {
-    font-weight: 1000;
-  }
-  html .marquee a .dot {
-    margin: 0px 15px;
-    font-size: 4rem;
-  }
-}
-@media (min-width: 768px) {
-  html .marquee {
-    height: 72px;
-  }
-}
-@media (min-width: 1200px) {
-  html .marquee {
-    height: 90px;
-  }
-}
 @media (min-width: 320px) {
   html .messenger {
     position: fixed;
